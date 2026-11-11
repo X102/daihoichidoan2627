@@ -1,0 +1,56 @@
+TRÌNH CHIẾU ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA – NHIỆM KỲ 2026 – 2027
+
+1. MỞ
+   - Chép nguyên thư mục "Trình chiếu" sang máy chiếu (giữ đủ các thư mục fonts, img, nhac, video).
+   - Bấm đúp index.html, mở bằng Chrome hoặc Edge. Không cần mạng Internet.
+   - Phím F: bật/tắt toàn màn hình. Rê chuột xuống dưới để hiện thanh điều khiển.
+
+2. CHUYỂN SLIDE
+   - → / Space / PgDn: slide sau; ← / PgUp: slide trước (dùng được bút trình chiếu).
+   - M: mục lục 54 slide. Gõ số + Enter: nhảy tới slide đó. H: bảng phím tắt.
+   - B: màn hình đen. S: dừng mọi âm thanh.
+
+3. NHẬP KẾT QUẢ (phím K)
+   - Thẻ "Có mặt": số đoàn viên có mặt, vắng -> slide 11 tự tính % và điều kiện 2/3.
+   - Thẻ "Xếp loại": số phiếu từng mức của 10 đoàn viên (ghi theo số TT trên phiếu; họ tên chỉ hiện khi tích ô
+     "Hiện họ tên"), xếp loại Chi đoàn, đoàn viên ưu tú. Có ô "Chốt" để Đoàn Chủ tịch chọn mức cuối cùng nếu cần.
+     Màn hình chỉ chiếu SỐ LƯỢNG đoàn viên ở từng mức, không chiếu họ tên từng người.
+   - Thẻ "Bầu BCH": phiếu phát ra, thu vào, hợp lệ, số phiếu từng người -> tự tính tỷ lệ, trúng cử (trên 1/2 phiếu thu vào, tối đa 05 người).
+     Thêm được người ứng cử, đề cử tại Đại hội (tổng tối đa 06) và đổi ảnh.
+   - Thẻ "BCH mới": bấm "Lấy 05 người trúng cử", chọn Bí thư, Phó Bí thư -> slide "Ra mắt" hiện ảnh, họ tên, chức danh.
+   - Thẻ "Khách mời · Dữ liệu": danh sách đại biểu (đã điền sẵn 04 đại biểu), người phát biểu chỉ đạo
+     (đã điền sẵn đ/c Lê Thanh Bảo Ngân); Xuất/Nhập dữ liệu dự phòng.
+   - Số liệu tự lưu trong trình duyệt của máy đang chiếu. Nên nhập trên chính máy chiếu.
+
+4. CÔNG BỐ KẾT QUẢ
+   - Trên slide "Kết quả đánh giá, xếp loại" (35) và "Kết quả bầu Ban Chấp hành" (46):
+     nhấn Enter hoặc → để công bố (có hồi trống); nhấn R để ẩn lại.
+
+5. ÂM NHẠC (phím A)
+   - Nhạc tự đổi theo slide: đón tiếp (phông chờ, cảm ơn), giải lao và kiểm phiếu, chúc mừng (ra mắt BCH); tự tắt ở slide chào cờ.
+   - Các bản nhạc nền trong thư mục nhac là nhạc không lời tự tổng hợp, dùng tự do.
+   - QUỐC CA, ĐOÀN CA (nhac/quoc-ca.mp3, nhac/doan-ca.mp3): mỗi bài có slide riêng, toàn màn hình, không chữ
+       slide 3 và 52: quốc kỳ tung bay  -> tự phát Quốc ca khi chuyển tới
+       slide 4 và 53: huy hiệu Đoàn      -> tự phát Đoàn ca khi chuyển tới
+     Trình tự: MC hô "Nghiêm! Chào cờ! Chào!" trên slide "Nghi thức chào cờ" (2 / 51), bấm → sang quốc kỳ;
+     hết Quốc ca bấm → sang huy hiệu Đoàn; hết Đoàn ca bấm → sang slide tiếp theo.
+     Trên hai slide này, Enter = phát lại / dừng bài đang chiếu. Rời slide khi bài chưa hết thì nhạc tự nhỏ dần rồi tắt.
+
+6. TÙY CHỌN
+   - Slide phông dựng theo đúng mẫu Phụ lục 2 (búa liềm, ngôi sao, tượng Bác lấy từ mẫu). Dòng thứ ba
+     ("NHIỆM KỲ 2026 – 2027") sửa được trong bảng K, thẻ "Khách mời · Dữ liệu", nếu cần ghi "LẦN THỨ …".
+   - img/phong-nen.jpg: nếu có ảnh phông chính thức đã thiết kế sẵn (16:9), đặt vào đây, slide phông sẽ dùng ảnh này.
+   - img/ungvien/*.jpg: ảnh ứng cử viên (ảnh của đ/c Hoành, đ/c Nam đang nhỏ, nên thay ảnh rõ hơn, khổ 3x4).
+
+7. VIDEO
+   - video/video-tong-ket-nhiem-ky-2025-2026.mp4 (Full HD) – slide 25, nhấn Enter để phát.
+
+8. SLIDE PHỔ BIẾN TIÊU CHÍ (theo Hướng dẫn tổ chức Đại hội, hội nghị Đoàn – HSV năm 2026)
+   - Slide 27 – 28: tiêu chí 04 mức xếp loại đoàn viên và lưu ý khi biểu quyết (tỷ lệ HTXS, đối tượng tính ngoài tỷ lệ...).
+   - Slide 29: 06 tiêu chí bình xét đoàn viên ưu tú. Slide 30: tiêu chí xếp loại Chi đoàn.
+     -> Chiếu khi Đoàn Chủ tịch phổ biến nội dung đánh giá, xếp loại (Mục 9), trước khi phát phiếu.
+   - Slide 32: mã QR và link Google Form bỏ phiếu đánh giá, xếp loại (forms.gle/CASCuWZM5KEnMkHt8).
+     Để nguyên slide này trong suốt thời gian bỏ phiếu; đồng thời gửi link vào nhóm Chi đoàn.
+   - Slide 42: Về nhân sự Ban Chấp hành và đại biểu -> chiếu khi trình bày Đề án nhân sự (Mục 13).
+   - Slide 36 – 38: phát biểu của đại biểu theo thứ tự đ/c Võ Duy Nin (Hội Sinh viên) → đ/c Lê Thanh Bảo Ngân
+     (Ban Cán sự Đoàn, phát biểu chỉ đạo) → đ/c Đinh Công Đại (Bí thư Chi bộ, phát biểu chỉ đạo).
