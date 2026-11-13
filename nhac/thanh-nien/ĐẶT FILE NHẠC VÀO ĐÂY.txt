@@ -1,0 +1,13 @@
+ĐẶT FILE BÀI HÁT (mp3) VÀO THƯ MỤC NÀY, ĐỔI TÊN ĐÚNG NHƯ SAU:
+
+01-thanh-nien-lam-theo-loi-bac.mp3   (Thanh niên làm theo lời Bác)
+02-noi-vong-tay-lon.mp3              (Nối vòng tay lớn)
+03-hat-mai-khuc-quan-hanh.mp3        (Hát mãi khúc quân hành)
+04-khat-vong-tuoi-tre.mp3            (Khát vọng tuổi trẻ)
+05-tuoi-tre-the-he-bac-ho.mp3        (Tuổi trẻ thế hệ Bác Hồ)
+06-dau-chan-tinh-nguyen.mp3          (Dấu chân tình nguyện)
+07-len-dang.mp3                      (Lên đàng)
+08-loi-bac-day-thanh-nien.mp3        (Lời Bác dạy thanh niên)
+
+Bài nào chưa có thì trình chiếu tự bỏ qua; chưa có bài nào thì dùng nhạc không lời cũ.
+Kiểm tra: mở trình chiếu, nhấn phím A – bài thiếu file hiện chữ đỏ "Chưa có file này".

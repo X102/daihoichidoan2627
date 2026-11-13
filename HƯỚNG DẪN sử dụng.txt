@@ -1,13 +1,13 @@
 TRÌNH CHIẾU ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA – NHIỆM KỲ 2026 – 2027
 
 1. MỞ
-   - Chép nguyên thư mục "Trình chiếu" sang máy chiếu (giữ đủ các thư mục fonts, img, nhac, video).
+   - Chép nguyên thư mục "daihoichidoan2627" sang máy chiếu (giữ đủ các thư mục fonts, img, nhac, video).
    - Bấm đúp index.html, mở bằng Chrome hoặc Edge. Không cần mạng Internet.
    - Phím F: bật/tắt toàn màn hình. Rê chuột xuống dưới để hiện thanh điều khiển.
 
 2. CHUYỂN SLIDE
    - → / Space / PgDn: slide sau; ← / PgUp: slide trước (dùng được bút trình chiếu).
-   - M: mục lục 54 slide. Gõ số + Enter: nhảy tới slide đó. H: bảng phím tắt.
+   - M: mục lục 62 slide. Gõ số + Enter: nhảy tới slide đó. H: bảng phím tắt.
    - B: màn hình đen. S: dừng mọi âm thanh.
 
 3. NHẬP KẾT QUẢ (phím K)
@@ -17,28 +17,55 @@ TRÌNH CHIẾU ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA �
      Màn hình chỉ chiếu SỐ LƯỢNG đoàn viên ở từng mức, không chiếu họ tên từng người.
    - Thẻ "Bầu BCH": phiếu phát ra, thu vào, hợp lệ, số phiếu từng người -> tự tính tỷ lệ, trúng cử (trên 1/2 phiếu thu vào, tối đa 05 người).
      Thêm được người ứng cử, đề cử tại Đại hội (tổng tối đa 06) và đổi ảnh.
-   - Thẻ "BCH mới": bấm "Lấy 05 người trúng cử", chọn Bí thư, Phó Bí thư -> slide "Ra mắt" hiện ảnh, họ tên, chức danh.
-   - Thẻ "Khách mời · Dữ liệu": danh sách đại biểu (đã điền sẵn 04 đại biểu), người phát biểu chỉ đạo
-     (đã điền sẵn đ/c Lê Thanh Bảo Ngân); Xuất/Nhập dữ liệu dự phòng.
+   - Thẻ "BCH mới": mục "Bầu trực tiếp Bí thư tại Đại hội" nhập nhân sự dự kiến, người trúng cử, phiếu thu vào,
+     số phiếu bầu -> slide "Kết quả bầu Bí thư" (54). Bấm "Lấy 05 người trúng cử", chọn Bí thư, Phó Bí thư
+     -> slide "Ra mắt" hiện ảnh, họ tên, chức danh (Bí thư lấy số phiếu của Đại hội, Phó Bí thư của Hội nghị BCH).
+   - Thẻ "Khách mời · Dữ liệu": danh sách đại biểu (đã điền sẵn 05 đại biểu), người phát biểu chỉ đạo
+     (đã điền sẵn đ/c Lê Thị Thuỳ Linh); Xuất/Nhập dữ liệu dự phòng.
    - Số liệu tự lưu trong trình duyệt của máy đang chiếu. Nên nhập trên chính máy chiếu.
 
 4. CÔNG BỐ KẾT QUẢ
-   - Trên slide "Kết quả đánh giá, xếp loại" (35) và "Kết quả bầu Ban Chấp hành" (46):
+   - Trên slide "Kết quả đánh giá, xếp loại" (34) và "Kết quả bầu Ban Chấp hành" (51):
      nhấn Enter hoặc → để công bố (có hồi trống); nhấn R để ẩn lại.
 
 5. ÂM NHẠC (phím A)
    - Nhạc tự đổi theo slide: đón tiếp (phông chờ, cảm ơn), giải lao và kiểm phiếu, chúc mừng (ra mắt BCH); tự tắt ở slide chào cờ.
-   - Các bản nhạc nền trong thư mục nhac là nhạc không lời tự tổng hợp, dùng tự do.
+   - NHẠC NỀN LÀ CÁC BÀI HÁT VỀ THANH NIÊN: đặt file mp3 vào thư mục nhac/thanh-nien/ đúng tên:
+       01-thanh-nien-lam-theo-loi-bac.mp3   (Thanh niên làm theo lời Bác)
+       02-noi-vong-tay-lon.mp3              (Nối vòng tay lớn)
+       03-hat-mai-khuc-quan-hanh.mp3        (Hát mãi khúc quân hành)
+       04-khat-vong-tuoi-tre.mp3            (Khát vọng tuổi trẻ)
+       05-tuoi-tre-the-he-bac-ho.mp3        (Tuổi trẻ thế hệ Bác Hồ)
+       06-dau-chan-tinh-nguyen.mp3          (Dấu chân tình nguyện)
+       07-len-dang.mp3                      (Lên đàng)
+       08-loi-bac-day-thanh-nien.mp3        (Lời Bác dạy thanh niên)
+     Đón tiếp, giải lao, kiểm phiếu: phát lần lượt 01 -> 08 rồi quay lại, lần sau nối tiếp bài đang dở.
+     Ra mắt BCH: phát bài 01 "Thanh niên làm theo lời Bác".
+     Thiếu bài nào thì tự bỏ qua bài đó; thiếu hết thì dùng lại nhạc không lời cũ (don-tiep.mp3, giai-lao.mp3, chuc-mung.mp3).
+     Phím N: chuyển sang bài tiếp theo. Bảng âm nhạc (phím A) có danh sách 8 bài, bấm để phát đúng bài, bài thiếu file hiện chữ đỏ.
    - QUỐC CA, ĐOÀN CA (nhac/quoc-ca.mp3, nhac/doan-ca.mp3): mỗi bài có slide riêng, toàn màn hình, không chữ
-       slide 3 và 52: quốc kỳ tung bay  -> tự phát Quốc ca khi chuyển tới
-       slide 4 và 53: huy hiệu Đoàn      -> tự phát Đoàn ca khi chuyển tới
-     Trình tự: MC hô "Nghiêm! Chào cờ! Chào!" trên slide "Nghi thức chào cờ" (2 / 51), bấm → sang quốc kỳ;
+       slide 3 và 60: quốc kỳ tung bay  -> tự phát Quốc ca khi chuyển tới
+       slide 4 và 61: huy hiệu Đoàn      -> tự phát Đoàn ca khi chuyển tới
+     Trình tự: MC hô "Nghiêm! Chào cờ! Chào!" trên slide "Nghi thức chào cờ" (2 / 59), bấm → sang quốc kỳ;
      hết Quốc ca bấm → sang huy hiệu Đoàn; hết Đoàn ca bấm → sang slide tiếp theo.
      Trên hai slide này, Enter = phát lại / dừng bài đang chiếu. Rời slide khi bài chưa hết thì nhạc tự nhỏ dần rồi tắt.
 
 6. TÙY CHỌN
    - Slide phông dựng theo đúng mẫu Phụ lục 2 (búa liềm, ngôi sao, tượng Bác lấy từ mẫu). Dòng thứ ba
      ("NHIỆM KỲ 2026 – 2027") sửa được trong bảng K, thẻ "Khách mời · Dữ liệu", nếu cần ghi "LẦN THỨ …".
+   - CHỌN MẪU PHÔNG: bảng K -> thẻ "Khách mời · Dữ liệu" -> "Mẫu phông":
+       Phương án 1: theo mẫu Phụ lục 2 (như cũ).
+       Phương án 2: theo mẫu khánh tiết (rèm đỏ, tượng Bác, nền trống đồng); khẩu hiệu trên cùng,
+                    cờ Đảng, cờ Tổ quốc tỷ lệ 3:2, huy hiệu Đoàn thấp hơn hai lá cờ.
+       Phương án 3: tự chỉnh. Ban đầu giống phương án 2; trong bảng K có ô Hiện/ẩn, Cỡ (%), X, Y cho
+                    từng chi tiết (khẩu hiệu, rèm và tượng Bác, cờ Đảng, cờ Tổ quốc, huy hiệu Đoàn, 4 dòng chữ),
+                    chọn nền, sửa chữ. Bấm "Chỉnh trực tiếp trên slide (kéo thả)" để:
+                    kéo chuột = di chuyển; lăn chuột hoặc + / − = phóng to, thu nhỏ; mũi tên = dịch từng chút
+                    (giữ Shift dịch nhanh); nhấp đúp hoặc Delete = ẩn/hiện; nút ⇅ đưa thanh công cụ lên/xuống;
+                    "Bố cục mặc định" (bấm 2 lần) để làm lại từ đầu; "Xong" hoặc Esc để thoát.
+                    Bố cục tự lưu trong trình duyệt; nhớ "Xuất dữ liệu" nếu chuyển sang máy khác.
+       Phương án 4: như phương án 1 nhưng bỏ dải xanh trên cùng (khẩu hiệu sát mép trên),
+                    nền đỏ bên trái đều màu, tượng Bác thu nhỏ.
    - img/phong-nen.jpg: nếu có ảnh phông chính thức đã thiết kế sẵn (16:9), đặt vào đây, slide phông sẽ dùng ảnh này.
    - img/ungvien/*.jpg: ảnh ứng cử viên (ảnh của đ/c Hoành, đ/c Nam đang nhỏ, nên thay ảnh rõ hơn, khổ 3x4).
 
@@ -51,6 +78,14 @@ TRÌNH CHIẾU ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA �
      -> Chiếu khi Đoàn Chủ tịch phổ biến nội dung đánh giá, xếp loại (Mục 9), trước khi phát phiếu.
    - Slide 32: mã QR và link Google Form bỏ phiếu đánh giá, xếp loại (forms.gle/CASCuWZM5KEnMkHt8).
      Để nguyên slide này trong suốt thời gian bỏ phiếu; đồng thời gửi link vào nhóm Chi đoàn.
-   - Slide 42: Về nhân sự Ban Chấp hành và đại biểu -> chiếu khi trình bày Đề án nhân sự (Mục 13).
-   - Slide 36 – 38: phát biểu của đại biểu theo thứ tự đ/c Võ Duy Nin (Hội Sinh viên) → đ/c Lê Thanh Bảo Ngân
-     (Ban Cán sự Đoàn, phát biểu chỉ đạo) → đ/c Đinh Công Đại (Bí thư Chi bộ, phát biểu chỉ đạo).
+   - Slide 41: Về nhân sự Ban Chấp hành và đại biểu -> chiếu khi trình bày Đề án nhân sự (Mục 13).
+   - Slide 42: danh sách bầu cử; slide 43 – 48: giới thiệu riêng từng ứng cử viên (ảnh, năm sinh, quê quán,
+     học tập, công tác Đoàn, khen thưởng) -> chiếu lần lượt khi Đoàn Chủ tịch giới thiệu từng đồng chí.
+     Nếu có người ứng cử, đề cử thêm tại Đại hội, chỉ hiện ở slide 42 (không có slide giới thiệu riêng).
+   - Slide 36 – 37: phát biểu chỉ đạo của đ/c Lê Thị Thuỳ Linh (Phó Bí thư Ban Cán sự Đoàn, đại diện Đoàn cấp trên)
+     → đ/c Đinh Công Đại (Bí thư Chi bộ). Các đại biểu khác dự, không phát biểu.
+   - Thứ tự mới: slide 8 báo cáo số lượng đoàn viên có mặt, rồi slide 9 – 11 Chương trình, Nội quy, Quy chế.
+     Kết quả xếp loại (34) công bố ngay trong Mục 9, sau slide kiểm phiếu (33).
+   - Bầu trực tiếp Bí thư (Ban Cán sự Đoàn, Chi ủy đã đồng ý): sau "Kết quả bầu BCH" (51) là slide 52 ý kiến chỉ đạo,
+     nhân sự dự kiến, trình tự; 53 đang kiểm phiếu; 54 kết quả. Slide 55: Hội nghị BCH lần thứ nhất do Bí thư mới
+     chủ trì, chỉ bầu Phó Bí thư và phân công nhiệm vụ.

@@ -285,6 +285,82 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 .qrsteps{counter-reset:st;margin:0;padding:0;list-style:none}
 .qrsteps li{counter-increment:st;position:relative;padding:0 0 0 70px;margin:0 0 22px;font-size:29px;line-height:1.36}
 .qrsteps li::before{content:counter(st);position:absolute;left:0;top:-2px;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;font:900 28px/48px LatoV,Arial;text-align:center}
+
+/* ---- phông phương án 2 (theo mẫu khánh tiết tham khảo) ---- */
+.pn2{position:absolute;inset:0;display:none}
+#phong.v2 .pn{display:none} #phong.v2 .pn2{display:block}
+#phong.custom .pn2{display:none}
+.p2-banner{position:absolute;left:0;right:0;top:0;height:108px;background:linear-gradient(180deg,#e2332b,#c81f1c);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.25);z-index:3}
+.p2-banner span{font-family:OswaldV,'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:70px;line-height:1;color:#ffe81a;letter-spacing:.015em;white-space:nowrap;text-shadow:0 2px 0 rgba(120,0,0,.45);transform:translateY(2px)}
+.p2-left{position:absolute;left:0;top:108px;width:749px;height:972px;overflow:hidden}
+.p2-left > img{position:absolute;left:0;top:0;width:749px;height:972px}
+.p2-flag{position:absolute;top:18px;width:192px;height:128px;box-shadow:0 8px 18px rgba(60,0,0,.45);background:#e10600}
+.p2-fold{position:absolute;top:18px;width:192px;height:128px;background:linear-gradient(100deg,rgba(255,255,255,.10),rgba(0,0,0,0) 30%,rgba(0,0,0,.10) 55%,rgba(255,255,255,.08) 75%,rgba(0,0,0,.12));pointer-events:none}
+.p2-right{position:absolute;left:749px;right:0;top:108px;bottom:0;background:#dff1fb url(img/phong2-nen.jpg) center/cover no-repeat;text-align:center;font-family:LatoV,Lato,Arial,sans-serif}
+.p2-emb{position:absolute;left:50%;top:192px;height:196px;transform:translateX(-50%)}
+.p2-t1{position:absolute;left:30px;right:30px;top:432px;font-size:72px;font-weight:700;color:#1d4f9e;line-height:1.1;letter-spacing:.02em}
+.p2-t2{position:absolute;left:30px;right:30px;top:528px;font-size:60px;font-weight:700;color:#d61f26;line-height:1.1}
+.p2-t3{position:absolute;left:30px;right:30px;top:614px;font-size:56px;font-weight:700;color:#1d4f9e;line-height:1.1}
+.p2-t4{position:absolute;left:30px;right:30px;top:790px;font-size:38px;color:#13265a;line-height:1.1}
+/* ---- giới thiệu từng ứng cử viên ---- */
+.cv{position:absolute;left:100px;right:100px;top:250px;bottom:130px;display:grid;grid-template-columns:450px 1fr;gap:64px;align-items:center}
+.cv-ph{position:relative;width:450px;height:600px;border-radius:24px;overflow:hidden;box-shadow:0 18px 40px rgba(20,40,90,.22);background:#dde3ef}
+.cv-ph img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.cv-ph .no{position:absolute;left:18px;top:18px;background:var(--red);color:#fff;font-weight:900;font-size:26px;border-radius:10px;padding:4px 16px}
+.cv-r{display:flex;flex-direction:column;gap:20px;min-width:0}
+.cv-n{font-size:78px;font-weight:900;color:var(--blued);line-height:1.05}
+.cv-chips{display:flex;flex-wrap:wrap;gap:12px}
+.cv-chips span{background:#e8eefb;color:#173a8a;border-radius:999px;padding:8px 22px;font-size:25px;font-weight:700}
+.cv-chips span.p{background:#fde7e7;color:#b3121f}
+.cv-sec h3{margin:0 0 8px;font-size:24px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);font-weight:900}
+.cv-sec ul{margin:0;padding:0;list-style:none}
+.cv-sec li{position:relative;padding-left:30px;font-size:28px;line-height:1.38;margin-bottom:8px;color:#1f2a44}
+.cv-sec li::before{content:'';position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--gold,#e0a400)}
+.cv.dense .cv-sec li{font-size:24.5px;margin-bottom:6px}.cv.dense .cv-n{font-size:68px}.cv.dense .cv-r{gap:14px}
+
+/* ---- phông phương án 3 (tùy chỉnh vị trí, ẩn/hiện từng chi tiết) ---- */
+.pn3{position:absolute;inset:0;display:none;overflow:hidden;background:#dff1fb url(img/phong2-nen.jpg) center/cover no-repeat}
+.pn3.bg-xanh{background:#1892df}.pn3.bg-trang{background:#fff}.pn3.bg-do{background:#c8102e}
+#phong.v3 .pn,#phong.v3 .pn2{display:none} #phong.v3 .pn3{display:block}
+#phong.custom .pn3{display:none}
+.p3el{position:absolute;left:0;top:0;white-space:nowrap;line-height:0;transform-origin:50% 50%;user-select:none;-webkit-user-select:none}
+.p3el img{display:block;-webkit-user-drag:none;pointer-events:none}
+.p3el svg{pointer-events:none}
+.p3el.off{display:none}
+.p3-banner{width:1920px;height:108px;background:linear-gradient(180deg,#e2332b,#c81f1c);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.p3-banner span{font-family:OswaldV,'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:70px;line-height:1;color:#ffe81a;letter-spacing:.015em;white-space:nowrap;text-shadow:0 2px 0 rgba(120,0,0,.45);transform:translateY(2px)}
+.p3-flag{display:block;width:192px;height:128px;box-shadow:0 8px 18px rgba(60,0,0,.45);background:#e10600}
+.p3t{font-family:LatoV,Lato,Arial,sans-serif;font-weight:700;line-height:1.1}
+.p3t[data-k=t1]{font-size:72px;color:#1d4f9e;letter-spacing:.02em}.p3t[data-k=t2]{font-size:60px;color:#d61f26}
+.p3t[data-k=t3]{font-size:56px;color:#1d4f9e}.p3t[data-k=t4]{font-size:38px;color:#13265a;font-weight:400}
+.pn3.bg-xanh .p3t,.pn3.bg-do .p3t{color:#fff}.pn3.bg-xanh .p3t[data-k=t2],.pn3.bg-do .p3t[data-k=t2]{color:#fff41c}
+#phong.p3edit .p3el{cursor:move}
+#phong.p3edit .p3el:hover{outline:3px dashed #ffb300;outline-offset:4px}
+#phong.p3edit .p3el.sel{outline:4px solid #ffb300;outline-offset:4px}
+#phong.p3edit .p3el.off{display:block;opacity:.25}
+#p3bar{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:58;display:none;align-items:center;gap:10px;flex-wrap:wrap;max-width:96vw;background:rgba(10,18,40,.94);color:#fff;border-radius:14px;padding:10px 14px;font:600 14px/1.35 'Segoe UI',LatoV,Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+#p3bar.on{display:flex}
+#p3bar.bot{top:auto;bottom:12px}
+#p3bar .tip{opacity:.8;font-weight:400;font-size:13px}
+#p3bar b{color:#ffcf4d}
+#p3bar button{border:0;border-radius:9px;padding:7px 12px;font:700 14px 'Segoe UI',Arial,sans-serif;cursor:pointer;background:#2c3b63;color:#fff}
+#p3bar button.ok{background:#1f9d55}
+.p3tab{width:100%;border-collapse:collapse;margin:6px 0 10px}
+.p3tab td{padding:3px 4px;border-bottom:1px solid #26314d}
+.p3tab input[type=number]{width:86px}
+
+
+/* ---- phông phương án 4: như phương án 1, bỏ dải xanh trên cùng, nền đỏ đều màu, tượng Bác nhỏ ---- */
+#phong.v4 .pn-top{display:none}
+#phong.v4 .pn-banner{top:0;height:132px}
+#phong.v4 .pn-banner span{transform:translateY(4px) scaleY(1.08)}
+#phong.v4 .pn-left{top:132px;background:#d62422}
+#phong.v4 .pn-right{top:132px}
+#phong.v4 .pn-bac{height:330px;left:50%;transform:translateX(-50%);bottom:24px}
+
+ol.steps{margin:6px 0 0;padding:0;list-style:none;counter-reset:st}
+ol.steps li{position:relative;padding-left:62px;font-size:26px;line-height:1.38;margin-bottom:18px;counter-increment:st}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
 </style>
 </head>
 <body>
@@ -308,6 +384,32 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
       <div class="pn-t3" id="pnLine3">NHIỆM KỲ 2026 – 2027</div>
       <div class="pn-t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
     </div>
+  </div>
+  <div class="pn2">
+    <div class="p2-banner"><span>ĐẢNG CỘNG SẢN VIỆT NAM QUANG VINH MUÔN NĂM!</span></div>
+    <div class="p2-left">
+      <img src="img/phong2-trai.png" alt="">
+      <svg class="p2-flag" style="left:159px" viewBox="0 0 300 200" aria-hidden="true"><rect width="300" height="200" fill="#e10600"/><g transform="translate(89.45,45) scale(0.5046)"><path fill="#ffe100" fill-rule="evenodd" d="M121.00,216.47 C119.08,215.72 116.36,215.09 114.96,215.06 C105.15,214.84 81.03,203.90 66.60,193.14 C60.61,188.66 55.17,185.00 54.52,185.00 C53.06,185.00 42.80,193.16 33.87,201.42 C23.79,210.75 20.88,212.06 16.20,209.37 C11.89,206.89 0.15,193.33 0.06,190.73 C-0.01,188.62 10.43,178.15 21.11,169.59 C25.30,166.24 32.50,160.08 37.11,155.89 C50.11,144.10 49.57,144.15 63.50,153.47 C79.41,164.13 99.84,173.40 114.50,176.63 C133.50,180.82 165.00,174.44 165.00,166.41 C165.00,165.62 151.11,151.02 134.13,133.98 C97.63,97.35 101.16,99.19 88.87,110.50 C78.35,120.19 77.14,120.26 68.70,111.75 C57.99,100.95 51.00,91.89 51.00,88.80 C51.00,86.72 52.75,84.16 57.84,78.75 C61.61,74.76 65.09,70.77 65.59,69.87 C66.09,68.97 73.98,60.53 83.13,51.12 C99.77,34.00 99.77,34.00 108.65,34.00 C114.77,34.00 119.72,33.35 124.52,31.91 C136.92,28.20 137.00,28.21 142.27,33.64 C151.27,42.90 150.98,44.48 137.56,58.82 C132.85,63.85 129.00,68.60 129.00,69.38 C129.00,72.01 137.63,82.50 150.57,95.63 C157.68,102.84 167.49,113.18 172.37,118.62 C183.53,131.05 190.64,137.19 193.40,136.80 C198.14,136.12 202.00,121.54 202.00,104.30 C201.99,69.23 186.48,41.66 148.69,9.59 C142.45,4.29 141.37,0.80 145.78,0.18 C151.53,-0.64 184.41,12.20 193.33,18.74 C213.80,33.76 223.47,47.60 232.00,74.05 C240.59,100.69 237.84,133.54 224.89,159.22 C220.67,167.58 220.87,168.25 230.98,180.04 C235.91,185.79 239.95,191.40 239.94,192.50 C239.92,195.64 220.06,215.00 216.85,215.00 C215.02,215.00 211.65,212.57 205.06,206.50 C193.98,196.29 193.48,196.21 182.29,202.94 C163.73,214.10 132.61,220.97 121.00,216.47 Z"/></g></svg><div class="p2-fold" style="left:159px"></div>
+      <svg class="p2-flag" style="left:365px" viewBox="0 0 300 200" aria-hidden="true"><rect width="300" height="200" fill="#e10600"/><polygon fill="#ffe100" points="150.00,40.00 163.47,81.46 207.06,81.46 171.80,107.08 185.27,148.54 150.00,122.92 114.73,148.54 128.20,107.08 92.94,81.46 136.53,81.46"/></svg><div class="p2-fold" style="left:365px"></div>
+    </div>
+    <div class="p2-right">
+      <img class="p2-emb" src="img/huy-hieu-doan.png" alt="">
+      <div class="p2-t1">ĐẠI HỘI CHI ĐOÀN</div>
+      <div class="p2-t2">TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
+      <div class="p2-t3" id="pn2Line3">NHIỆM KỲ 2026 – 2027</div>
+      <div class="p2-t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
+    </div>
+  </div>
+  <div class="pn3" id="pn3">
+    <div class="p3el" data-k="rem"><img src="img/phong3-rem.png" style="width:749px;height:972px" alt=""></div>
+    <div class="p3el" data-k="fdang"><svg class="p3-flag" viewBox="0 0 300 200" aria-hidden="true"><rect width="300" height="200" fill="#e10600"/><g transform="translate(89.45,45) scale(0.5046)"><path fill="#ffe100" fill-rule="evenodd" d="M121.00,216.47 C119.08,215.72 116.36,215.09 114.96,215.06 C105.15,214.84 81.03,203.90 66.60,193.14 C60.61,188.66 55.17,185.00 54.52,185.00 C53.06,185.00 42.80,193.16 33.87,201.42 C23.79,210.75 20.88,212.06 16.20,209.37 C11.89,206.89 0.15,193.33 0.06,190.73 C-0.01,188.62 10.43,178.15 21.11,169.59 C25.30,166.24 32.50,160.08 37.11,155.89 C50.11,144.10 49.57,144.15 63.50,153.47 C79.41,164.13 99.84,173.40 114.50,176.63 C133.50,180.82 165.00,174.44 165.00,166.41 C165.00,165.62 151.11,151.02 134.13,133.98 C97.63,97.35 101.16,99.19 88.87,110.50 C78.35,120.19 77.14,120.26 68.70,111.75 C57.99,100.95 51.00,91.89 51.00,88.80 C51.00,86.72 52.75,84.16 57.84,78.75 C61.61,74.76 65.09,70.77 65.59,69.87 C66.09,68.97 73.98,60.53 83.13,51.12 C99.77,34.00 99.77,34.00 108.65,34.00 C114.77,34.00 119.72,33.35 124.52,31.91 C136.92,28.20 137.00,28.21 142.27,33.64 C151.27,42.90 150.98,44.48 137.56,58.82 C132.85,63.85 129.00,68.60 129.00,69.38 C129.00,72.01 137.63,82.50 150.57,95.63 C157.68,102.84 167.49,113.18 172.37,118.62 C183.53,131.05 190.64,137.19 193.40,136.80 C198.14,136.12 202.00,121.54 202.00,104.30 C201.99,69.23 186.48,41.66 148.69,9.59 C142.45,4.29 141.37,0.80 145.78,0.18 C151.53,-0.64 184.41,12.20 193.33,18.74 C213.80,33.76 223.47,47.60 232.00,74.05 C240.59,100.69 237.84,133.54 224.89,159.22 C220.67,167.58 220.87,168.25 230.98,180.04 C235.91,185.79 239.95,191.40 239.94,192.50 C239.92,195.64 220.06,215.00 216.85,215.00 C215.02,215.00 211.65,212.57 205.06,206.50 C193.98,196.29 193.48,196.21 182.29,202.94 C163.73,214.10 132.61,220.97 121.00,216.47 Z"/></g></svg></div>
+    <div class="p3el" data-k="ftq"><svg class="p3-flag" viewBox="0 0 300 200" aria-hidden="true"><rect width="300" height="200" fill="#e10600"/><polygon fill="#ffe100" points="150.00,40.00 163.47,81.46 207.06,81.46 171.80,107.08 185.27,148.54 150.00,122.92 114.73,148.54 128.20,107.08 92.94,81.46 136.53,81.46"/></svg></div>
+    <div class="p3el" data-k="emb"><img src="img/huy-hieu-doan.png" style="width:179px;height:196px" alt=""></div>
+    <div class="p3el p3t" data-k="t1" id="p3t1">ĐẠI HỘI CHI ĐOÀN</div>
+    <div class="p3el p3t" data-k="t2" id="p3t2">TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
+    <div class="p3el p3t" data-k="t3" id="p3t3">NHIỆM KỲ 2026 – 2027</div>
+    <div class="p3el p3t" data-k="t4" id="p3t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
+    <div class="p3el" data-k="banner"><div class="p3-banner"><span id="p3slogan">ĐẢNG CỘNG SẢN VIỆT NAM QUANG VINH MUÔN NĂM!</span></div></div>
   </div>
 </section>
 
@@ -382,15 +484,22 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- 9. SỐ LƯỢNG CÓ MẶT -->
+<section class="slide blue" data-title="Báo cáo số lượng đoàn viên có mặt" data-item="6" id="s-attend">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Báo cáo của Đoàn Chủ tịch</div><h1>Số lượng đoàn viên tham dự Đại hội</h1></div></div>
+  <div class="bd" id="attendBody"></div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
 <!-- 6. CHƯƠNG TRÌNH -->
-<section class="slide paper" data-title="Chương trình Đại hội" data-item="6">
+<section class="slide paper" data-title="Chương trình Đại hội" data-item="7">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Chủ nhật, 15/11/2026 · ул. Академика Королёва, 28, корп. 1</div><h1>Chương trình Đại hội</h1></div></div>
   <div class="bd" style="top:250px"><div class="agenda" id="agenda"></div></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
 <!-- 7. NỘI QUY -->
-<section class="slide paper" data-title="Nội quy Đại hội" data-item="6">
+<section class="slide paper" data-title="Nội quy Đại hội" data-item="7">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Thông qua Nội quy</div><h1>Nội quy Đại hội</h1></div></div>
   <div class="bd grid" style="grid-template-columns:1fr 1fr 1fr">
     <div class="card"><h3>Thời gian, tác phong</h3><ul class="list sm">
@@ -413,27 +522,20 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 </section>
 
 <!-- 8. QUY CHẾ BẦU CỬ (tóm tắt) -->
-<section class="slide paper" data-title="Quy chế bầu cử" data-item="6">
+<section class="slide paper" data-title="Quy chế bầu cử" data-item="7">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Thông qua Quy chế bầu cử</div><h1>Quy chế bầu cử</h1></div></div>
   <div class="bd grid" style="grid-template-columns:1fr 1fr">
     <div class="card"><h3>Số lượng, danh sách bầu cử</h3><ul class="list sm">
       <li>Ban Chấp hành nhiệm kỳ 2026 – 2027 gồm <b>05 đồng chí</b></li>
       <li>Danh sách bầu cử có số dư không quá 30% (tối đa <b>06 đồng chí</b>), xếp theo vần A, B, C của tên</li>
       <li>Ban Kiểm phiếu 03 đồng chí, không có tên trong danh sách bầu cử</li>
-      <li>Bầu Bí thư, Phó Bí thư tại Hội nghị Ban Chấp hành lần thứ nhất</li></ul></div>
+      <li>Đại hội <b>bầu trực tiếp Bí thư</b> trong số Ủy viên Ban Chấp hành vừa trúng cử; Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu</li></ul></div>
     <div class="card"><h3>Nguyên tắc trúng cử</h3><ul class="list sm">
       <li>Trúng cử khi được <b>quá 1/2</b> tổng số phiếu thu vào (gồm phiếu hợp lệ và không hợp lệ)</li>
       <li>Nhiều người đạt quá 1/2 hơn số cần bầu: lấy từ cao xuống thấp</li>
       <li>Bằng phiếu ở vị trí cuối cùng: bầu lại trong số những người đó</li>
       <li>Xếp loại đoàn viên bằng phiếu kín, thông qua khi trên 1/2 số đoàn viên biểu quyết tán thành</li></ul></div>
   </div>
-  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
-</section>
-
-<!-- 9. SỐ LƯỢNG CÓ MẶT -->
-<section class="slide blue" data-title="Báo cáo số lượng đoàn viên có mặt" data-item="7" id="s-attend">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Báo cáo của Đoàn Chủ tịch</div><h1>Số lượng đoàn viên tham dự Đại hội</h1></div></div>
-  <div class="bd" id="attendBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
@@ -451,7 +553,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 
 <!-- 11. TÌNH HÌNH ĐOÀN VIÊN -->
 <section class="slide paper" data-title="Tình hình đoàn viên" data-item="8">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phần I · Đặc điểm tình hình</div><h1>40 đoàn viên tại 07 trường đại học</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phần I · Đặc điểm tình hình</div><h1>41 đoàn viên tại 07 trường đại học</h1></div></div>
   <div class="bd" style="display:grid;grid-template-columns:690px 1fr;gap:44px">
     <div class="card" style="display:flex;gap:30px;align-items:center"><div id="donutSchool"></div><div class="legend" id="legSchool"></div></div>
     <div style="display:flex;flex-direction:column;gap:22px">
@@ -468,7 +570,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Công tác xây dựng tổ chức Đoàn</div><h1>Biến động đoàn viên · Tham gia xây dựng Đảng</h1></div></div>
   <div class="bd">
     <div class="grid" style="grid-template-columns:repeat(4,1fr)">
-      <div class="kpi"><b>18</b><span>đoàn viên chuyển sinh hoạt đến</span></div>
+      <div class="kpi"><b>19</b><span>đoàn viên chuyển sinh hoạt đến</span></div>
       <div class="kpi r"><b>09</b><span>đoàn viên chuyển đi (tốt nghiệp, về nước)</span></div>
       <div class="kpi g"><b>02</b><span>đoàn viên ưu tú giới thiệu cho Chi bộ</span></div>
       <div class="kpi"><b>03</b><span>đoàn viên đã học lớp cảm tình Đảng</span></div>
@@ -628,7 +730,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="bd" style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
     <div class="card"><h3>Đối tượng</h3>
       <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:18px;margin-bottom:24px">
-        <div class="kpi"><b>10</b><span>đoàn viên thuộc diện xếp loại</span></div>
+        <div class="kpi"><b>11</b><span>đoàn viên thuộc diện xếp loại</span></div>
         <div class="kpi"><b>16</b><span>đảng viên – không xếp loại</span></div>
         <div class="kpi"><b>14</b><span>đoàn viên mới – chỉ nhận xét</span></div>
       </div>
@@ -656,7 +758,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 <!-- 24b. TIÊU CHÍ XẾP LOẠI (2/2) -->
 <section class="slide paper" data-title="Tiêu chí xếp loại đoàn viên (HT, KHT, lưu ý)" data-item="9">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn tổ chức Đại hội, hội nghị Đoàn – HSV năm 2026</div><h1>Tiêu chí xếp loại chất lượng đoàn viên (2/2)</h1></div></div>
-  <div class="bd grid c3" style="grid-template-columns:1fr 1fr 1.12fr;gap:26px"><div class="card crit" style="border-top:10px solid #1c8a5a"><h3 style="color:#1c8a5a">Hoàn thành nhiệm vụ</h3><ul class="list sm"><li>Phẩm chất chính trị, đạo đức, lối sống phù hợp; chấp hành chủ trương, pháp luật, Điều lệ Đoàn, quy định; có ý thức kỷ luật</li><li>Tham gia <b>từ 50%</b> hoạt động của Chi đoàn; tham gia hoạt động Đoàn – Hội phù hợp nhiệm vụ được phân công</li><li>Hoàn thành nhiệm vụ được giao; thực hiện nghĩa vụ học tập, bảo đảm tiến độ đào tạo</li></ul></div><div class="card crit" style="border-top:10px solid #d61f26"><h3 style="color:#d61f26">Không hoàn thành nhiệm vụ</h3><ul class="list sm"><li class="nob">Thuộc một trong các trường hợp:</li><li>Đang thi hành kỷ luật <b>từ cảnh cáo</b> trở lên</li><li>Vi phạm đạo đức, lối sống, kỷ luật, pháp luật, Điều lệ Đoàn, nội quy… <b>đã được cấp có thẩm quyền kết luận, xử lý</b></li><li>Tham gia <b>dưới 50%</b> hoạt động; hoặc không hoàn thành nhiệm vụ được giao</li></ul></div><div class="card crit" style="border-top:10px solid var(--blued)"><h3 style="color:var(--blued)">Lưu ý khi biểu quyết</h3><ul class="list sm"><li>“Hoàn thành xuất sắc” <b>không quá 25%</b> số đoàn viên thuộc diện xếp loại, làm tròn xuống: <b>tối đa 02/10 đồng chí</b></li><li>Đoàn viên đã học lớp bồi dưỡng nhận thức về Đảng, đang được xem xét kết nạp: nếu đạt “Hoàn thành xuất sắc” thì <b>tính ngoài tỷ lệ</b></li><li>Đảng viên và đoàn viên không thuộc diện đánh giá không tính vào tổng số</li><li>Nghỉ ốm từ 03 tháng trở lên: không xếp từ “Hoàn thành tốt” trở lên</li><li>Mỗi mức được thông qua khi <b>trên 1/2</b> số đoàn viên biểu quyết tán thành</li></ul></div></div>
+  <div class="bd grid c3" style="grid-template-columns:1fr 1fr 1.12fr;gap:26px"><div class="card crit" style="border-top:10px solid #1c8a5a"><h3 style="color:#1c8a5a">Hoàn thành nhiệm vụ</h3><ul class="list sm"><li>Phẩm chất chính trị, đạo đức, lối sống phù hợp; chấp hành chủ trương, pháp luật, Điều lệ Đoàn, quy định; có ý thức kỷ luật</li><li>Tham gia <b>từ 50%</b> hoạt động của Chi đoàn; tham gia hoạt động Đoàn – Hội phù hợp nhiệm vụ được phân công</li><li>Hoàn thành nhiệm vụ được giao; thực hiện nghĩa vụ học tập, bảo đảm tiến độ đào tạo</li></ul></div><div class="card crit" style="border-top:10px solid #d61f26"><h3 style="color:#d61f26">Không hoàn thành nhiệm vụ</h3><ul class="list sm"><li class="nob">Thuộc một trong các trường hợp:</li><li>Đang thi hành kỷ luật <b>từ cảnh cáo</b> trở lên</li><li>Vi phạm đạo đức, lối sống, kỷ luật, pháp luật, Điều lệ Đoàn, nội quy… <b>đã được cấp có thẩm quyền kết luận, xử lý</b></li><li>Tham gia <b>dưới 50%</b> hoạt động; hoặc không hoàn thành nhiệm vụ được giao</li></ul></div><div class="card crit" style="border-top:10px solid var(--blued)"><h3 style="color:var(--blued)">Lưu ý khi biểu quyết</h3><ul class="list sm"><li>“Hoàn thành xuất sắc” <b>không quá 25%</b> số đoàn viên thuộc diện xếp loại, làm tròn xuống: <b>tối đa 02/11 đồng chí</b></li><li>Đoàn viên đã học lớp bồi dưỡng nhận thức về Đảng, đang được xem xét kết nạp: nếu đạt “Hoàn thành xuất sắc” thì <b>tính ngoài tỷ lệ</b></li><li>Đảng viên và đoàn viên không thuộc diện đánh giá không tính vào tổng số</li><li>Nghỉ ốm từ 03 tháng trở lên: không xếp từ “Hoàn thành tốt” trở lên</li><li>Mỗi mức được thông qua khi <b>trên 1/2</b> số đoàn viên biểu quyết tán thành</li></ul></div></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
@@ -682,7 +784,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phiếu đánh giá, xếp loại</div><h1>Danh sách đoàn viên thuộc diện xếp loại</h1></div></div>
   <div class="bd" style="display:grid;grid-template-columns:1fr 560px;gap:44px">
     <div class="card" style="padding:34px 40px"><h3>Đoàn viên thuộc diện đánh giá, xếp loại</h3>
-      <div style="display:flex;align-items:center;gap:34px;margin:10px 0 26px"><div class="big-num" style="font-size:150px;color:var(--red);line-height:1">10</div><div style="font-size:34px;line-height:1.35;font-weight:800">đồng chí<br><span style="font-weight:400;color:var(--muted);font-size:28px">họ tên in sẵn trên Phiếu đánh giá, xếp loại</span></div></div>
+      <div style="display:flex;align-items:center;gap:34px;margin:10px 0 26px"><div class="big-num" style="font-size:150px;color:var(--red);line-height:1">11</div><div style="font-size:34px;line-height:1.35;font-weight:800">đồng chí<br><span style="font-weight:400;color:var(--muted);font-size:28px">họ tên in sẵn trên Phiếu đánh giá, xếp loại</span></div></div>
       <ul class="list sm"><li>Đánh dấu X vào <b>01 ô</b> cho mỗi dòng (phiếu kín, không ghi tên người bỏ phiếu)</li><li>Tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc nhiệm vụ” (không tính đoàn viên đang được xem xét kết nạp Đảng)</li><li>Cùng phiếu: xếp loại Chi đoàn và bình xét đoàn viên ưu tú</li></ul></div>
     <div class="card" style="border-top:8px solid var(--gold)"><h3>Ban Kiểm phiếu</h3>
       <ul class="list"><li><b>Nguyễn Đình Quân</b> – Trưởng ban</li><li><b>Trương Đức Tân</b> – Ủy viên</li><li><b>Lê Nhật Minh</b> – Ủy viên</li></ul>
@@ -719,8 +821,15 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
     <div class="sec-k">BAN KIỂM PHIẾU ĐANG LÀM VIỆC</div>
     <div class="sec-t" style="margin:18px 0 0;font-size:80px;max-width:900px">Kiểm phiếu đánh giá, xếp loại đoàn viên</div>
     <div class="sec-bar" style="margin:36px 0"></div>
-    <div class="sec-s serif">Xin mời Đại hội chuyển sang nội dung thảo luận</div>
+    <div class="sec-s serif">Đại hội nghỉ tại chỗ trong khi Ban Kiểm phiếu làm việc</div>
   </div>
+</section>
+
+<!-- 28. KẾT QUẢ XẾP LOẠI -->
+<section class="slide paper" data-title="Kết quả đánh giá, xếp loại" data-reveal="xl" data-item="9" id="s-xl">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Trưởng Ban Kiểm phiếu công bố</div><h1>Kết quả đánh giá, xếp loại năm 2026</h1></div></div>
+  <div class="bd" id="xlBody"></div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
 <!-- 27. THẢO LUẬN -->
@@ -733,33 +842,14 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
-<!-- 28. KẾT QUẢ XẾP LOẠI -->
-<section class="slide paper" data-title="Kết quả đánh giá, xếp loại" data-reveal="xl" data-item="13" id="s-xl">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Trưởng Ban Kiểm phiếu công bố</div><h1>Kết quả đánh giá, xếp loại năm 2026</h1></div></div>
-  <div class="bd" id="xlBody"></div>
-  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
-</section>
-
-<!-- 29a. PHÁT BIỂU CỦA ĐẠI BIỂU HỘI SINH VIÊN -->
-<section class="slide blue" data-title="Phát biểu của đ/c Võ Duy Nin (Hội Sinh viên)" data-item="11">
-  <div class="center">
-    <img src="img/huy-hieu-doan.png" alt="" style="height:170px">
-    <div class="sec-k" style="margin-top:36px">PHÁT BIỂU CỦA ĐẠI BIỂU</div>
-    <div class="sec-t" style="font-size:84px">Đồng chí Võ Duy Nin</div>
-    <div class="sec-bar"></div>
-    <div class="sec-s serif">Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga</div>
-  </div>
-  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
-</section>
-
 <!-- 29. PHÁT BIỂU CHỈ ĐẠO BCSĐ -->
 <section class="slide blue" data-title="Phát biểu chỉ đạo của Ban Cán sự Đoàn" data-item="11">
   <div class="center">
     <img src="img/huy-hieu-doan.png" alt="" style="height:170px">
     <div class="sec-k" style="margin-top:36px">PHÁT BIỂU CHỈ ĐẠO</div>
-    <div class="sec-t" id="spk1n" style="font-size:84px">Đồng chí Lê Thanh Bảo Ngân</div>
+    <div class="sec-t" id="spk1n" style="font-size:84px">Đồng chí Lê Thị Thuỳ Linh</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif" id="spk1t" style="max-width:1500px;line-height:1.4">Ủy viên Ban Cán sự Đoàn tại Liên bang Nga · Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga · Cụm trưởng Cụm thi đua số 5</div>
+    <div class="sec-s serif" id="spk1t" style="max-width:1500px;line-height:1.4">Phó Bí thư Ban Cán sự Đoàn tại Liên bang Nga</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -820,8 +910,8 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 <section class="slide paper" data-title="Về nhân sự Ban Chấp hành và đại biểu" data-item="13">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn tổ chức Đại hội, hội nghị Đoàn – HSV năm 2026 · Đề án số 11-ĐA/CĐ</div><h1>Về nhân sự Ban Chấp hành và đại biểu</h1></div></div>
   <div class="bd" style="display:flex;flex-direction:column;gap:20px">
-    <div class="grid c3" style="grid-template-columns:0.95fr 1.1fr;gap:30px;flex:1;min-height:0"><div class="card crit" style="border-top:10px solid var(--red)"><h3 style="color:var(--red)">Tiêu chuẩn (Quy chế Cán bộ Đoàn)</h3><ul class="list sm"><li><b>Bản lĩnh chính trị</b>; đạo đức, lối sống trong sáng, gương mẫu</li><li><b>Năng lực thực tiễn, uy tín</b>, tinh thần trách nhiệm; năng động, dám nghĩ, dám làm; có khả năng quy tụ, vận động đoàn viên</li><li>Nắm vững Điều lệ Đoàn, Điều lệ Hội Sinh viên Việt Nam; <b>kết quả học tập, rèn luyện tốt</b></li><li><b>Đủ thời gian</b> học tập, sinh sống tại Mát-xcơ-va để công tác hết nhiệm kỳ 2026 – 2027</li></ul></div><div class="card crit" style="border-top:10px solid var(--blue)"><h3 style="color:var(--blue)">Số lượng, cơ cấu</h3><ul class="list sm"><li>Chi đoàn từ 09 đoàn viên: Ban Chấp hành 03 – 05 Ủy viên. Đề án: <b>05 đồng chí</b> (Bí thư, 01 Phó Bí thư, 03 Ủy viên)</li><li>Danh sách bầu cử có số dư <b>không quá 30%</b>: tối đa <b>06 đồng chí</b>; đoàn viên có quyền ứng cử, đề cử</li><li>Trúng cử khi đạt <b>trên 1/2</b> số phiếu thu vào</li><li>Cơ cấu hợp lý, có kế thừa, đổi mới, <b>tính đại diện</b>: các trường đông đoàn viên, đoàn viên nữ, đoàn viên mới sang học tập</li><li>Bí thư, Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu; Chi ủy Chi bộ và Ban Cán sự Đoàn xem xét, phê duyệt</li></ul></div></div>
-    <div class="lead">Đại biểu: Chi đoàn tổ chức <b>Đại hội đoàn viên</b>, triệu tập toàn bộ 40 đồng chí; Đại hội có giá trị khi có <b>ít nhất 2/3</b> số được triệu tập tham dự (tối thiểu 27 đồng chí). Công tác nhân sự bảo đảm chặt chẽ, dân chủ, khách quan, minh bạch.</div>
+    <div class="grid c3" style="grid-template-columns:0.95fr 1.1fr;gap:30px;flex:1;min-height:0"><div class="card crit" style="border-top:10px solid var(--red)"><h3 style="color:var(--red)">Tiêu chuẩn (Quy chế Cán bộ Đoàn)</h3><ul class="list sm"><li><b>Bản lĩnh chính trị</b>; đạo đức, lối sống trong sáng, gương mẫu</li><li><b>Năng lực thực tiễn, uy tín</b>, tinh thần trách nhiệm; năng động, dám nghĩ, dám làm; có khả năng quy tụ, vận động đoàn viên</li><li>Nắm vững Điều lệ Đoàn, Điều lệ Hội Sinh viên Việt Nam; <b>kết quả học tập, rèn luyện tốt</b></li><li><b>Đủ thời gian</b> học tập, sinh sống tại Mát-xcơ-va để công tác hết nhiệm kỳ 2026 – 2027</li></ul></div><div class="card crit" style="border-top:10px solid var(--blue)"><h3 style="color:var(--blue)">Số lượng, cơ cấu</h3><ul class="list sm"><li>Chi đoàn từ 09 đoàn viên: Ban Chấp hành 03 – 05 Ủy viên. Đề án: <b>05 đồng chí</b> (Bí thư, 01 Phó Bí thư, 03 Ủy viên)</li><li>Danh sách bầu cử có số dư <b>không quá 30%</b>: tối đa <b>06 đồng chí</b>; đoàn viên có quyền ứng cử, đề cử</li><li>Trúng cử khi đạt <b>trên 1/2</b> số phiếu thu vào</li><li>Cơ cấu hợp lý, có kế thừa, đổi mới, <b>tính đại diện</b>: các trường đông đoàn viên, đoàn viên nữ, đoàn viên mới sang học tập</li><li>Bí thư do Đại hội bầu trực tiếp (Ban Cán sự Đoàn, Chi ủy Chi bộ đã đồng ý); Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu</li></ul></div></div>
+    <div class="lead">Đại biểu: Chi đoàn tổ chức <b>Đại hội đoàn viên</b>, triệu tập toàn bộ 41 đồng chí; Đại hội có giá trị khi có <b>ít nhất 2/3</b> số được triệu tập tham dự (tối thiểu 28 đồng chí). Công tác nhân sự bảo đảm chặt chẽ, dân chủ, khách quan, minh bạch.</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -830,6 +920,96 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 <section class="slide paper" data-title="Danh sách bầu cử" data-item="13">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Xếp theo vần A, B, C của tên</div><h1>Danh sách bầu cử Ban Chấp hành</h1></div></div>
   <div class="bd" style="top:236px"><div class="cands" id="candGrid"></div></div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34a. GIỚI THIỆU ỨNG CỬ VIÊN: ĐẶNG LÝ HOÀNH -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Đặng Lý Hoành" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 1/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv">
+    <div class="cv-ph"><img src="img/ungvien/hoanh.jpg" alt=""><span class="no">1</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Đặng Lý Hoành</div>
+      <div class="cv-chips"><span>Sinh năm 2001</span><span>Quê quán: Bắc Ninh</span><span class="p">Đảng viên dự bị</span></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Nghiên cứu sinh năm thứ nhất, ngành Trắc địa – Đại học Trắc địa Bản đồ <span style="white-space:nowrap">Mát-xcơ-va</span></li></ul></div>
+      <div class="cv-sec"><h3>Khen thưởng</h3><ul><li>Huy chương Vàng do Bộ Quốc phòng Liên bang Nga trao tặng (2026)</li><li>Bằng khen của Bộ trưởng Bộ Quốc phòng Việt Nam (2026)</li><li>Giấy khen của Ban Cán sự Đoàn tại Liên bang Nga (2024)</li></ul></div>
+    </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34b. GIỚI THIỆU ỨNG CỬ VIÊN: TRẦN VĂN HƯNG -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Trần Văn Hưng" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 2/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv">
+    <div class="cv-ph"><img src="img/ungvien/hung.jpg" alt=""><span class="no">2</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Trần Văn Hưng</div>
+      <div class="cv-chips"><span>Sinh năm 2007</span><span>Quê quán: Ninh Bình</span><span class="p">Đoàn viên</span></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Sinh viên năm thứ nhất, ngành Viễn thám – Đại học Trắc địa Bản đồ <span style="white-space:nowrap">Mát-xcơ-va</span></li><li>Sang Liên bang Nga học tập từ tháng 10/2025</li></ul></div>
+    </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34c. GIỚI THIỆU ỨNG CỬ VIÊN: ĐỖ MINH NHẬT NAM -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Đỗ Minh Nhật Nam" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 3/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv">
+    <div class="cv-ph"><img src="img/ungvien/nam.jpg" alt=""><span class="no">3</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Đỗ Minh Nhật Nam</div>
+      <div class="cv-chips"><span>Sinh năm 2008</span><span>Quê quán: Hà Nội</span><span class="p">Đoàn viên</span></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Sinh viên năm dự bị, ngành Công nghệ sinh học – Đại học Công nghệ Sinh học Rosbiotech</li><li>Sang Liên bang Nga học tập từ tháng 9/2026</li></ul></div>
+    </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34d. GIỚI THIỆU ỨNG CỬ VIÊN: BÙI BẢO THIỆN -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Bùi Bảo Thiện" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 4/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv dense">
+    <div class="cv-ph"><img src="img/ungvien/thien.jpg" alt=""><span class="no">4</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Bùi Bảo Thiện</div>
+      <div class="cv-chips"><span>Sinh năm 1998</span><span>Quê quán: Đà Nẵng</span><span class="p">Cảm tình Đảng</span></div>
+      <div class="cv-sec"><h3>Học tập, nghiên cứu</h3><ul><li>Nghiên cứu sinh năm thứ nhất, ngành Địa sinh thái học – Đại học Quản lý Đất đai</li><li>Thạc sĩ Địa sinh thái ứng dụng, Đại học Liên bang phương Nam (Rostov trên sông Đông), tốt nghiệp loại xuất sắc; nghiên cứu viên tập sự Bộ môn Hải dương học, Viện Khoa học Trái đất</li><li>Hướng nghiên cứu: viễn thám, GIS, học máy trong phân tích biến động sử dụng đất, lớp phủ ở Việt Nam, Lào; 13 bài báo quốc tế, trong đó 4 bài Q1 – Q2 (tính đến năm 2024)</li></ul></div>
+      <div class="cv-sec"><h3>Công tác Đoàn – Hội</h3><ul><li>Từng là Bí thư Đoàn trường; tham gia công tác Đoàn lưu học sinh Việt Nam tại Lào (2019 – 2021)</li></ul></div>
+      <div class="cv-sec"><h3>Khen thưởng</h3><ul><li>Bằng khen và Huy chương của Đại sứ Việt Nam tại Liên bang Nga – Chủ tịch danh dự Quỹ Khai sáng (2024, 2025)</li><li>Giấy khen của Đảng ủy tại Liên bang Nga (2024); Bằng khen của Ban Cán sự Đoàn tại Liên bang Nga (2023)</li><li>Giấy khen của Đại sứ Việt Nam tại Lào (nhiệm kỳ 2019 – 2021)</li></ul></div>
+    </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34e. GIỚI THIỆU ỨNG CỬ VIÊN: TỐNG THỊ THUỲ -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Tống Thị Thuỳ" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 5/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv">
+    <div class="cv-ph"><img src="img/ungvien/thuy.jpg" alt=""><span class="no">5</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Tống Thị Thuỳ</div>
+      <div class="cv-chips"><span>Sinh năm 2002</span><span>Quê quán: Lâm Đồng</span><span class="p">Cảm tình Đảng</span></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Học viên thạc sĩ năm thứ nhất, ngành Bản đồ học, địa tin học – Đại học Trắc địa Bản đồ <span style="white-space:nowrap">Mát-xcơ-va</span></li><li>Cử nhân Địa lý học, Đại học Tổng hợp Tyumen (Liên bang Nga)</li><li>Cựu học sinh chuyên Địa lý, Trường THPT Chuyên Nguyễn Chí Thanh (Đắk Nông)</li></ul></div>
+      <div class="cv-sec"><h3>Thành tích</h3><ul><li>Giải Ba môn Địa lý, Kỳ thi chọn học sinh giỏi quốc gia THPT năm 2020</li></ul></div>
+    </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 34f. GIỚI THIỆU ỨNG CỬ VIÊN: NGUYỄN THỊ UYÊN -->
+<section class="slide paper" data-title="Giới thiệu ứng cử viên: Nguyễn Thị Uyên" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 6/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="cv">
+    <div class="cv-ph"><img src="img/ungvien/uyen.jpg" alt=""><span class="no">6</span></div>
+    <div class="cv-r">
+      <div class="cv-n">Nguyễn Thị Uyên</div>
+      <div class="cv-chips"><span>Sinh năm 2002</span><span>Quê quán: Bắc Ninh</span><span class="p">Đoàn viên</span></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Học viên thạc sĩ năm thứ nhất, ngành Sản phẩm thực phẩm có nguồn gốc từ thực vật – Đại học Công nghệ Sinh học Rosbiotech</li></ul></div>
+      <div class="cv-sec"><h3>Công tác Đoàn – Hội</h3><ul><li>Phó Bí thư Chi đoàn</li></ul></div>
+      <div class="cv-sec"><h3>Khen thưởng</h3><ul><li>Giấy khen của Ban Chấp hành Huyện đoàn Thuận Thành (năm học 2018 – 2019)</li><li>Giấy khen của Ban Chấp hành Huyện đoàn Quế Võ (năm học 2019 – 2020)</li></ul></div>
+    </div>
+  </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
@@ -870,14 +1050,49 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- 37a. BẦU TRỰC TIẾP BÍ THƯ -->
+<section class="slide paper" data-title="Bầu trực tiếp Bí thư tại Đại hội" data-music="stop" data-item="13">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Ý kiến chỉ đạo của Ban Cán sự Đoàn và Chi ủy Chi bộ</div><h1>Đại hội bầu trực tiếp Bí thư Chi đoàn</h1></div></div>
+  <div class="bd grid" style="grid-template-columns:1fr 1.15fr;gap:40px">
+    <div class="card"><h3>Ý kiến chỉ đạo · nhân sự dự kiến</h3><ul class="list sm">
+      <li>Ban Cán sự Đoàn tại Liên bang Nga và Chi ủy Chi bộ Trắc địa Bản đồ Mát-xcơ-va đồng ý để Đại hội <b>bầu trực tiếp Bí thư</b> Chi đoàn nhiệm kỳ 2026 – 2027</li>
+      <li>Tiêu chuẩn: ưu tiên đảng viên hoặc đoàn viên đã học lớp bồi dưỡng nhận thức về Đảng; có kinh nghiệm công tác Đoàn – Hội; quy tụ, đoàn kết đoàn viên các trường; sử dụng tốt tiếng Nga</li>
+      <li>Nhân sự dự kiến được giới thiệu: <b id="btDkName">đồng chí Đặng Lý Hoành</b></li></ul></div>
+    <div class="card"><h3>Trình tự</h3><ol class="steps">
+      <li>Đại hội thảo luận; ứng cử, đề cử Bí thư <b>trong số 05 Ủy viên</b> Ban Chấp hành vừa trúng cử</li>
+      <li>Đoàn Chủ tịch lập danh sách, quyết định việc rút tên; Đại hội biểu quyết thông qua danh sách (từ 03 người trở lên: lấy phiếu tín nhiệm, chọn tối đa 02 người)</li>
+      <li>Bỏ phiếu kín bằng phiếu bầu Bí thư; trúng cử khi được <b>quá 1/2</b> số phiếu thu vào</li>
+      <li>Ban Kiểm phiếu công bố kết quả; Đại hội biểu quyết thông qua kết quả bầu Bí thư</li></ol></div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 37b. ĐANG KIỂM PHIẾU BẦU BÍ THƯ -->
+<section class="slide blue" data-title="Đang kiểm phiếu bầu Bí thư" data-music="giai-lao" data-item="13">
+  <div class="slshow" data-show></div>
+  <div class="center" style="align-items:flex-start;left:130px;text-align:left">
+    <div class="spin"></div>
+    <div class="sec-k">BAN KIỂM PHIẾU ĐANG LÀM VIỆC</div>
+    <div class="sec-t" style="margin:18px 0 0;font-size:84px;max-width:900px">Kiểm phiếu bầu Bí thư Chi đoàn</div>
+    <div class="sec-bar" style="margin:36px 0"></div>
+    <div class="sec-s serif">nhiệm kỳ 2026 – 2027</div>
+  </div>
+</section>
+
+<!-- 37c. KẾT QUẢ BẦU BÍ THƯ -->
+<section class="slide blue" data-title="Kết quả bầu Bí thư" data-music="stop" data-item="13" id="s-bt">
+  <div class="center" id="btBody"></div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
 <!-- 38. HỘI NGHỊ BCH LẦN 1 -->
-<section class="slide blue" data-title="Hội nghị BCH lần thứ nhất (chờ)" data-music="giai-lao" data-item="14">
+<section class="slide blue" data-title="Hội nghị BCH lần thứ nhất – bầu Phó Bí thư (chờ)" data-music="giai-lao" data-item="14">
   <div class="slshow" data-show></div>
   <div class="center" style="align-items:flex-start;left:130px;text-align:left">
     <div class="sec-k">HỘI NGHỊ BAN CHẤP HÀNH LẦN THỨ NHẤT</div>
-    <div class="sec-t" style="margin:18px 0 0;font-size:80px;max-width:960px">Bầu Bí thư, Phó Bí thư Chi đoàn</div>
+    <div class="sec-t" style="margin:18px 0 0;font-size:80px;max-width:960px">Bầu Phó Bí thư, phân công nhiệm vụ</div>
     <div class="sec-bar" style="margin:36px 0"></div>
-    <div class="sec-s serif">Đại hội nghỉ tại chỗ</div>
+    <div class="sec-s serif">Đồng chí Bí thư vừa trúng cử triệu tập, chủ trì · Đại hội nghỉ tại chỗ</div>
   </div>
 </section>
 
@@ -896,7 +1111,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
     <div class="card"><h3>Đại hội nhất trí</h3><ul class="list sm">
       <li>Thông qua Báo cáo tổng kết nhiệm kỳ 2025 – 2026, phương hướng nhiệm kỳ 2026 – 2027</li>
       <li>Thông qua kết quả đánh giá, xếp loại đoàn viên, Chi đoàn và đoàn viên ưu tú năm 2026</li>
-      <li>Bầu Ban Chấp hành nhiệm kỳ 2026 – 2027 gồm 05 đồng chí</li>
+      <li>Bầu Ban Chấp hành nhiệm kỳ 2026 – 2027 gồm 05 đồng chí; bầu trực tiếp Bí thư Chi đoàn</li>
       <li>Tiếp thu ý kiến chỉ đạo của Ban Cán sự Đoàn, Chi ủy Chi bộ</li></ul></div>
     <div class="card" style="background:linear-gradient(160deg,#123f9a,#071a45);color:#fff;border:0"><h3 style="color:var(--gold)">05 chỉ tiêu nhiệm kỳ 2026 – 2027</h3><ul class="list sm" style="color:#e6ecfa" id="targetsShort"></ul></div>
   </div>
@@ -978,12 +1193,13 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
   <kbd>R</kbd> ẩn lại kết quả trên slide hiện tại để công bố lại<br>
   Gõ số + <kbd>Enter</kbd>: nhảy tới slide số đó<br>
   <kbd>F</kbd> toàn màn hình · <kbd>M</kbd> mục lục · <kbd>K</kbd> bảng nhập kết quả · <kbd>A</kbd> âm nhạc<br>
-  <kbd>B</kbd> màn hình đen · <kbd>T</kbd> chạy/dừng đồng hồ giải lao · <kbd>S</kbd> dừng mọi âm thanh<br>
+  <kbd>B</kbd> màn hình đen · <kbd>T</kbd> chạy/dừng đồng hồ giải lao · <kbd>S</kbd> dừng mọi âm thanh · <kbd>N</kbd> chuyển bài hát (nhạc đón tiếp, giải lao)<br>
   <kbd>Esc</kbd> đóng bảng đang mở
 </div></div>
 
 <div class="ovl" id="ovMusic"><div class="drawer"><header><b>Âm nhạc</b><button class="x" data-close>×</button></header><div class="pane" id="musicPane"></div></div></div>
 
+<div id="p3bar"><button id="p3mv" title="Chuyển thanh này lên trên / xuống dưới">⇅</button><span>Chỉnh phông: <b id="p3selName">bấm chọn một chi tiết</b></span><span class="tip">kéo để di chuyển · lăn chuột hoặc + / − để phóng to, thu nhỏ · mũi tên để dịch (Shift: nhanh) · nhấp đúp để ẩn/hiện</span><button id="p3all">Hiện lại tất cả</button><button id="p3def">Bố cục mặc định</button><button class="ok" id="p3done">Xong</button></div>
 <div class="ovl" id="ovPanel"><div class="drawer">
   <header><b>Bảng điều khiển – nhập kết quả</b><button class="x" data-close>×</button></header>
   <div class="tabs" id="ptabs">
@@ -1002,12 +1218,12 @@ var PHOTOS = [["01.jpg", "21/12/2025", "Đại hội Chi đoàn nhiệm kỳ 202
 var AGENDA = [
  [1,'12h30 – 13h00','Ổn định tổ chức, đón tiếp đại biểu'],[2,'13h00 – 13h05','Chào cờ (Quốc ca, Đoàn ca)'],
  [3,'13h05 – 13h12','Tuyên bố lý do, giới thiệu đại biểu'],[4,'13h12 – 13h17','Bầu Đoàn Chủ tịch, Đoàn Thư ký'],
- [5,'13h17 – 13h22','Khai mạc Đại hội'],[6,'13h22 – 13h32','Thông qua Chương trình, Nội quy, Quy chế bầu cử'],
- [7,'13h32 – 13h35','Báo cáo số lượng đoàn viên có mặt'],[8,'13h35 – 14h00','Báo cáo tổng kết, phương hướng nhiệm kỳ mới'],
- [9,'14h00 – 14h30','Xếp loại đoàn viên; bình xét đoàn viên ưu tú'],[10,'14h30 – 15h00','Thảo luận, góp ý văn kiện'],
- [11,'15h00 – 15h15','Phát biểu của đại biểu Hội Sinh viên, Ban Cán sự Đoàn'],[12,'15h15 – 15h25','Chỉ đạo của Chi ủy Chi bộ'],
- [0,'15h25 – 15h35','Giải lao'],[13,'15h35 – 16h15','Kết thúc nhiệm kỳ; bầu Ban Chấp hành mới'],
- [14,'16h15 – 16h30','Hội nghị BCH lần thứ nhất (Bí thư, Phó Bí thư)'],[15,'16h30 – 16h40','Ra mắt BCH khóa mới; tri ân BCH khóa cũ'],
+ [5,'13h17 – 13h22','Khai mạc Đại hội'],[6,'13h22 – 13h25','Báo cáo số lượng đoàn viên có mặt'],
+ [7,'13h25 – 13h35','Thông qua Chương trình, Nội quy, Quy chế bầu cử'],[8,'13h35 – 14h00','Báo cáo tổng kết, phương hướng nhiệm kỳ mới'],
+ [9,'14h00 – 14h40','Xếp loại đoàn viên; bình xét đoàn viên ưu tú; công bố kết quả'],[10,'14h40 – 15h05','Thảo luận, góp ý văn kiện'],
+ [11,'15h05 – 15h15','Phát biểu chỉ đạo của Ban Cán sự Đoàn'],[12,'15h15 – 15h25','Chỉ đạo của Chi ủy Chi bộ'],
+ [0,'15h25 – 15h35','Giải lao'],[13,'15h35 – 16h20','Kết thúc nhiệm kỳ; bầu Ban Chấp hành mới; bầu trực tiếp Bí thư'],
+ [14,'16h20 – 16h30','Hội nghị BCH lần thứ nhất (bầu Phó Bí thư)'],[15,'16h30 – 16h40','Ra mắt BCH khóa mới; tri ân BCH khóa cũ'],
  [16,'16h40 – 16h50','Thông qua Nghị quyết Đại hội'],[17,'16h50 – 16h55','Bế mạc Đại hội'],[18,'16h55 – 17h00','Chào cờ bế mạc; chụp ảnh lưu niệm']];
 var TIMELINE1 = [
  ['12/2025',[['21/12','Đại hội Chi đoàn nhiệm kỳ 2025 – 2026']]],
@@ -1028,21 +1244,34 @@ var TARGETS = [
  '100% đoàn viên đóng đoàn phí đầy đủ, 100% đoàn viên thuộc diện được đánh giá, xếp loại; Chi đoàn đạt “Hoàn thành tốt nhiệm vụ” trở lên'];
 var TARGETS_SHORT = ['100% học tập Nghị quyết; không vi phạm','≥ 02 đoàn viên ưu tú; ≥ 02 học lớp cảm tình Đảng','≥ 02 hoạt động tập thể; ≥ 02 đăng ký “Sinh viên 5 tốt”','≥ 15 bài báo, báo cáo khoa học (≥ 05 VAK/ISI, Scopus)','100% đóng đoàn phí; Chi đoàn “Hoàn thành tốt” trở lên'];
 var CANDS = [
- {id:'hoanh',name:'Đặng Lý Hoành',born:2001,pol:'Đảng viên',edu:'Nghiên cứu sinh năm thứ nhất, ngành Trắc địa – ĐH Trắc địa Bản đồ Mát-xcơ-va',past:'',award:'Huy chương Vàng của Bộ Quốc phòng LB Nga; Bằng khen của Bộ trưởng Bộ Quốc phòng'},
+ {id:'hoanh',name:'Đặng Lý Hoành',born:2001,pol:'Đảng viên dự bị',edu:'Nghiên cứu sinh năm thứ nhất, ngành Trắc địa – ĐH Trắc địa Bản đồ Mát-xcơ-va',past:'',award:'Huy chương Vàng của Bộ Quốc phòng LB Nga (2026); Bằng khen của Bộ trưởng Bộ Quốc phòng (2026)'},
  {id:'hung',name:'Trần Văn Hưng',born:2007,pol:'Đoàn viên',edu:'Sinh viên năm thứ nhất, ngành Viễn thám – ĐH Trắc địa Bản đồ Mát-xcơ-va',past:'',award:''},
  {id:'nam',name:'Đỗ Minh Nhật Nam',born:2008,pol:'Đoàn viên',edu:'Sinh viên năm dự bị, ngành Công nghệ sinh học – ĐH Công nghệ Sinh học Rosbiotech',past:'',award:''},
- {id:'thien',name:'Bùi Bảo Thiện',born:1998,pol:'Cảm tình Đảng',edu:'Nghiên cứu sinh năm thứ nhất, ngành Địa sinh thái học – ĐH Quản lý Đất đai',past:'Bí thư Đoàn trường',award:'Bằng khen của Ban Cán sự Đoàn tại LB Nga (2023)'},
- {id:'thuy',name:'Tống Thị Thuỳ',born:2002,pol:'Cảm tình Đảng',edu:'Học viên thạc sĩ năm thứ nhất, ngành Bản đồ học, địa tin học – ĐH Trắc địa Bản đồ Mát-xcơ-va',past:'',award:''},
+ {id:'thien',name:'Bùi Bảo Thiện',born:1998,pol:'Cảm tình Đảng',edu:'Nghiên cứu sinh năm thứ nhất, ngành Địa sinh thái học – ĐH Quản lý Đất đai',past:'Bí thư Đoàn trường',award:'Bằng khen, Huy chương của Đại sứ Việt Nam tại LB Nga (2024, 2025)'},
+ {id:'thuy',name:'Tống Thị Thuỳ',born:2002,pol:'Cảm tình Đảng',edu:'Học viên thạc sĩ năm thứ nhất, ngành Bản đồ học, địa tin học – ĐH Trắc địa Bản đồ Mát-xcơ-va',past:'',award:'Giải Ba học sinh giỏi quốc gia môn Địa lý (2020)'},
  {id:'uyen',name:'Nguyễn Thị Uyên',born:2002,pol:'Đoàn viên',edu:'Học viên thạc sĩ năm thứ nhất, ngành Sản phẩm thực phẩm nguồn gốc thực vật – ĐH Công nghệ Sinh học Rosbiotech',past:'Phó Bí thư Chi đoàn',award:''}];
-var XL_NAMES = ['Trần Văn Hưng','Nguyễn Thị Uyên','Nguyễn Thị Hường','Phạm Thị Thu Ba','Nguyễn Hoàng Duy','Trịnh Thanh Thảo','Nguyễn Thùy Trang','Nguyễn Thương Huyền','Bùi Bảo Thiện','Võ Ngọc Minh Tố'];
-var XL_OUT_OF_QUOTA = ['Nguyễn Thị Hường']; // đang được xem xét kết nạp Đảng: tính ngoài tỷ lệ HTXS
+var XL_NAMES = ['Trần Văn Hưng','Nguyễn Thị Uyên','Nguyễn Thị Hường','Phạm Thị Thu Ba','Nguyễn Hoàng Duy','Trịnh Thanh Thảo','Nguyễn Thùy Trang','Nguyễn Thương Huyền','Bùi Bảo Thiện','Võ Ngọc Minh Tố','Tống Thị Thuỳ'];
+var XL_OUT_OF_QUOTA = ['Nguyễn Thị Hường','Bùi Bảo Thiện','Tống Thị Thuỳ']; // đang được xem xét kết nạp Đảng: tính ngoài tỷ lệ HTXS
 var LEVELS = [['HTXS','Hoàn thành xuất sắc nhiệm vụ'],['HTT','Hoàn thành tốt nhiệm vụ'],['HT','Hoàn thành nhiệm vụ'],['KHT','Không hoàn thành nhiệm vụ']];
 var SO_BCH = 5, MAX_HTXS = 2;
 var COLORS = ['#123f9a','#d61f26','#f0a500','#1c9c8c','#7a4fbf','#e86a2c','#5b6782'];
+/* Bài hát về thanh niên: đặt file mp3 vào nhac/thanh-nien/ đúng tên dưới đây.
+   Nhạc đón tiếp và giải lao phát lần lượt các bài (nối tiếp nhau giữa các lần); thiếu bài nào thì bỏ qua bài đó;
+   thiếu hết thì dùng lại bản nhạc không lời cũ. */
+var SONG_DIR = 'nhac/thanh-nien/';
+var SONGS = [
+ ['01-thanh-nien-lam-theo-loi-bac.mp3','Thanh niên làm theo lời Bác'],
+ ['02-noi-vong-tay-lon.mp3','Nối vòng tay lớn'],
+ ['03-hat-mai-khuc-quan-hanh.mp3','Hát mãi khúc quân hành'],
+ ['04-khat-vong-tuoi-tre.mp3','Khát vọng tuổi trẻ'],
+ ['05-tuoi-tre-the-he-bac-ho.mp3','Tuổi trẻ thế hệ Bác Hồ'],
+ ['06-dau-chan-tinh-nguyen.mp3','Dấu chân tình nguyện'],
+ ['07-len-dang.mp3','Lên đàng'],
+ ['08-loi-bac-day-thanh-nien.mp3','Lời Bác dạy thanh niên']];
 var TRACKS = {
- 'don-tiep':{src:'nhac/don-tiep.mp3',name:'Nhạc đón tiếp, chờ (tự tổng hợp)',loop:true},
- 'giai-lao':{src:'nhac/giai-lao.mp3',name:'Nhạc giải lao, kiểm phiếu (tự tổng hợp)',loop:true},
- 'chuc-mung':{src:'nhac/chuc-mung.mp3',name:'Nhạc chúc mừng ra mắt BCH (tự tổng hợp)',loop:false},
+ 'don-tiep':{src:'nhac/don-tiep.mp3',name:'Nhạc đón tiếp, chờ: các bài hát về thanh niên',loop:true,list:true},
+ 'giai-lao':{src:'nhac/giai-lao.mp3',name:'Nhạc giải lao, kiểm phiếu: các bài hát về thanh niên',loop:true,list:true},
+ 'chuc-mung':{src:'nhac/chuc-mung.mp3',alt:SONG_DIR+'01-thanh-nien-lam-theo-loi-bac.mp3',name:'Nhạc ra mắt BCH: Thanh niên làm theo lời Bác',loop:false},
  'video':{src:'nhac/video-tong-ket.mp3',name:'Nhạc nền video tổng kết (tự tổng hợp)',loop:true},
  'quoc-ca':{src:'nhac/quoc-ca.mp3',name:'Quốc ca',loop:false,fast:true},
  'doan-ca':{src:'nhac/doan-ca.mp3',name:'Đoàn ca',loop:false,fast:true}};
@@ -1050,21 +1279,26 @@ var SFX = {'trong':'nhac/trong-cong-bo.mp3'};
 
 /* ================== TRẠNG THÁI (lưu trên máy) ================== */
 var KEY = 'dhcd-tracdia-mxv-2026-v2';
+var P3DEF = {rem:{x:375,y:594,s:1,on:1}, fdang:{x:255,y:190,s:1,on:1}, ftq:{x:461,y:190,s:1,on:1}, emb:{x:1335,y:398,s:1,on:1},
+  t1:{x:1335,y:580,s:1,on:1}, t2:{x:1335,y:669,s:1,on:1}, t3:{x:1335,y:753,s:1,on:1}, t4:{x:1335,y:919,s:1,on:1}, banner:{x:960,y:54,s:1,on:1}};
+var P3LBL = {banner:'Khẩu hiệu', rem:'Rèm đỏ, tượng Bác', fdang:'Cờ Đảng', ftq:'Cờ Tổ quốc', emb:'Huy hiệu Đoàn', t1:'Dòng 1', t2:'Dòng 2', t3:'Dòng 3', t4:'Dòng ngày tháng'};
+var P3TXT = {t1:'ĐẠI HỘI CHI ĐOÀN', t2:'TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA', t4:'Mát-xcơ-va, ngày 15 tháng 11 năm 2026', slogan:'ĐẢNG CỘNG SẢN VIỆT NAM QUANG VINH MUÔN NĂM!'};
 function blankState(){
   return {
-    att:{trieuTap:40,coMat:'',vangCo:'',vangKhong:''},
-    guests:'Đồng chí Đinh Công Đại – Bí thư Chi bộ Trắc địa Bản đồ Mát-xcơ-va\nĐồng chí Lê Thanh Bảo Ngân – Ủy viên Ban Cán sự Đoàn tại Liên bang Nga, Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga, Phó Trưởng ban Tổ chức – Kiểm tra, Cụm trưởng Cụm thi đua số 5\nĐồng chí Võ Duy Nin – Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga\nĐồng chí Nguyễn Thị Hằng – Bí thư Chi đoàn Đại học Xây dựng Quốc gia Mát-xcơ-va\nCùng 40 đồng chí đoàn viên Chi đoàn được triệu tập',
-    spk:{name:'Lê Thanh Bảo Ngân',title:'Ủy viên Ban Cán sự Đoàn tại Liên bang Nga · Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga · Cụm trưởng Cụm thi đua số 5'},
+    att:{trieuTap:41,coMat:'',vangCo:'',vangKhong:''},
+    guests:'Đồng chí Đinh Công Đại – Bí thư Chi bộ Trắc địa Bản đồ Mát-xcơ-va\nĐồng chí Lê Thị Thuỳ Linh – Phó Bí thư Ban Cán sự Đoàn tại Liên bang Nga\nĐồng chí Lê Thanh Bảo Ngân – Ủy viên Ban Cán sự Đoàn tại Liên bang Nga, Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga, Phó Trưởng ban Tổ chức – Kiểm tra, Cụm trưởng Cụm thi đua số 5\nĐồng chí Võ Duy Nin – Ủy viên Ban Chấp hành Hội Sinh viên Việt Nam tại Nga\nĐồng chí Nguyễn Thị Hằng – Bí thư Chi đoàn Đại học Xây dựng Quốc gia Mát-xcơ-va\nCùng 41 đồng chí đoàn viên Chi đoàn được triệu tập',
+    spk:{name:'Lê Thị Thuỳ Linh',title:'Phó Bí thư Ban Cán sự Đoàn tại Liên bang Nga'},
     xl:{phat:'',thu:'',p:XL_NAMES.map(function(n){return {name:n,v:['','','',''],ov:''};}),cd:{v:['','','',''],ov:''},ut:[{name:'',dy:''},{name:'',dy:''},{name:'',dy:''}]},
     bch:{phat:'',thu:'',hl:'',khl:'',v:{},extra:[]},
-    nb:{m:[],hn:{thu:'',bt:'',pbt:''}},
+    nb:{m:[],hn:{thu:'',bt:'',pbt:''},bt:{dk:'Đặng Lý Hoành',name:'',thu:'',v:''}},
     photos:{},
-    brk:10,
+    brk:10, phongV:'v1', p3:p3def(),
     phong3:'NHIỆM KỲ 2026 – 2027'
   };
 }
 var S;
-function load(){ S = blankState(); try{ var t = localStorage.getItem(KEY); if(t){ var o = JSON.parse(t); merge(S,o); } }catch(e){} }
+var DATA_VER = 5;
+function load(){ S = blankState(); try{ var t = localStorage.getItem(KEY); if(t){ var o = JSON.parse(t); merge(S,o); if((o.dataVer||0) < DATA_VER){ var b = blankState(); S.guests = b.guests; S.spk = b.spk; if(num(S.att.trieuTap)===40) S.att.trieuTap = 41; var old = {}; (S.xl.p||[]).forEach(function(p){ old[p.name]=p; }); S.xl.p = XL_NAMES.map(function(n){ return old[n] || {name:n,v:['','','',''],ov:''}; }); } } }catch(e){} S.dataVer = DATA_VER; }
 function merge(a,b){ for(var k in b){ if(b[k] && typeof b[k]==='object' && !Array.isArray(b[k]) && a[k] && typeof a[k]==='object' && !Array.isArray(a[k])) merge(a[k],b[k]); else a[k]=b[k]; } }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){ toast('Không lưu được trên trình duyệt này – số liệu vẫn dùng được đến khi đóng trang.'); } }
 function num(v){ var n = parseInt(v,10); return isNaN(n)?null:n; }
@@ -1156,10 +1390,39 @@ slides.forEach(function(s,k){
 /* ================== ÂM NHẠC ================== */
 var Music = (function(){
   var els = {}, curKey = null, missing = {}, vol = 0.8, fadeT = null, pending = null, unlocked = false, auto = true;
+  /* --- danh sách bài hát thanh niên (dùng chung 1 trình phát cho đón tiếp + giải lao) --- */
+  var songBad = {}, songIdx = 0, tnA = null, tnFb = false, altFb = {};
+  function allBad(){ return SONGS.every(function(x,i){ return songBad[i]; }); }
+  function setSong(i){ tnFb = false; songIdx = (i+SONGS.length)%SONGS.length; tnA.loop = false; tnA.src = SONG_DIR+SONGS[songIdx][0]; }
+  function useFallback(k){ tnFb = true; tnA.loop = true; if(tnA.src.indexOf(TRACKS[k].src)<0) tnA.src = TRACKS[k].src; }
+  function goodFrom(i, step){ var j = i, n = 0; while(songBad[j] && n<SONGS.length){ j = (j+step+SONGS.length)%SONGS.length; n++; } return j; }
+  function nextSong(step){
+    if(!curKey || !TRACKS[curKey].list) return;
+    if(allBad()){ useFallback(curKey); }
+    else setSong(goodFrom((songIdx+step+SONGS.length)%SONGS.length, step>=0?1:-1));
+    tnA.volume = vol; var p = tnA.play(); if(p && p.catch) p.catch(function(){});
+    nowPlaying(); renderMusicPane();
+  }
+  function tnEl(){
+    if(!tnA){
+      tnA = new Audio(); tnA.preload = 'auto';
+      tnA.addEventListener('ended', function(){ if(curKey && TRACKS[curKey].list) nextSong(1); });
+      tnA.addEventListener('error', function(){
+        if(tnFb){ if(curKey && TRACKS[curKey].list){ missing[curKey] = true; toast('Chưa có bài hát nào trong nhac/thanh-nien/ và cũng thiếu '+TRACKS[curKey].src); curKey = null; nowPlaying(); markBtns(); } renderMusicPane(); return; }
+        songBad[songIdx] = true;
+        if(curKey && TRACKS[curKey].list){ if(allBad()) toast('Chưa có file bài hát trong nhac/thanh-nien/ – tạm dùng nhạc không lời.'); nextSong(1); }
+        else renderMusicPane();
+      });
+      setSong(0);
+    }
+    return tnA;
+  }
+  function playSong(i){ var k = (curKey && TRACKS[curKey].list) ? curKey : 'don-tiep'; tnEl(); songBad[i] = false; setSong(i); play(k, true); }
   function el(k){
+    if(TRACKS[k].list) return tnEl();
     if(!els[k]){
-      var a = new Audio(); a.preload='auto'; a.src = TRACKS[k].src; a.loop = !!TRACKS[k].loop;
-      a.addEventListener('error', function(){ missing[k]=true; if(curKey===k){ toast('Chưa có file '+TRACKS[k].src+' – hãy đặt file vào thư mục nhac.'); curKey=null; } renderMusicPane(); nowPlaying(); });
+      var a = new Audio(); a.preload='auto'; a.src = TRACKS[k].alt || TRACKS[k].src; a.loop = !!TRACKS[k].loop;
+      a.addEventListener('error', function(){ if(TRACKS[k].alt && !altFb[k]){ altFb[k] = true; a.src = TRACKS[k].src; if(curKey===k){ a.play().catch(function(){}); } renderMusicPane(); nowPlaying(); return; } missing[k]=true; if(curKey===k){ toast('Chưa có file '+TRACKS[k].src+' – hãy đặt file vào thư mục nhac.'); curKey=null; } renderMusicPane(); nowPlaying(); });
       a.addEventListener('ended', function(){ if(curKey===k){ curKey=null; nowPlaying(); renderMusicPane(); markBtns(); } });
       els[k]=a;
     }
@@ -1171,26 +1434,37 @@ var Music = (function(){
   }
   function play(k, force){
     if(!auto && !force) return;
-    if(curKey===k && !els[k].paused) return;
+    if(curKey===k && !el(k).paused) return;
     if(curKey && curKey!==k) stopKey(curKey, 900);
     var a = el(k); curKey = k;
+    if(TRACKS[k].list){
+      if(allBad()) useFallback(k);
+      else if(tnFb || songBad[songIdx]) setSong(goodFrom(songIdx,1));
+    }
     a.volume = 0; if(!TRACKS[k].loop || force) a.currentTime = 0;
-    var p = a.play();
-    if(p && p.catch) p.catch(function(err){ if(curKey===k) curKey = null; if(err && err.name==='NotAllowedError'){ pending = k; toast('Nhấn phím bất kỳ hoặc bấm chuột để bật nhạc.'); } else { missing[k] = true; toast('Chưa có file '+TRACKS[k].src+' – hãy đặt file vào thư mục nhac.'); } nowPlaying(); markBtns(); renderMusicPane(); });
+    var srcAtPlay = a.src, p = a.play();
+    if(p && p.catch) p.catch(function(err){ if(a.src !== srcAtPlay && !(err && err.name==='NotAllowedError')) return; if(err && err.name==='NotAllowedError'){ if(curKey===k) curKey = null; pending = k; toast('Nhấn phím bất kỳ hoặc bấm chuột để bật nhạc.'); } else { if(TRACKS[k].list || (TRACKS[k].alt && !altFb[k]) || (err && err.name==='AbortError')) return; if(curKey===k) curKey = null; missing[k] = true; toast('Chưa có file '+TRACKS[k].src+' – hãy đặt file vào thư mục nhac.'); } nowPlaying(); markBtns(); renderMusicPane(); });
     ramp(a, vol, TRACKS[k].fast ? 120 : 1200);
     nowPlaying(); renderMusicPane(); markBtns();
   }
-  function stopKey(k, ms){ var a = els[k]; if(!a) return; ramp(a, 0, ms||900, function(){ a.pause(); }); }
+  function stopKey(k, ms){ var a = TRACKS[k] && TRACKS[k].list ? tnA : els[k]; if(!a) return; ramp(a, 0, ms||900, function(){ a.pause(); }); }
   function fadeOut(){ if(curKey){ stopKey(curKey, 1200); curKey=null; nowPlaying(); renderMusicPane(); markBtns(); } }
-  function stopAll(){ for(var k in els){ clearInterval(els[k]._t); els[k].pause(); } curKey=null; nowPlaying(); renderMusicPane(); markBtns(); }
+  function stopAll(){ for(var k in els){ clearInterval(els[k]._t); els[k].pause(); } if(tnA){ clearInterval(tnA._t); tnA.pause(); } curKey=null; nowPlaying(); renderMusicPane(); markBtns(); }
   function sfx(name, done){ var a = new Audio(SFX[name]); a.volume = Math.min(1, vol+0.15); a.addEventListener('error', function(){ if(done) done(); }); var p=a.play(); if(p&&p.catch) p.catch(function(){ if(done) done(); }); return a; }
   function unlock(){ if(unlocked) return; unlocked = true; if(pending){ var k=pending; pending=null; play(k,true); } }
-  function setVol(v){ vol = v; if(curKey && els[curKey]) els[curKey].volume = v; }
-  return {play:play,fadeOut:fadeOut,stopAll:stopAll,sfx:sfx,unlock:unlock,setVol:setVol,
+  function setVol(v){ vol = v; if(curKey) el(curKey).volume = v; }
+  function label(k){
+    if(TRACKS[k].list) return tnFb ? TRACKS[k].name.split(':')[0]+' (nhạc không lời – chưa có file bài hát)' : 'Bài hát: '+SONGS[songIdx][1]+' ('+(songIdx+1)+'/'+SONGS.length+')';
+    if(TRACKS[k].alt) return altFb[k] ? TRACKS[k].name.split(':')[0]+' (nhạc không lời)' : 'Bài hát: '+SONGS[0][1];
+    return TRACKS[k].name;
+  }
+  return {play:play,fadeOut:fadeOut,stopAll:stopAll,sfx:sfx,unlock:unlock,setVol:setVol,label:label,
+    nextSong:function(st){ if(curKey && TRACKS[curKey].list){ nextSong(st||1); return true; } return false; }, playSong:playSong,
+    songIdx:function(){ return songIdx; }, songBad:songBad, listing:function(){ return !!(curKey && TRACKS[curKey].list); },
     cur:function(){return curKey;}, vol:function(){return vol;}, missing:missing, el:el,
     auto:function(v){ if(v!==undefined) auto=v; return auto; }};
 })();
-function nowPlaying(){ var n = document.getElementById('nowp'); var k = Music.cur(); n.textContent = k ? '♪ '+TRACKS[k].name : ''; n.classList.toggle('show', !!k && barVisible); }
+function nowPlaying(){ var n = document.getElementById('nowp'); var k = Music.cur(); n.textContent = k ? '♪ '+Music.label(k) : ''; n.classList.toggle('show', !!k && barVisible); }
 function markBtns(){ document.querySelectorAll('[data-play]').forEach(function(b){ b.classList.toggle('playing', b.dataset.play===Music.cur()); }); }
 document.addEventListener('click', function(e){ var b = e.target.closest('[data-play]'); if(!b) return; e.stopPropagation(); if(b.dataset.play==='stop') Music.fadeOut(); else if(Music.cur()===b.dataset.play) Music.fadeOut(); else Music.play(b.dataset.play, true); }, true);
 
@@ -1231,11 +1505,11 @@ function donut(id, legId, items){
 }
 function buildStatic(){
   document.getElementById('agenda').innerHTML = AGENDA.map(function(a){ return '<div class="agi'+(a[0]===0?' brk':'')+'"><span class="n">'+(a[0]||'☕')+'</span><span class="t">'+a[1]+'</span><span>'+esc(a[2])+'</span></div>'; }).join('');
-  donut('donutSchool','legSchool',[['MIIGAiK',16],['Rosbiotech',11],['Timiryazev',5],['GUZ',5],['Razumovsky',1],['HSE',1],['Skryabin',1]]);
-  split('spLevel',[['Nghiên cứu sinh',16],['Thạc sĩ',11],['Đại học',13]],['#123f9a','#1c9c8c','#f0a500']);
-  split('spType',[['Hiệp định',28],['Một phía',12]],['#123f9a','#7a4fbf']);
-  split('spSex',[['Nam',24],['Nữ',16]],['#1d55b8','#d61f26']);
-  split('spPol',[['Đảng viên',16],['Cảm tình Đảng',3],['Đoàn viên',21]],['#d61f26','#f0a500','#123f9a']);
+  donut('donutSchool','legSchool',[['MIIGAiK',16],['Rosbiotech',11],['GUZ',6],['Timiryazev',5],['Razumovsky',1],['HSE',1],['Skryabin',1]]);
+  split('spLevel',[['Nghiên cứu sinh',16],['Thạc sĩ',11],['Đại học',14]],['#123f9a','#1c9c8c','#f0a500']);
+  split('spType',[['Hiệp định',28],['Một phía',13]],['#123f9a','#7a4fbf']);
+  split('spSex',[['Nam',25],['Nữ',16]],['#1d55b8','#d61f26']);
+  split('spPol',[['Đảng viên',16],['Cảm tình Đảng',3],['Đoàn viên',22]],['#d61f26','#f0a500','#123f9a']);
   hbar('nckh',[['Hội thảo khoa học',19],['Bài báo VAK',10],['Bài báo РИНЦ',7],['Bài báo ISI/Scopus',5],['Đề tài nghiên cứu',3],['Ấn phẩm khác',2]],'',['#123f9a','#1d55b8','#1c9c8c','#d61f26','#f0a500','#7a4fbf']);
   hbar('finIn',[['Quỹ Chi đoàn',14500],['Chi bộ hỗ trợ',5000],['Đoàn phí',4800],['Chuyển từ 2025',4788],['Nguồn khác',1100]],'',['#123f9a']);
   hbar('finOut',[['Chương trình 8/3',23000],['Nộp đoàn phí',2400],['“Tự hào tiến bước”',1500],['“Sắc trẻ III”',1500],['Giải cờ vua',300],['Quà Tết',200]],'',['#d61f26']);
@@ -1259,13 +1533,18 @@ function sortABC(list){
 function renderGuests(){
   var lines = (S.guests||'').split('\n').map(function(s){return s.trim();}).filter(Boolean);
   document.getElementById('pnLine3').textContent = (S.phong3||'NHIỆM KỲ 2026 – 2027');
+  document.getElementById('pn2Line3').textContent = (S.phong3||'NHIỆM KỲ 2026 – 2027');
+  document.getElementById('phong').classList.toggle('v2', S.phongV==='v2');
+  document.getElementById('phong').classList.toggle('v3', S.phongV==='v3');
+  document.getElementById('phong').classList.toggle('v4', S.phongV==='v4');
+  renderP3();
   document.getElementById('guestList').innerHTML = lines.map(function(l){ var k = l.indexOf(' – '); if(k>0 && /^đồng chí/i.test(l)) return '<li style="font-size:30px;margin-bottom:18px"><b>'+esc(l.slice(0,k))+'</b><div style="font-size:25px;line-height:1.35;color:var(--muted);margin-top:4px">'+esc(l.slice(k+3))+'</div></li>'; return '<li style="font-size:30px;margin-bottom:18px">'+esc(l)+'</li>'; }).join('');
   var n = (S.spk.name||'').trim(), t=(S.spk.title||'').trim();
   document.getElementById('spk1n').textContent = n ? ('Đồng chí '+n.replace(/^đồng chí\s+/i,'')) : 'Đại diện Ban Cán sự Đoàn tại Liên bang Nga';
   document.getElementById('spk1t').textContent = t || (n ? 'Ban Cán sự Đoàn tại Liên bang Nga' : 'Ban Chấp hành Hội Sinh viên Việt Nam tại Nga');
 }
 function renderAttend(){
-  var a = S.att, tt = num(a.trieuTap)||40, cm = num(a.coMat), need = Math.ceil(tt*2/3);
+  var a = S.att, tt = num(a.trieuTap)||41, cm = num(a.coMat), need = Math.ceil(tt*2/3);
   var h;
   if(cm===null){ h = '<div class="waiting" style="color:#cfd9f2"><b style="color:#fff">Đang tổng hợp số liệu điểm danh…</b>Tổng số đoàn viên được triệu tập: '+tt+' đồng chí</div>'; }
   else {
@@ -1367,9 +1646,9 @@ function renderNewBch(animate){
   var order = [], L=[], R=[];
   ms.forEach(function(m,i){ if(i===0) return; (i%2 ? L : R).push(m); });
   order = L.reverse().concat([ms[0]]).concat(R);
-  var hn = S.nb.hn, thu = num(hn.thu);
+  var hn = S.nb.hn, thu = num(hn.thu), bt = S.nb.bt || {}, btThu = num(bt.thu), btV = num(bt.v);
   box.innerHTML = '<div class="bchrow">'+order.map(function(m){ var c = byId[m.id]; var cls = m.role==='Bí thư'?'bt':m.role==='Phó Bí thư'?'pbt':'';
-    var extra = ''; if(thu){ var vv = m.role==='Bí thư'?num(hn.bt):m.role==='Phó Bí thư'?num(hn.pbt):null; if(vv!==null) extra = '<div style="font-size:20px;color:#cfd9f2;margin-top:10px;font-weight:700">'+vv+'/'+thu+' phiếu ('+pct(vv,thu)+')</div>'; }
+    var extra = '', vv = null, tt = null; if(m.role==='Bí thư' && btThu && btV!==null){ vv = btV; tt = btThu; } else if(m.role==='Phó Bí thư' && thu){ vv = num(hn.pbt); tt = thu; } if(vv!==null && tt) extra = '<div style="font-size:20px;color:#cfd9f2;margin-top:10px;font-weight:700">'+vv+'/'+tt+' phiếu ('+pct(vv,tt)+')</div>';
     return '<div class="mcard '+cls+'" data-rank="'+rank[m.role]+'"><div class="pf"><img src="'+esc(photoOf(c))+'" alt="" onerror="this.style.visibility=\'hidden\'"></div><div class="nm">'+esc(c.name)+'</div><div class="rl">'+esc(m.role.toUpperCase())+'</div>'+extra+'</div>'; }).join('')+'</div>';
   var cards = [].slice.call(box.querySelectorAll('.mcard')).sort(function(a,b){ return a.dataset.rank-b.dataset.rank; });
   if(animate){ cards.forEach(function(c,i){ setTimeout(function(){ c.classList.add('in'); }, 500+i*650); }); confetti(); }
@@ -1380,7 +1659,16 @@ function confetti(){
   var cols = ['#f6c443','#d61f26','#ffffff','#4f8ff7','#ffd8a8'];
   for(var i=0;i<120;i++){ var e = document.createElement('i'); e.style.left = (Math.random()*100)+'%'; e.style.background = cols[i%cols.length]; e.style.animationDuration = (3+Math.random()*3.5)+'s'; e.style.animationDelay = (Math.random()*2.5)+'s'; e.style.opacity = .85; e.style.transform='rotate('+(Math.random()*180)+'deg)'; box.appendChild(e); }
 }
-function renderAll(){ renderGuests(); renderAttend(); renderCands(); renderXL(); renderBCH(); if(slides[cur] && slides[cur].id==='s-newbch') renderNewBch(false); else renderNewBch(false); }
+function renderBT(){
+  var b = S.nb.bt || {}, dk = (b.dk||'').trim(), nm = (b.name||'').trim() || dk;
+  var el = document.getElementById('btDkName'); if(el) el.textContent = dk ? 'đồng chí '+dk : '…………';
+  var box = document.getElementById('btBody'); if(!box) return;
+  var thu = num(b.thu), v = num(b.v);
+  if(!nm || !thu || v===null){ box.innerHTML = '<div class="sec-k">KẾT QUẢ BẦU BÍ THƯ</div><div class="waiting" style="color:#cfd9f2;margin-top:30px"><b style="color:#fff">Chờ Ban Kiểm phiếu công bố</b>Nhập kết quả trong Bảng điều khiển (phím K) → thẻ “BCH mới” → mục “Bầu trực tiếp Bí thư”</div>'; return; }
+  var ok = v*2 > thu;
+  box.innerHTML = '<img src="img/huy-hieu-doan.png" alt="" style="height:150px"><div class="sec-k" style="margin-top:30px">KẾT QUẢ BẦU TRỰC TIẾP BÍ THƯ CHI ĐOÀN NHIỆM KỲ 2026 – 2027</div><div class="sec-t" style="font-size:96px">Đồng chí '+esc(nm.replace(/^đồng chí\s+/i,''))+'</div><div class="sec-bar"></div><div class="sec-s serif">'+v+'/'+thu+' phiếu thu vào ('+pct(v,thu)+') · '+(ok?'trúng cử Bí thư Chi đoàn':'chưa đạt quá 1/2 số phiếu thu vào')+'</div>';
+}
+function renderAll(){ renderBT(); renderGuests(); renderAttend(); renderCands(); renderXL(); renderBCH(); if(slides[cur] && slides[cur].id==='s-newbch') renderNewBch(false); else renderNewBch(false); }
 
 /* ================== ĐỒNG HỒ GIẢI LAO ================== */
 var Clock = (function(){
@@ -1435,7 +1723,8 @@ document.addEventListener('keydown', function(e){
   Music.unlock();
   var tag = (e.target.tagName||'').toLowerCase();
   if(tag==='input' || tag==='textarea' || tag==='select'){ if(e.key==='Escape'){ e.target.blur(); closeOv(); } return; }
-  if(e.key==='Escape'){ closeOv(); digits=''; return; }
+  if(e.key==='Escape'){ if(p3edit && !anyOpen()){ p3setEdit(false); return; } closeOv(); digits=''; return; }
+  if(!anyOpen() && p3key(e)) return;
   if(anyOpen() && ['k','K','a','A','m','M','h','H','?'].indexOf(e.key)<0) return;
   var k = e.key;
   if(/^[0-9]$/.test(k)){ digits += k; toast('Đến slide: '+digits+' (Enter)'); return; }
@@ -1453,10 +1742,92 @@ document.addEventListener('keydown', function(e){
   else if(k==='b'||k==='B'||k==='.'){ var b=document.getElementById('black'); b.style.display = b.style.display==='block'?'none':'block'; }
   else if(k==='t'||k==='T') Clock.toggle();
   else if(k==='s'||k==='S') Music.stopAll();
+  else if(k==='n'||k==='N'){ if(!Music.nextSong(1)) toast('Phím N chuyển bài khi đang phát nhạc đón tiếp / giải lao'); }
   else if(k==='r'||k==='R'){ var key = slides[cur].dataset.reveal; if(key){ revealed[key]=false; renderAll(); toast('Đã ẩn kết quả – nhấn Enter để công bố lại'); } }
 });
-stage.addEventListener('click', function(e){ Music.unlock(); if(e.target.closest('button,input,a,video,select,textarea,label')) return; next(); });
+stage.addEventListener('click', function(e){ Music.unlock(); if(p3edit) return; if(e.target.closest('button,input,a,video,select,textarea,label')) return; next(); });
 document.addEventListener('mousedown', function(){ Music.unlock(); });
+
+
+/* ================== PHÔNG PHƯƠNG ÁN 3 ================== */
+function p3def(){ return JSON.parse(JSON.stringify({bg:'trongdong', el:P3DEF, txt:{t1:'',t2:'',t4:'',slogan:''}})); }
+var p3edit = false, p3sel = null;
+function p3E(k){ if(!S.p3) S.p3 = p3def(); if(!S.p3.el) S.p3.el = {}; if(!S.p3.el[k]) S.p3.el[k] = JSON.parse(JSON.stringify(P3DEF[k])); return S.p3.el[k]; }
+function renderP3(){
+  var r = document.getElementById('pn3'); if(!r) return;
+  if(!S.p3) S.p3 = p3def();
+  var P = S.p3, T = P.txt||{};
+  r.className = 'pn3' + (P.bg && P.bg!=='trongdong' ? ' bg-'+P.bg : '');
+  document.getElementById('p3t1').textContent = T.t1 || P3TXT.t1;
+  document.getElementById('p3t2').textContent = T.t2 || P3TXT.t2;
+  document.getElementById('p3t3').textContent = S.phong3 || 'NHIỆM KỲ 2026 – 2027';
+  document.getElementById('p3t4').textContent = T.t4 || P3TXT.t4;
+  document.getElementById('p3slogan').textContent = T.slogan || P3TXT.slogan;
+  r.querySelectorAll('.p3el').forEach(function(el){
+    var k = el.dataset.k, e = p3E(k);
+    el.style.transform = 'translate('+e.x+'px,'+e.y+'px) translate(-50%,-50%) scale('+e.s+')';
+    el.classList.toggle('off', !(+e.on));
+    el.classList.toggle('sel', p3edit && p3sel===k);
+  });
+  var nm = document.getElementById('p3selName');
+  if(nm) nm.textContent = p3sel ? (P3LBL[p3sel]+' · '+Math.round(p3E(p3sel).s*100)+'%'+(+p3E(p3sel).on?'':' (đang ẩn)')) : 'bấm chọn một chi tiết';
+}
+function p3setEdit(on){
+  p3edit = !!on; if(!on) p3sel = null;
+  document.getElementById('phong').classList.toggle('p3edit', p3edit);
+  document.getElementById('p3bar').classList.toggle('on', p3edit);
+  renderP3();
+}
+function p3startEdit(){ closeOv(); if(S.phongV!=='v3'){ S.phongV = 'v3'; save(); renderAll(); } go(0); p3setEdit(true); }
+(function(){
+  var r = document.getElementById('pn3'), drag = null, lastDown = null;
+  r.addEventListener('pointerdown', function(e){
+    if(!p3edit) return; var el = e.target.closest('.p3el'); if(!el) return;
+    e.preventDefault(); e.stopPropagation();
+    p3sel = el.dataset.k; var E = p3E(p3sel);
+    var now = Date.now(); if(lastDown && lastDown.k===p3sel && now-lastDown.t<400){ E.on = (+E.on) ? 0 : 1; lastDown = null; save(); } else lastDown = {k:p3sel, t:now};
+    drag = {id:e.pointerId, mx:e.clientX, my:e.clientY, x:E.x, y:E.y, sc: stage.getBoundingClientRect().width/1920, moved:false};
+    try{ r.setPointerCapture(e.pointerId); }catch(_){}
+    renderP3();
+  });
+  r.addEventListener('pointermove', function(e){
+    if(!drag || e.pointerId!==drag.id) return; var E = p3E(p3sel);
+    E.x = Math.round(drag.x + (e.clientX-drag.mx)/drag.sc); E.y = Math.round(drag.y + (e.clientY-drag.my)/drag.sc); drag.moved = true;
+    renderP3();
+  });
+  function end(e){ if(!drag) return; drag = null; save(); }
+  r.addEventListener('pointerup', end); r.addEventListener('pointercancel', end);
+  r.addEventListener('wheel', function(e){
+    if(!p3edit) return; var el = e.target.closest('.p3el'); if(!el) return;
+    e.preventDefault(); p3sel = el.dataset.k; var E = p3E(p3sel);
+    E.s = Math.max(.15, Math.min(4, Math.round(E.s*(e.deltaY<0?1.04:1/1.04)*1000)/1000)); renderP3(); save();
+  }, {passive:false});
+  document.getElementById('p3done').onclick = function(e){ e.stopPropagation(); p3setEdit(false); toast('Đã lưu bố cục phông phương án 3'); };
+  document.getElementById('p3all').onclick = function(e){ e.stopPropagation(); Object.keys(P3DEF).forEach(function(k){ p3E(k).on = 1; }); renderP3(); save(); };
+  var defArm = 0;
+  document.getElementById('p3def').onclick = function(e){
+    e.stopPropagation(); var b = this;
+    if(Date.now()-defArm > 3000){ defArm = Date.now(); b.textContent = 'Bấm lần nữa để xác nhận'; setTimeout(function(){ b.textContent = 'Bố cục mặc định'; }, 3000); return; }
+    defArm = 0; b.textContent = 'Bố cục mặc định'; S.p3.el = JSON.parse(JSON.stringify(P3DEF)); p3sel = null; renderP3(); save(); toast('Đã trả về bố cục mặc định');
+  };
+  document.getElementById('p3mv').onclick = function(e){ e.stopPropagation(); document.getElementById('p3bar').classList.toggle('bot'); };
+  document.getElementById('p3bar').addEventListener('click', function(e){ e.stopPropagation(); });
+  var _go = go; go = function(i, instant){ if(p3edit && i!==0) p3setEdit(false); return _go(i, instant); };
+})();
+function p3key(e){
+  if(!p3edit) return false;
+  var k = e.key;
+  if(k==='Escape'){ p3setEdit(false); return true; }
+  if(!p3sel) return /^Arrow|^Page| |Enter|Backspace/.test(k);
+  var E = p3E(p3sel), st = e.shiftKey ? 10 : 1;
+  if(k==='ArrowLeft') E.x -= st; else if(k==='ArrowRight') E.x += st; else if(k==='ArrowUp') E.y -= st; else if(k==='ArrowDown') E.y += st;
+  else if(k==='+'||k==='=') E.s = Math.min(4, Math.round(E.s*1.04*1000)/1000);
+  else if(k==='-'||k==='_') E.s = Math.max(.15, Math.round(E.s/1.04*1000)/1000);
+  else if(k==='Delete'||k==='Backspace') E.on = (+E.on) ? 0 : 1;
+  else if(/^Page| |Enter/.test(k)) return true;
+  else return false;
+  e.preventDefault(); renderP3(); save(); return true;
+}
 
 /* ================== BẢNG ÂM NHẠC ================== */
 function renderMusicPane(){
@@ -1464,13 +1835,18 @@ function renderMusicPane(){
   var h = '<label><span>Tự động đổi nhạc theo slide</span><input type="checkbox" id="mAuto" '+(Music.auto()?'checked':'')+'></label>'+
     '<label><span>Âm lượng</span><input type="range" id="mVol" min="0" max="1" step="0.05" value="'+Music.vol()+'"></label><h4>Danh sách</h4>';
   Object.keys(TRACKS).forEach(function(k){ var t = TRACKS[k], on = Music.cur()===k;
-    h += '<div class="trk"><button class="act'+(on?' red':'')+'" data-mk="'+k+'">'+(on?'■ Dừng':'▶ Phát')+'</button><span class="nm">'+esc(t.name)+'<br><span class="note">'+t.src+'</span>'+(Music.missing[k]?'<br><span class="miss">Chưa có file này</span>':'')+'</span></div>'; });
+    h += '<div class="trk"><button class="act'+(on?' red':'')+'" data-mk="'+k+'">'+(on?'■ Dừng':'▶ Phát')+'</button><span class="nm">'+esc(t.name)+'<br><span class="note">'+(t.list?'nhac/thanh-nien/ (8 bài) · dự phòng: '+t.src:(t.alt?t.alt+' · dự phòng: '+t.src:t.src))+'</span>'+(Music.missing[k]?'<br><span class="miss">Chưa có file này</span>':'')+'</span></div>'; });
+  h += '<h4>Bài hát về thanh niên (nhac/thanh-nien/)</h4>';
+  SONGS.forEach(function(sg,i){ var on = Music.listing() && Music.songIdx()===i;
+    h += '<div class="trk"><button class="act'+(on?' red':' gray')+'" data-song="'+i+'">'+(on?'♪ Đang phát':'▶ '+(i+1))+'</button><span class="nm">'+esc(sg[1])+'<br><span class="note">'+sg[0]+'</span>'+(Music.songBad[i]?'<br><span class="miss">Chưa có file này</span>':'')+'</span></div>'; });
+  h += '<button class="act gray" data-mk="__next">⏭ Bài tiếp theo (N)</button>';
   h += '<button class="act gray" data-mk="__trong">Thử hồi trống công bố</button><button class="act red" data-mk="__stop">■ Dừng tất cả (S)</button>'+
-    '<p class="note">Quốc ca, Đoàn ca: bản ghi do Ban Tổ chức cung cấp (nhac/quoc-ca.mp3, nhac/doan-ca.mp3), tự phát khi chuyển tới slide quốc kỳ / huy hiệu Đoàn. Các bản nhạc nền còn lại là nhạc không lời tự tổng hợp.</p>';
+    '<p class="note">Quốc ca, Đoàn ca: bản ghi do Ban Tổ chức cung cấp (nhac/quoc-ca.mp3, nhac/doan-ca.mp3), tự phát khi chuyển tới slide quốc kỳ / huy hiệu Đoàn. Nhạc đón tiếp, giải lao phát lần lượt 8 bài hát về thanh niên trong nhac/thanh-nien/ (bài nào thiếu file thì bỏ qua; thiếu hết thì dùng nhạc không lời cũ); ra mắt BCH phát «Thanh niên làm theo lời Bác».</p>';
   p.innerHTML = h;
   document.getElementById('mAuto').onchange = function(){ Music.auto(this.checked); };
   document.getElementById('mVol').oninput = function(){ Music.setVol(parseFloat(this.value)); };
-  p.querySelectorAll('[data-mk]').forEach(function(b){ b.onclick = function(){ var k=b.dataset.mk; if(k==='__stop') Music.stopAll(); else if(k==='__trong') Music.sfx('trong'); else if(Music.cur()===k) Music.fadeOut(); else Music.play(k,true); renderMusicPane(); }; });
+  p.querySelectorAll('[data-song]').forEach(function(b){ b.onclick = function(){ Music.playSong(+b.dataset.song); renderMusicPane(); }; });
+  p.querySelectorAll('[data-mk]').forEach(function(b){ b.onclick = function(){ var k=b.dataset.mk; if(k==='__next'){ if(!Music.nextSong(1)) Music.play('don-tiep',true); renderMusicPane(); return; } if(k==='__stop') Music.stopAll(); else if(k==='__trong') Music.sfx('trong'); else if(Music.cur()===k) Music.fadeOut(); else Music.play(k,true); renderMusicPane(); }; });
 }
 
 /* ================== BẢNG ĐIỀU KHIỂN KẾT QUẢ ================== */
@@ -1483,7 +1859,7 @@ function setP(path, v){ var ks = path.split('.'), o = S; for(var i=0;i<ks.length
 function renderPanel(){
   var p = document.getElementById('ppane'), h = '';
   if(ptab==='att'){
-    var a = S.att, tt = num(a.trieuTap)||40, cm = num(a.coMat);
+    var a = S.att, tt = num(a.trieuTap)||41, cm = num(a.coMat);
     h += '<h4>Điểm danh (chốt lúc 13h30)</h4><label>Tổng số đoàn viên được triệu tập '+inp('att.trieuTap',a.trieuTap)+'</label><label>Có mặt '+inp('att.coMat',a.coMat)+'</label><label>Vắng có lý do '+inp('att.vangCo',a.vangCo)+'</label><label>Vắng không lý do '+inp('att.vangKhong',a.vangKhong)+'</label>';
     if(cm!==null) h += '<p class="res '+(cm>=Math.ceil(tt*2/3)?'okc':'bad')+'">Có mặt '+cm+'/'+tt+' = '+pct(cm,tt)+' · tối thiểu 2/3 là '+Math.ceil(tt*2/3)+' đồng chí'+((num(a.vangCo)||0)+(num(a.vangKhong)||0)!==tt-cm && (a.vangCo!==''||a.vangKhong!=='')?' · <span class="bad">số vắng chưa khớp</span>':'')+'</p>';
     h += '<p class="note">Slide “Báo cáo số lượng đoàn viên có mặt” cập nhật ngay khi nhập.</p>';
@@ -1527,13 +1903,23 @@ function renderPanel(){
     if((S.nb.m||[]).length < SO_BCH) h += '<button class="act gray" id="addM">+ Thêm thành viên</button>';
     var nBT = (S.nb.m||[]).filter(function(m){return m.role==='Bí thư';}).length;
     if((S.nb.m||[]).length && nBT!==1) h += '<p class="bad">Cần đúng 01 Bí thư.</p>';
-    h += '<h4>Hội nghị BCH lần thứ nhất (không bắt buộc)</h4><label>Phiếu thu vào '+inp('nb.hn.thu',S.nb.hn.thu)+'</label><label>Số phiếu bầu Bí thư '+inp('nb.hn.bt',S.nb.hn.bt)+'</label><label>Số phiếu bầu Phó Bí thư '+inp('nb.hn.pbt',S.nb.hn.pbt)+'</label>';
+    var B = S.nb.bt || (S.nb.bt = {dk:'Đặng Lý Hoành',name:'',thu:'',v:''});
+    h += '<h4>Bầu trực tiếp Bí thư tại Đại hội</h4><label>Nhân sự dự kiến (Đoàn Chủ tịch giới thiệu) '+txt('nb.bt.dk',B.dk,'Đặng Lý Hoành',240)+'</label><label>Người trúng cử (để trống = nhân sự dự kiến) '+txt('nb.bt.name',B.name,'',240)+'</label><label>Phiếu thu vào '+inp('nb.bt.thu',B.thu)+'</label><label>Số phiếu bầu '+inp('nb.bt.v',B.v)+'</label>';
+    h += '<h4>Hội nghị BCH lần thứ nhất – bầu Phó Bí thư (không bắt buộc)</h4><label>Phiếu thu vào '+inp('nb.hn.thu',S.nb.hn.thu)+'</label><label>Số phiếu bầu Phó Bí thư '+inp('nb.hn.pbt',S.nb.hn.pbt)+'</label>';
     h += '<p class="note">Slide “Ra mắt Ban Chấp hành khóa mới” hiện ảnh, họ tên, chức danh theo bảng này; Bí thư đứng giữa.</p>';
   }
   if(ptab==='misc'){
     h += '<h4>Đại biểu (mỗi dòng một người)</h4><textarea data-p="guests" rows="6">'+esc(S.guests)+'</textarea>';
     h += '<h4>Người phát biểu chỉ đạo (Ban Cán sự Đoàn / Hội Sinh viên)</h4><label>Họ tên '+txt('spk.name',S.spk.name,'vd: Nguyễn Văn A',260)+'</label><label>Chức vụ '+txt('spk.title',S.spk.title,'vd: Phó Bí thư Ban Cán sự Đoàn',260)+'</label>';
-    h += '<h4>Phông Đại hội</h4><label>Dòng thứ ba '+txt('phong3',S.phong3,'LẦN THỨ …, NHIỆM KỲ 2026 – 2027',300)+'</label><p class="note">Mẫu Phụ lục 2 ghi “LẦN THỨ …, NHIỆM KỲ 2026 – 2027”; điền số lần thứ nếu Chi đoàn xác định được.</p>';
+    h += '<h4>Phông Đại hội</h4><label>Mẫu phông <select data-p="phongV"><option value="v1"'+(['v2','v3','v4'].indexOf(S.phongV)<0?' selected':'')+'>Phương án 1 – theo Phụ lục 2</option><option value="v2"'+(S.phongV==='v2'?' selected':'')+'>Phương án 2 – theo mẫu khánh tiết (rèm đỏ, tượng Bác)</option><option value="v3"'+(S.phongV==='v3'?' selected':'')+'>Phương án 3 – tự chỉnh vị trí, ẩn/hiện chi tiết</option><option value="v4"'+(S.phongV==='v4'?' selected':'')+'>Phương án 4 – như phương án 1, nền đỏ đều màu, tượng Bác nhỏ</option></select></label><label>Dòng thứ ba '+txt('phong3',S.phong3,'LẦN THỨ …, NHIỆM KỲ 2026 – 2027',300)+'</label><p class="note">Mẫu Phụ lục 2 ghi “LẦN THỨ …, NHIỆM KỲ 2026 – 2027”; điền số lần thứ nếu Chi đoàn xác định được.</p>';
+    if(S.phongV==='v3'){
+      var P = S.p3 || (S.p3 = p3def()), T = P.txt || (P.txt = {});
+      h += '<h4>Tùy chỉnh phương án 3</h4><button class="act" id="p3go">Chỉnh trực tiếp trên slide (kéo thả)</button>';
+      h += '<label>Nền <select data-p="p3.bg">'+[['trongdong','Trống đồng, xanh nhạt'],['xanh','Xanh lam (như phương án 1)'],['trang','Trắng'],['do','Đỏ']].map(function(o){ return '<option value="'+o[0]+'"'+((P.bg||'trongdong')===o[0]?' selected':'')+'>'+o[1]+'</option>'; }).join('')+'</select></label>';
+      h += '<table class="p3tab"><tr><td>Hiện</td><td>Chi tiết</td><td>Cỡ (%)</td><td>X</td><td>Y</td></tr>' + Object.keys(P3DEF).map(function(k){ var E = p3E(k); return '<tr><td><input type="checkbox" data-p3on="'+k+'"'+((+E.on)?' checked':'')+'></td><td>'+P3LBL[k]+'</td><td><input type="number" step="5" data-p3n="'+k+'.s" value="'+Math.round(E.s*100)+'"></td><td><input type="number" data-p3n="'+k+'.x" value="'+E.x+'"></td><td><input type="number" data-p3n="'+k+'.y" value="'+E.y+'"></td></tr>'; }).join('') + '</table>';
+      h += '<p class="note">X, Y là tâm của chi tiết, tính theo khung 1920 × 1080. Chi tiết vẽ sau nằm đè lên chi tiết vẽ trước (khẩu hiệu nằm trên cùng).</p>';
+      h += '<label>Khẩu hiệu '+txt('p3.txt.slogan',T.slogan,P3TXT.slogan,330)+'</label><label>Dòng 1 '+txt('p3.txt.t1',T.t1,P3TXT.t1,330)+'</label><label>Dòng 2 '+txt('p3.txt.t2',T.t2,P3TXT.t2,330)+'</label><p class="note">Dòng 3 dùng chung ô “Dòng thứ ba” ở trên.</p><label>Dòng ngày tháng '+txt('p3.txt.t4',T.t4,P3TXT.t4,330)+'</label>';
+    }
     h += '<h4>Đồng hồ giải lao</h4><label>Số phút '+inp('brk',S.brk)+'</label>';
     h += '<h4>Dữ liệu</h4><p class="note">Số liệu tự lưu trong trình duyệt của máy này. Nên “Xuất” một bản dự phòng sau mỗi lần nhập.</p><button class="act" id="exp">Xuất dữ liệu (.json)</button><button class="act gray" id="imp">Nhập dữ liệu</button><button class="act red" id="rst">Xóa toàn bộ số liệu đã nhập</button>';
   }
@@ -1544,10 +1930,14 @@ function renderPanel(){
       var path = el.dataset.p; if(path==='_newname') return;
       setP(path, el.value); save(); renderAll();
       if(path==='brk') Clock.set(num(el.value)||10);
+      if(path==='phongV') renderPanel();
       if(el.tagName==='SELECT' || ptab==='att' || /\.thu$|^bch\.v\.|^xl\.p\.|^xl\.cd|^xl\.ut/.test(path)) refreshResults();
     });
   });
+  p.querySelectorAll('[data-p3on]').forEach(function(el){ el.addEventListener('change', function(){ p3E(el.dataset.p3on).on = el.checked ? 1 : 0; save(); renderP3(); }); });
+  p.querySelectorAll('[data-p3n]').forEach(function(el){ el.addEventListener('input', function(){ var a = el.dataset.p3n.split('.'), v = parseFloat(el.value); if(isNaN(v)) return; var E = p3E(a[0]); if(a[1]==='s') E.s = Math.max(.15, Math.min(4, v/100)); else E[a[1]] = Math.round(v); save(); renderP3(); }); });
   var q = function(id){ return document.getElementById(id); };
+  if(q('p3go')) q('p3go').onclick = function(){ p3startEdit(); };
   if(q('addX')) q('addX').onclick = function(){ var nm = p.querySelector('[data-p="_newname"]').value.trim(); if(!nm) return; S.bch.extra = S.bch.extra||[]; S.bch.extra.push({id:'x'+Date.now(), name:nm, pol:'', edu:'Ứng cử, đề cử tại Đại hội'}); save(); renderAll(); renderPanel(); };
   p.querySelectorAll('[data-delx]').forEach(function(b){ b.onclick = function(){ var x = S.bch.extra.splice(+b.dataset.delx,1)[0]; if(x){ delete S.bch.v[x.id]; S.nb.m = (S.nb.m||[]).filter(function(m){return m.id!==x.id;}); } save(); renderAll(); renderPanel(); }; });
   p.querySelectorAll('[data-photo]').forEach(function(b){ b.onclick = function(){ pickPhoto(b.dataset.photo); }; });
