@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va – Nhiệm kỳ 2026 – 2027</title>
+<title>Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va – Nhiệm kỳ 2026 ⁠–⁠ 2027</title>
 <style>
 @font-face{font-family:'LatoV';src:url('fonts/Lato-Regular.ttf');font-weight:400}
 @font-face{font-family:'LatoV';src:url('fonts/Lato-Bold.ttf');font-weight:700}
@@ -78,7 +78,7 @@ table.tbl td.c,table.tbl th.c{text-align:center}
 /* ---- phông (bố cục theo mẫu Phụ lục 2, Công văn 04-CV/BCSĐ) ---- */
 @font-face{font-family:'OswaldV';font-weight:700;src:url('fonts/oswald-vietnamese-700-normal.woff2') format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
 @font-face{font-family:'OswaldV';font-weight:700;src:url('fonts/oswald-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-#phong{background:#1892df}
+:is(#phong,.phong-copy){background:#1892df}
 .pn{position:absolute;inset:0}
 .pn-top{position:absolute;left:0;right:0;top:0;height:59px;background:#1892df}
 .pn-banner{position:absolute;left:0;right:0;top:59px;height:121px;background:#d62422;display:flex;align-items:center;justify-content:center}
@@ -93,9 +93,9 @@ table.tbl td.c,table.tbl th.c{text-align:center}
 .pn-t2{position:absolute;left:0;right:0;top:556px;font-size:55px;line-height:1}
 .pn-t3{position:absolute;left:0;right:0;top:628px;font-size:55px;line-height:1}
 .pn-t4{position:absolute;left:0;right:0;top:728px;font-size:40px;line-height:1;font-style:italic}
-#phong.custom .pn{display:none}
-#phong .phimg,.flagbg .phimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
-#phong.custom .phimg,.flagbg.custom .phimg{display:block}
+:is(#phong,.phong-copy).custom .pn{display:none}
+:is(#phong,.phong-copy) .phimg,.flagbg .phimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+:is(#phong,.phong-copy).custom .phimg,.flagbg.custom .phimg{display:block}
 
 /* ---- slide đặc biệt ---- */
 .center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
@@ -307,8 +307,8 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 
 /* ---- phông phương án 2 (theo mẫu khánh tiết tham khảo) ---- */
 .pn2{position:absolute;inset:0;display:none}
-#phong.v2 .pn{display:none} #phong.v2 .pn2{display:block}
-#phong.custom .pn2{display:none}
+:is(#phong,.phong-copy).v2 .pn{display:none} :is(#phong,.phong-copy).v2 .pn2{display:block}
+:is(#phong,.phong-copy).custom .pn2{display:none}
 .p2-banner{position:absolute;left:0;right:0;top:0;height:108px;background:linear-gradient(180deg,#e2332b,#c81f1c);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.25);z-index:3}
 .p2-banner span{font-family:OswaldV,'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:70px;line-height:1;color:#ffe81a;letter-spacing:.015em;white-space:nowrap;text-shadow:0 2px 0 rgba(120,0,0,.45);transform:translateY(2px)}
 .p2-left{position:absolute;left:0;top:108px;width:749px;height:972px;overflow:hidden}
@@ -340,8 +340,8 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 /* ---- phông phương án 3 (tùy chỉnh vị trí, ẩn/hiện từng chi tiết) ---- */
 .pn3{position:absolute;inset:0;display:none;overflow:hidden;background:#dff1fb url(img/phong2-nen.jpg) center/cover no-repeat}
 .pn3.bg-xanh{background:#1892df}.pn3.bg-trang{background:#fff}.pn3.bg-do{background:#c8102e}
-#phong.v3 .pn,#phong.v3 .pn2{display:none} #phong.v3 .pn3{display:block}
-#phong.custom .pn3{display:none}
+:is(#phong,.phong-copy).v3 .pn,:is(#phong,.phong-copy).v3 .pn2{display:none} :is(#phong,.phong-copy).v3 .pn3{display:block}
+:is(#phong,.phong-copy).custom .pn3{display:none}
 .p3el{position:absolute;left:0;top:0;white-space:nowrap;line-height:0;transform-origin:50% 50%;user-select:none;-webkit-user-select:none}
 .p3el img{display:block;-webkit-user-drag:none;pointer-events:none}
 .p3el svg{pointer-events:none}
@@ -353,10 +353,10 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 .p3t[data-k=t1]{font-size:72px;color:#1d4f9e;letter-spacing:.02em}.p3t[data-k=t2]{font-size:60px;color:#d61f26}
 .p3t[data-k=t3]{font-size:56px;color:#1d4f9e}.p3t[data-k=t4]{font-size:38px;color:#13265a;font-weight:400}
 .pn3.bg-xanh .p3t,.pn3.bg-do .p3t{color:#fff}.pn3.bg-xanh .p3t[data-k=t2],.pn3.bg-do .p3t[data-k=t2]{color:#fff41c}
-#phong.p3edit .p3el{cursor:move}
-#phong.p3edit .p3el:hover{outline:3px dashed #ffb300;outline-offset:4px}
-#phong.p3edit .p3el.sel{outline:4px solid #ffb300;outline-offset:4px}
-#phong.p3edit .p3el.off{display:block;opacity:.25}
+:is(#phong,.phong-copy).p3edit .p3el{cursor:move}
+:is(#phong,.phong-copy).p3edit .p3el:hover{outline:3px dashed #ffb300;outline-offset:4px}
+:is(#phong,.phong-copy).p3edit .p3el.sel{outline:4px solid #ffb300;outline-offset:4px}
+:is(#phong,.phong-copy).p3edit .p3el.off{display:block;opacity:.25}
 #p3bar{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:58;display:none;align-items:center;gap:10px;flex-wrap:wrap;max-width:96vw;background:rgba(10,18,40,.94);color:#fff;border-radius:14px;padding:10px 14px;font:600 14px/1.35 'Segoe UI',LatoV,Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.45)}
 #p3bar.on{display:flex}
 #p3bar.bot{top:auto;bottom:12px}
@@ -370,16 +370,46 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 
 
 /* ---- phông phương án 4: như phương án 1, bỏ dải xanh trên cùng, nền đỏ đều màu, tượng Bác nhỏ ---- */
-#phong.v4 .pn-top{display:none}
-#phong.v4 .pn-banner{top:0;height:132px}
-#phong.v4 .pn-banner span{transform:translateY(4px) scaleY(1.08)}
-#phong.v4 .pn-left{top:132px;background:#d62422}
-#phong.v4 .pn-right{top:132px}
-#phong.v4 .pn-bac{height:330px;left:50%;transform:translateX(-50%);bottom:24px}
+:is(#phong,.phong-copy).v4 .pn-top{display:none}
+:is(#phong,.phong-copy).v4 .pn-banner{top:0;height:132px}
+:is(#phong,.phong-copy).v4 .pn-banner span{transform:translateY(4px) scaleY(1.08)}
+:is(#phong,.phong-copy).v4 .pn-left{top:132px;background:#d62422}
+:is(#phong,.phong-copy).v4 .pn-right{top:132px}
+:is(#phong,.phong-copy).v4 .pn-bac{height:330px;left:50%;transform:translateX(-50%);bottom:24px}
 
 ol.steps{margin:6px 0 0;padding:0;list-style:none;counter-reset:st}
 ol.steps li{position:relative;padding-left:62px;font-size:26px;line-height:1.38;margin-bottom:18px;counter-increment:st}
 ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
+
+/* ---- tham luận ---- */
+.tl-list li{margin-bottom:22px}
+.tl-sm{font-size:25px;line-height:1.3;color:var(--muted);font-weight:600;margin-top:4px}
+.tl-topic{font-size:64px;line-height:1.28;color:#fff;max-width:1560px;margin:30px auto 0;font-weight:600}
+.tl-name{font-size:56px;font-weight:900;color:#ffecc0}
+.tl-info{font-size:33px;color:#d5e0f8;margin-top:16px;font-weight:600;max-width:1500px}
+
+/* ---- cỡ chữ lớn hơn cho các slide nhiều chữ (14/11) ---- */
+.card h3{font-size:36px}
+ul.list li{font-size:36px}
+ul.list.sm li{font-size:32px}
+table.tbl{font-size:29px} table.tbl th{font-size:26px}
+.chip{font-size:25px} .cap{font-size:22px}
+.pcard .nm{font-size:38px} .pcard .rl{font-size:28px}
+.hbar .row{font-size:30px} .legend{font-size:30px} .split{font-size:26px}
+.tlm h4{font-size:34px} .tli{font-size:26px} .tli b{font-size:23px}
+.sumbox .it{font-size:29px}
+table.xl td,table.xl th{font-size:25px}
+.card.crit h3{font-size:33px} .card.crit ul.list.sm li{font-size:30px} .c3 .card.crit ul.list.sm li{font-size:28px}
+.lead{font-size:27px}
+.ut-it span{font-size:27px}
+table.tbl.cd td{font-size:28px} table.tbl.cd td.lv{font-size:30px}
+.qrsteps li{font-size:31px}
+ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
+.cv-chips span{font-size:27px} .cv-sec h3{font-size:26px} .cv-sec li{font-size:30px}
+.cv.dense .cv-sec li{font-size:26px}
+.rrow .nm{font-size:30px} .rrow .vv{font-size:29px}
+.tl-sm{font-size:27px}
+.mcard .nm{font-size:36px} .mcard .rl{font-size:26px}
 </style>
 </head>
 <body>
@@ -400,7 +430,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
       <img class="pn-emb" src="img/huy-hieu-doan.png" alt="">
       <div class="pn-t1">ĐẠI HỘI</div>
       <div class="pn-t2">CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
-      <div class="pn-t3" id="pnLine3">NHIỆM KỲ 2026 – 2027</div>
+      <div class="pn-t3" id="pnLine3">NHIỆM KỲ 2026 ⁠–⁠ 2027</div>
       <div class="pn-t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
     </div>
   </div>
@@ -415,7 +445,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
       <img class="p2-emb" src="img/huy-hieu-doan.png" alt="">
       <div class="p2-t1">ĐẠI HỘI CHI ĐOÀN</div>
       <div class="p2-t2">TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
-      <div class="p2-t3" id="pn2Line3">NHIỆM KỲ 2026 – 2027</div>
+      <div class="p2-t3" id="pn2Line3">NHIỆM KỲ 2026 ⁠–⁠ 2027</div>
       <div class="p2-t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
     </div>
   </div>
@@ -426,7 +456,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="p3el" data-k="emb"><img src="img/huy-hieu-doan.png" style="width:179px;height:196px" alt=""></div>
     <div class="p3el p3t" data-k="t1" id="p3t1">ĐẠI HỘI CHI ĐOÀN</div>
     <div class="p3el p3t" data-k="t2" id="p3t2">TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
-    <div class="p3el p3t" data-k="t3" id="p3t3">NHIỆM KỲ 2026 – 2027</div>
+    <div class="p3el p3t" data-k="t3" id="p3t3">NHIỆM KỲ 2026 ⁠–⁠ 2027</div>
     <div class="p3el p3t" data-k="t4" id="p3t4">Mát-xcơ-va, ngày 15 tháng 11 năm 2026</div>
     <div class="p3el" data-k="banner"><div class="p3-banner"><span id="p3slogan">ĐẢNG CỘNG SẢN VIỆT NAM QUANG VINH MUÔN NĂM!</span></div></div>
   </div>
@@ -459,6 +489,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <img class="emb-big" src="img/huy-hieu-doan.png" alt="">
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 3: Tuyên bố lý do, giới thiệu đại biểu" data-item="3"></section>
+
 <!-- 3. TUYÊN BỐ LÝ DO, GIỚI THIỆU ĐẠI BIỂU -->
 <section class="slide paper" data-title="Tuyên bố lý do, giới thiệu đại biểu" data-item="3">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Tuyên bố lý do · Giới thiệu đại biểu</div><h1>Nhiệt liệt chào mừng các quý vị đại biểu</h1></div></div>
@@ -477,6 +510,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 4: Bầu Đoàn Chủ tịch, Đoàn Thư ký" data-item="4"></section>
+
 <!-- 4. ĐOÀN CHỦ TỊCH -->
 <section class="slide paper" data-title="Đoàn Chủ tịch, Đoàn Thư ký" data-item="4">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Bầu Đoàn Chủ tịch · Đoàn Thư ký</div><h1>Điều hành Đại hội</h1></div></div>
@@ -491,6 +527,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 5: Khai mạc Đại hội" data-item="5"></section>
+
 <!-- 5. KHAI MẠC -->
 <section class="slide blue" data-title="Khai mạc Đại hội" data-item="5">
   <div class="center">
@@ -498,10 +537,13 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="sec-k" style="margin-top:36px">ĐOÀN CHỦ TỊCH</div>
     <div class="sec-t" style="font-size:120px">KHAI MẠC ĐẠI HỘI</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif">Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va nhiệm kỳ 2026 – 2027</div>
+    <div class="sec-s serif">Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va nhiệm kỳ 2026 ⁠–⁠ 2027</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 6: Báo cáo số lượng đoàn viên có mặt" data-item="6"></section>
 
 <!-- 9. SỐ LƯỢNG CÓ MẶT -->
 <section class="slide blue" data-title="Báo cáo số lượng đoàn viên có mặt" data-item="6" id="s-attend">
@@ -509,6 +551,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="bd" id="attendBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 7: Thông qua Chương trình, Nội quy, Quy chế bầu cử" data-item="7"></section>
 
 <!-- 6. CHƯƠNG TRÌNH -->
 <section class="slide paper" data-title="Chương trình Đại hội" data-item="7">
@@ -545,7 +590,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Thông qua Quy chế bầu cử</div><h1>Quy chế bầu cử</h1></div></div>
   <div class="bd grid" style="grid-template-columns:1fr 1fr">
     <div class="card"><h3>Số lượng, danh sách bầu cử</h3><ul class="list sm">
-      <li>Ban Chấp hành nhiệm kỳ 2026 – 2027 gồm <b>05 đồng chí</b></li>
+      <li>Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 gồm <b>05 đồng chí</b></li>
       <li>Danh sách bầu cử có số dư không quá 30% (tối đa <b>06 đồng chí</b>), xếp theo vần A, B, C của tên</li>
       <li>Ban Kiểm phiếu 03 đồng chí, không có tên trong danh sách bầu cử</li>
       <li>Đại hội <b>bầu trực tiếp Bí thư</b> trong số Ủy viên Ban Chấp hành vừa trúng cử; Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu</li></ul></div>
@@ -558,13 +603,16 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 8: Báo cáo tổng kết, phương hướng nhiệm kỳ mới" data-item="8"></section>
+
 <!-- 10. PHẦN BÁO CÁO -->
-<section class="slide blue" data-title="Báo cáo tổng kết nhiệm kỳ 2025 – 2026" data-item="8">
+<section class="slide blue" data-title="Báo cáo tổng kết nhiệm kỳ 2025 ⁠–⁠ 2026" data-item="8">
   <div class="center">
     <div class="sec-k">BÁO CÁO TỔNG KẾT</div>
-    <div class="sec-t">Công tác Đoàn và phong trào thanh niên nhiệm kỳ 2025 – 2026</div>
+    <div class="sec-t">Công tác Đoàn và phong trào thanh niên nhiệm kỳ 2025 ⁠–⁠ 2026</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif">Phương hướng, nhiệm vụ nhiệm kỳ 2026 – 2027</div>
+    <div class="sec-s serif">Phương hướng, nhiệm vụ nhiệm kỳ 2026 ⁠–⁠ 2027</div>
     <div class="sec-p">Trình bày: đồng chí Phạm Đăng Hiển – Bí thư Chi đoàn</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
@@ -663,7 +711,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="card"><h3>Tổng thu: 30.188</h3><div class="hbar" id="finIn" style="--lw:250px"></div></div>
     <div class="card"><h3 style="color:var(--red)">Tổng chi: 28.900</h3><div class="hbar" id="finOut" style="--lw:250px"></div></div>
     <div style="display:flex;flex-direction:column;gap:24px">
-      <div class="kpi g"><b>1.288</b><span>rúp chuyển sang nhiệm kỳ 2026 – 2027</span></div>
+      <div class="kpi g"><b>1.288</b><span>rúp chuyển sang nhiệm kỳ 2026 ⁠–⁠ 2027</span></div>
       <div class="kpi"><b>100%</b><span>đoàn phí nộp về Ban Cán sự Đoàn đúng quy định (2.400 rúp)</span></div>
     </div>
   </div>
@@ -671,8 +719,8 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 </section>
 
 <!-- 18. CHỈ TIÊU NHIỆM KỲ -->
-<section class="slide paper" data-title="Thực hiện chỉ tiêu nhiệm kỳ 2025 – 2026" data-item="8">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Đánh giá việc thực hiện Nghị quyết Đại hội nhiệm kỳ 2025 – 2026</div><h1>Kết quả thực hiện các chỉ tiêu</h1></div></div>
+<section class="slide paper" data-title="Thực hiện chỉ tiêu nhiệm kỳ 2025 ⁠–⁠ 2026" data-item="8">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Đánh giá việc thực hiện Nghị quyết Đại hội nhiệm kỳ 2025 ⁠–⁠ 2026</div><h1>Kết quả thực hiện các chỉ tiêu</h1></div></div>
   <div class="bd">
     <table class="tbl" style="font-size:30px">
       <tr><th style="width:44%">Chỉ tiêu</th><th>Kết quả</th><th class="c" style="width:230px">Đánh giá</th></tr>
@@ -720,8 +768,8 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 </section>
 
 <!-- 21. NHIỆM VỤ TRỌNG TÂM -->
-<section class="slide blue" data-title="Phương hướng: nhiệm vụ trọng tâm 2026 – 2027" data-item="8">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phương hướng nhiệm kỳ 2026 – 2027</div><h1>03 nhiệm vụ trọng tâm</h1></div></div>
+<section class="slide blue" data-title="Phương hướng: nhiệm vụ trọng tâm 2026 ⁠–⁠ 2027" data-item="8">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phương hướng nhiệm kỳ 2026 ⁠–⁠ 2027</div><h1>03 nhiệm vụ trọng tâm</h1></div></div>
   <div class="bd grid" style="grid-template-columns:repeat(3,1fr)">
     <div class="card"><div class="big-num" style="font-size:90px;color:var(--gold)">01</div><h3 style="color:#fff;font-size:32px">Học tập, rèn luyện</h3><div style="font-size:27px;line-height:1.45;color:#dfe7fa">Học tập, quán triệt Nghị quyết Đại hội XIV của Đảng, Nghị quyết Đại hội Đoàn toàn quốc lần thứ XIII; nâng cao chất lượng học tập, nghiên cứu; hỗ trợ đoàn viên năm dự bị vượt rào cản ngôn ngữ</div></div>
     <div class="card"><div class="big-num" style="font-size:90px;color:var(--gold)">02</div><h3 style="color:#fff;font-size:32px">Xung kích, tình nguyện</h3><div style="font-size:27px;line-height:1.45;color:#dfe7fa">Tham gia phục vụ các sự kiện đối ngoại của Đại sứ quán, Ban Cán sự Đoàn; tổ chức hoạt động văn hóa, thể thao, tìm hiểu văn hóa Nga gắn kết đoàn viên</div></div>
@@ -731,17 +779,20 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 </section>
 
 <!-- 22. 05 CHỈ TIÊU -->
-<section class="slide paper" data-title="05 chỉ tiêu nhiệm kỳ 2026 – 2027" data-item="8">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phương hướng nhiệm kỳ 2026 – 2027</div><h1>05 chỉ tiêu phấn đấu</h1></div></div>
+<section class="slide paper" data-title="05 chỉ tiêu nhiệm kỳ 2026 ⁠–⁠ 2027" data-item="8">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phương hướng nhiệm kỳ 2026 ⁠–⁠ 2027</div><h1>05 chỉ tiêu phấn đấu</h1></div></div>
   <div class="bd" id="targets" style="display:flex;flex-direction:column;gap:18px"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
 <!-- 23. VIDEO -->
-<section class="slide" id="vslide" data-title="Video: Nhìn lại nhiệm kỳ 2025 – 2026" data-music="stop" data-item="8">
+<section class="slide" id="vslide" data-title="Video: Nhìn lại nhiệm kỳ 2025 ⁠–⁠ 2026" data-music="stop" data-item="8">
   <video id="vid" src="video/video-tong-ket-nhiem-ky-2025-2026.mp4" poster="video/poster.jpg" preload="metadata" playsinline></video>
   <div id="vplay" title="Phát video (Enter)"></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 9: Xếp loại đoàn viên; bình xét đoàn viên ưu tú; công bố kết quả" data-item="9"></section>
 
 <!-- 24. XẾP LOẠI: PHẦN -->
 <section class="slide blue" data-title="Đánh giá, xếp loại đoàn viên năm 2026" data-item="9">
@@ -759,7 +810,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
       <li>04 mức: Hoàn thành xuất sắc · Hoàn thành tốt · Hoàn thành · Không hoàn thành nhiệm vụ</li>
       <li>“Hoàn thành xuất sắc” không quá 25% (tối đa <b>02 đồng chí</b>); đoàn viên đang được xem xét kết nạp Đảng tính ngoài tỷ lệ</li>
       <li>Mức xếp loại được thông qua khi có <b>trên 1/2</b> số đoàn viên biểu quyết tán thành</li>
-      <li>Biểu quyết xếp loại Chi đoàn và đoàn viên ưu tú trên cùng phiếu</li></ul></div>
+      <li>Cùng phiếu: xếp loại Chi đoàn, đoàn viên ưu tú, đề nghị khen thưởng</li></ul></div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -804,10 +855,32 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="bd" style="display:grid;grid-template-columns:1fr 560px;gap:44px">
     <div class="card" style="padding:34px 40px"><h3>Đoàn viên thuộc diện đánh giá, xếp loại</h3>
       <div style="display:flex;align-items:center;gap:34px;margin:10px 0 26px"><div class="big-num" style="font-size:150px;color:var(--red);line-height:1">11</div><div style="font-size:34px;line-height:1.35;font-weight:800">đồng chí<br><span style="font-weight:400;color:var(--muted);font-size:28px">họ tên in sẵn trên Phiếu đánh giá, xếp loại</span></div></div>
-      <ul class="list sm"><li>Đánh dấu X vào <b>01 ô</b> cho mỗi dòng (phiếu kín, không ghi tên người bỏ phiếu)</li><li>Tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc nhiệm vụ” (không tính đoàn viên đang được xem xét kết nạp Đảng)</li><li>Cùng phiếu: xếp loại Chi đoàn và bình xét đoàn viên ưu tú</li></ul></div>
+      <ul class="list sm"><li>Đánh dấu X vào <b>01 ô</b> cho mỗi dòng (phiếu kín, không ghi tên người bỏ phiếu)</li><li>Tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc nhiệm vụ” (không tính đoàn viên đang được xem xét kết nạp Đảng)</li><li>Cùng phiếu: xếp loại Chi đoàn, đoàn viên ưu tú, đề nghị khen thưởng</li></ul></div>
     <div class="card" style="border-top:8px solid var(--gold)"><h3>Ban Kiểm phiếu</h3>
       <ul class="list"><li><b>Nguyễn Đình Quân</b> – Trưởng ban</li><li><b>Trương Đức Tân</b> – Ủy viên</li><li><b>Lê Nhật Minh</b> – Ủy viên</li></ul>
       <div class="cap" style="font-size:22px;line-height:1.4">Phổ biến thể lệ, phát và thu phiếu, kiểm phiếu, lập biên bản; không có tên trong danh sách bầu cử</div></div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 25a. BÌNH XÉT ĐỀ NGHỊ KHEN THƯỞNG 2026 -->
+<section class="slide paper" data-title="Bình xét đề nghị khen thưởng năm 2026" data-item="9">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn bình xét khen thưởng năm 2026 của Ban Cán sự Đoàn · biểu quyết cùng phiếu xếp loại</div><h1>Bình xét đề nghị khen thưởng năm 2026</h1></div></div>
+  <div class="bd" style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div class="card"><h3>Ban Chấp hành đề nghị</h3>
+      <ul class="list sm"><li class="nob"><b>Tập thể:</b> Chi đoàn Trắc địa Bản đồ Mát-xcơ-va</li><li class="nob"><b>Cá nhân (04 đồng chí):</b></li></ul>
+      <ul class="list"><li><b>Nguyễn Thị Hường</b></li><li><b>Bùi Bảo Thiện</b></li><li><b>Nguyễn Thị Uyên</b></li><li><b>Nguyễn Hoàng Duy</b></li></ul>
+    </div>
+    <div class="card"><h3>Nguyên tắc</h3>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px">
+        <div class="kpi"><b>41</b><span>đoàn viên đang sinh hoạt</span></div>
+        <div class="kpi"><b>04</b><span>cá nhân tối đa (mức 10%)</span></div>
+      </div>
+      <ul class="list sm">
+        <li>Bình xét khi có mặt ít nhất <b>2/3</b> số đoàn viên (từ 28/41 đồng chí)</li>
+        <li>Từng hồ sơ được thống nhất đề nghị khi có <b>trên 50%</b> số đoàn viên <b>có mặt</b> đồng ý</li>
+        <li>Biểu quyết <b>đồng ý / không đồng ý</b> trên cùng Google Form với phiếu xếp loại</li></ul>
+    </div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -823,7 +896,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
       <ol class="qrsteps">
         <li>Mở camera điện thoại, quét mã QR (hoặc bấm link Ban Tổ chức gửi vào nhóm Chi đoàn)</li>
         <li>Chọn <b>01 mức</b> cho từng đồng chí; tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc”</li>
-        <li>Xếp loại Chi đoàn; bình xét đoàn viên ưu tú (đồng ý / không đồng ý)</li>
+        <li>Xếp loại Chi đoàn; đoàn viên ưu tú và đề nghị khen thưởng (đồng ý / không đồng ý)</li>
         <li>Bấm <b>“Gửi”</b>; mỗi đồng chí chỉ gửi <b>01 lần</b></li>
       </ol>
       <div class="cap" style="font-size:22px;line-height:1.45;margin-top:8px">Ban Kiểm phiếu đóng biểu mẫu khi hết thời gian và đối chiếu số phiếu với số đoàn viên có mặt. Đồng chí không dùng được điện thoại nhận phiếu giấy tại bàn Ban Kiểm phiếu.</div>
@@ -851,36 +924,84 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 10: Thảo luận: nghe tham luận, góp ý" data-item="10"></section>
+
 <!-- 27. THẢO LUẬN -->
-<section class="slide paper" data-title="Thảo luận, góp ý văn kiện" data-item="10">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Đoàn Chủ tịch điều hành: đồng chí Trần Hồng Hải</div><h1>Thảo luận, đóng góp ý kiến vào văn kiện</h1></div></div>
+<section class="slide paper" data-title="Thảo luận: nghe tham luận, cho ý kiến đóng góp" data-item="10">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Đoàn Chủ tịch điều hành: đồng chí Trần Hồng Hải</div><h1>Thảo luận: nghe tham luận và cho ý kiến đóng góp</h1></div></div>
   <div class="bd" style="display:grid;grid-template-columns:1fr 1fr;gap:44px">
-    <div class="card"><h3>Tham luận</h3><ul class="list"><li>Đồng chí <b>Lưu Văn Thuận</b></li><li>Đồng chí <b>Đặng Thành Nam</b></li><li>Đồng chí <b>Hoàng Đăng Khôi</b></li></ul><div class="cap" style="font-size:23px">Mỗi ý kiến không quá 05 phút</div></div>
-    <div class="card"><h3>Trọng tâm góp ý</h3><ul class="list sm"><li>Dự thảo Báo cáo tổng kết nhiệm kỳ 2025 – 2026</li><li>Phương hướng, 05 chỉ tiêu và giải pháp nhiệm kỳ 2026 – 2027</li><li>Dự thảo Nghị quyết Đại hội</li><li>Ý kiến có thể gửi bằng văn bản cho Đoàn Thư ký</li></ul></div>
+    <div class="card"><h3>Tham luận (03)</h3><ul class="list tl-list"><li><b>Nguyễn Thị Uyên</b><div class="tl-sm">Chăm lo đời sống tinh thần cho đoàn viên xa nhà</div></li><li><b>Phương Thị Thanh Loan</b><div class="tl-sm">Gìn giữ, lan tỏa bản sắc văn hóa Việt Nam tại Liên bang Nga</div></li><li><b>Đặng Lý Hoành</b><div class="tl-sm">Hỗ trợ đoàn viên năm dự bị hòa nhập, tham gia hoạt động Chi đoàn</div></li></ul><div class="cap" style="font-size:23px">Mỗi tham luận không quá 05 phút</div></div>
+    <div class="card"><h3>Đề nghị Đại hội</h3><ul class="list sm"><li>Lắng nghe 03 bài tham luận của đoàn viên trong Chi đoàn</li><li>Cho ý kiến đóng góp vào từng bài tham luận, với tinh thần dân chủ, thẳng thắn, xây dựng</li><li>Mỗi ý kiến không quá 05 phút</li><li>Ý kiến có thể gửi bằng văn bản cho Đoàn Thư ký</li></ul></div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- THAM LUẬN 1/3 -->
+<section class="slide blue tl" data-title="Tham luận 1/3: Nguyễn Thị Uyên" data-item="10">
+  <div class="center">
+    <img src="img/huy-hieu-doan.png" alt="" style="height:138px">
+    <div class="sec-k" style="margin-top:30px">THAM LUẬN · 1/3</div>
+    <div class="tl-topic serif">“Chăm lo đời sống tinh thần cho đoàn viên xa nhà”</div>
+    <div class="sec-bar" style="margin:44px auto 34px"></div>
+    <div class="tl-name">Đồng chí Nguyễn Thị Uyên</div>
+    <div class="tl-info">Học viên thạc sĩ năm thứ nhất, Đại học Công nghệ Sinh học Rosbiotech</div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- THAM LUẬN 2/3 -->
+<section class="slide blue tl" data-title="Tham luận 2/3: Phương Thị Thanh Loan" data-item="10">
+  <div class="center">
+    <img src="img/huy-hieu-doan.png" alt="" style="height:138px">
+    <div class="sec-k" style="margin-top:30px">THAM LUẬN · 2/3</div>
+    <div class="tl-topic serif">“Phát huy vai trò của đoàn viên, sinh viên trong gìn giữ và lan tỏa bản sắc văn hóa Việt Nam tại Liên bang Nga”</div>
+    <div class="sec-bar" style="margin:44px auto 34px"></div>
+    <div class="tl-name">Đồng chí Phương Thị Thanh Loan</div>
+    <div class="tl-info">Nghiên cứu sinh năm thứ hai, Đại học Quản lý Đất đai</div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- THAM LUẬN 3/3 -->
+<section class="slide blue tl" data-title="Tham luận 3/3: Đặng Lý Hoành" data-item="10">
+  <div class="center">
+    <img src="img/huy-hieu-doan.png" alt="" style="height:138px">
+    <div class="sec-k" style="margin-top:30px">THAM LUẬN · 3/3</div>
+    <div class="tl-topic serif">“Hỗ trợ đoàn viên năm dự bị hòa nhập, tích cực tham gia hoạt động Chi đoàn”</div>
+    <div class="sec-bar" style="margin:44px auto 34px"></div>
+    <div class="tl-name">Đồng chí Đặng Lý Hoành</div>
+    <div class="tl-info">Đại diện đoàn viên mới sang · Nghiên cứu sinh năm thứ nhất, Đại học Trắc địa Bản đồ Mát-xcơ-va</div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 11: Phát biểu chỉ đạo của Ban Cán sự Đoàn" data-item="11"></section>
 
 <!-- 29. PHÁT BIỂU CHỈ ĐẠO BCSĐ -->
-<section class="slide blue" data-title="Phát biểu chỉ đạo của Ban Cán sự Đoàn" data-item="11">
+<section class="slide blue" data-title="Đại diện Ban Cán sự Đoàn tại Liên bang Nga phát biểu chỉ đạo" data-item="11">
   <div class="center">
     <img src="img/huy-hieu-doan.png" alt="" style="height:170px">
     <div class="sec-k" style="margin-top:36px">PHÁT BIỂU CHỈ ĐẠO</div>
-    <div class="sec-t" id="spk1n" style="font-size:84px">Đồng chí Lê Thị Thuỳ Linh</div>
+    <div class="sec-t" style="font-size:80px">Đại diện Ban Cán sự Đoàn<br>tại Liên bang Nga</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif" id="spk1t" style="max-width:1500px;line-height:1.4">Phó Bí thư Ban Cán sự Đoàn tại Liên bang Nga</div>
+    <div class="sec-s serif">phát biểu chỉ đạo Đại hội</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 12: Chỉ đạo của Chi ủy Chi bộ" data-item="12"></section>
+
 <!-- 30. PHÁT BIỂU CHI ỦY -->
-<section class="slide blue" data-title="Phát biểu chỉ đạo của Chi ủy Chi bộ" data-item="12">
+<section class="slide blue" data-title="Đại diện Chi ủy Chi bộ phát biểu chỉ đạo" data-item="12">
   <div class="center">
     <img src="img/huy-hieu-doan.png" alt="" style="height:170px">
     <div class="sec-k" style="margin-top:36px">PHÁT BIỂU CHỈ ĐẠO</div>
-    <div class="sec-t" style="font-size:84px">Đồng chí Đinh Công Đại</div>
+    <div class="sec-t" style="font-size:80px">Đại diện Chi ủy Chi bộ<br>Trắc địa Bản đồ Mát-xcơ-va</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif">Bí thư Chi bộ Trắc địa Bản đồ Mát-xcơ-va</div>
+    <div class="sec-s serif">phát biểu chỉ đạo Đại hội</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -900,25 +1021,12 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   </div>
 </section>
 
-<!-- 32. KẾT THÚC NHIỆM KỲ, TRI ÂN -->
-<section class="slide blue" data-title="Kết thúc nhiệm kỳ, tri ân BCH 2025 – 2026" data-music="stop" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Tuyên bố kết thúc nhiệm kỳ</div><h1>Tri ân Ban Chấp hành nhiệm kỳ 2025 – 2026</h1></div></div>
-  <div class="bd" style="display:grid;grid-template-columns:900px 1fr;gap:50px;align-items:center">
-    <div class="photo" style="height:640px"><img src="img/hd/01.jpg" alt=""></div>
-    <div><div class="sec-k" style="font-size:30px">21/12/2025 – 15/11/2026</div>
-      <div class="sec-t" style="font-size:64px;line-height:1.15;margin:22px 0 0">Ban Chấp hành Chi đoàn nhiệm kỳ 2025 – 2026</div>
-      <div class="sec-bar" style="margin:34px 0"></div>
-      <div class="sec-s serif" style="font-size:38px;line-height:1.45">Trân trọng cảm ơn các đồng chí đã tận tâm, trách nhiệm, đồng hành cùng Chi đoàn trong suốt nhiệm kỳ!</div></div>
-  </div>
-  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
-</section>
-
 <!-- 33. BẦU CỬ: PHẦN -->
-<section class="slide blue" data-title="Bầu Ban Chấp hành nhiệm kỳ 2026 – 2027" data-item="13">
+<section class="slide blue" data-title="Bầu Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027" data-item="13">
   <div class="center">
     <img src="img/huy-hieu-doan.png" alt="" style="height:190px">
     <div class="sec-k" style="margin-top:36px">BẦU CỬ</div>
-    <div class="sec-t">Ban Chấp hành Chi đoàn nhiệm kỳ 2026 – 2027</div>
+    <div class="sec-t">Ban Chấp hành Chi đoàn nhiệm kỳ 2026 ⁠–⁠ 2027</div>
     <div class="sec-bar"></div>
     <div class="sec-s serif">Số lượng: 05 đồng chí · Danh sách bầu cử: <span id="nCands">06</span> đồng chí</div>
   </div>
@@ -929,7 +1037,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 <section class="slide paper" data-title="Về nhân sự Ban Chấp hành và đại biểu" data-item="13">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn tổ chức Đại hội, hội nghị Đoàn – HSV năm 2026 · Đề án số 11-ĐA/CĐ</div><h1>Về nhân sự Ban Chấp hành và đại biểu</h1></div></div>
   <div class="bd" style="display:flex;flex-direction:column;gap:20px">
-    <div class="grid c3" style="grid-template-columns:0.95fr 1.1fr;gap:30px;flex:1;min-height:0"><div class="card crit" style="border-top:10px solid var(--red)"><h3 style="color:var(--red)">Tiêu chuẩn (Quy chế Cán bộ Đoàn)</h3><ul class="list sm"><li><b>Bản lĩnh chính trị</b>; đạo đức, lối sống trong sáng, gương mẫu</li><li><b>Năng lực thực tiễn, uy tín</b>, tinh thần trách nhiệm; năng động, dám nghĩ, dám làm; có khả năng quy tụ, vận động đoàn viên</li><li>Nắm vững Điều lệ Đoàn, Điều lệ Hội Sinh viên Việt Nam; <b>kết quả học tập, rèn luyện tốt</b></li><li><b>Đủ thời gian</b> học tập, sinh sống tại Mát-xcơ-va để công tác hết nhiệm kỳ 2026 – 2027</li></ul></div><div class="card crit" style="border-top:10px solid var(--blue)"><h3 style="color:var(--blue)">Số lượng, cơ cấu</h3><ul class="list sm"><li>Chi đoàn từ 09 đoàn viên: Ban Chấp hành 03 – 05 Ủy viên. Đề án: <b>05 đồng chí</b> (Bí thư, 01 Phó Bí thư, 03 Ủy viên)</li><li>Danh sách bầu cử có số dư <b>không quá 30%</b>: tối đa <b>06 đồng chí</b>; đoàn viên có quyền ứng cử, đề cử</li><li>Trúng cử khi đạt <b>trên 1/2</b> số phiếu thu vào</li><li>Cơ cấu hợp lý, có kế thừa, đổi mới, <b>tính đại diện</b>: các trường đông đoàn viên, đoàn viên nữ, đoàn viên mới sang học tập</li><li>Bí thư do Đại hội bầu trực tiếp (Ban Cán sự Đoàn, Chi ủy Chi bộ đã đồng ý); Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu</li></ul></div></div>
+    <div class="grid c3" style="grid-template-columns:0.95fr 1.1fr;gap:30px;flex:1;min-height:0"><div class="card crit" style="border-top:10px solid var(--red)"><h3 style="color:var(--red)">Tiêu chuẩn (Quy chế Cán bộ Đoàn)</h3><ul class="list sm"><li><b>Bản lĩnh chính trị</b>; đạo đức, lối sống trong sáng, gương mẫu</li><li><b>Năng lực thực tiễn, uy tín</b>, tinh thần trách nhiệm; năng động, dám nghĩ, dám làm; có khả năng quy tụ, vận động đoàn viên</li><li>Nắm vững Điều lệ Đoàn, Điều lệ Hội Sinh viên Việt Nam; <b>kết quả học tập, rèn luyện tốt</b></li><li><b>Đủ thời gian</b> học tập, sinh sống tại Mát-xcơ-va để công tác hết nhiệm kỳ 2026 ⁠–⁠ 2027</li></ul></div><div class="card crit" style="border-top:10px solid var(--blue)"><h3 style="color:var(--blue)">Số lượng, cơ cấu</h3><ul class="list sm"><li>Chi đoàn từ 09 đoàn viên: Ban Chấp hành 03 – 05 Ủy viên. Đề án: <b>05 đồng chí</b> (Bí thư, 01 Phó Bí thư, 03 Ủy viên)</li><li>Danh sách bầu cử có số dư <b>không quá 30%</b>: tối đa <b>06 đồng chí</b>; đoàn viên có quyền ứng cử, đề cử</li><li>Trúng cử khi đạt <b>trên 1/2</b> số phiếu thu vào</li><li>Cơ cấu hợp lý, có kế thừa, đổi mới, <b>tính đại diện</b>: các trường đông đoàn viên, đoàn viên nữ, đoàn viên mới sang học tập</li><li>Bí thư do Đại hội bầu trực tiếp (Ban Cán sự Đoàn, Chi ủy Chi bộ đã đồng ý); Phó Bí thư do Hội nghị Ban Chấp hành lần thứ nhất bầu</li></ul></div></div>
     <div class="lead">Đại biểu: Chi đoàn tổ chức <b>Đại hội đoàn viên</b>, triệu tập toàn bộ 41 đồng chí; Đại hội có giá trị khi có <b>ít nhất 2/3</b> số được triệu tập tham dự (tối thiểu 28 đồng chí). Công tác nhân sự bảo đảm chặt chẽ, dân chủ, khách quan, minh bạch.</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
@@ -944,7 +1052,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34a. GIỚI THIỆU ỨNG CỬ VIÊN: ĐẶNG LÝ HOÀNH -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Đặng Lý Hoành" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 1/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 1/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv">
     <div class="cv-ph"><img src="img/ungvien/hoanh.jpg" alt=""><span class="no">1</span></div>
     <div class="cv-r">
@@ -959,7 +1067,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34b. GIỚI THIỆU ỨNG CỬ VIÊN: TRẦN VĂN HƯNG -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Trần Văn Hưng" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 2/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 2/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv">
     <div class="cv-ph"><img src="img/ungvien/hung.jpg" alt=""><span class="no">2</span></div>
     <div class="cv-r">
@@ -973,7 +1081,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34c. GIỚI THIỆU ỨNG CỬ VIÊN: ĐỖ MINH NHẬT NAM -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Đỗ Minh Nhật Nam" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 3/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 3/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv">
     <div class="cv-ph"><img src="img/ungvien/nam.jpg" alt=""><span class="no">3</span></div>
     <div class="cv-r">
@@ -987,13 +1095,13 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34d. GIỚI THIỆU ỨNG CỬ VIÊN: BÙI BẢO THIỆN -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Bùi Bảo Thiện" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 4/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 4/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv dense">
     <div class="cv-ph"><img src="img/ungvien/thien.jpg" alt=""><span class="no">4</span></div>
     <div class="cv-r">
       <div class="cv-n">Bùi Bảo Thiện</div>
       <div class="cv-chips"><span>Sinh năm 1998</span><span>Quê quán: Đà Nẵng</span><span class="p">Cảm tình Đảng</span></div>
-      <div class="cv-sec"><h3>Học tập, nghiên cứu</h3><ul><li>Nghiên cứu sinh năm thứ nhất, ngành Địa sinh thái học – Đại học Quản lý Đất đai</li><li>Thạc sĩ Địa sinh thái ứng dụng, Đại học Liên bang phương Nam (Rostov trên sông Đông), tốt nghiệp loại xuất sắc; nghiên cứu viên tập sự Bộ môn Hải dương học, Viện Khoa học Trái đất</li><li>Hướng nghiên cứu: viễn thám, GIS, học máy trong phân tích biến động sử dụng đất, lớp phủ ở Việt Nam, Lào</li><li>Đã công bố 25 bài báo trên tạp chí quốc tế thuộc danh mục ISI/Scopus, 02 bài báo trên tạp chí danh mục VAK và 05 báo cáo tại hội nghị, hội thảo khoa học trong nước và quốc tế</li></ul></div>
+      <div class="cv-sec"><h3>Học tập</h3><ul><li>Nghiên cứu sinh năm thứ nhất, ngành Địa sinh thái học – Đại học Quản lý Đất đai</li><li>Thạc sĩ Địa sinh thái ứng dụng – Đại học Liên bang phương Nam (Rostov trên sông Đông)</li></ul></div>
       <div class="cv-sec"><h3>Công tác Đoàn – Hội</h3><ul><li>Từng là Bí thư Đoàn trường; tham gia công tác Đoàn lưu học sinh Việt Nam tại Lào (2019 – 2021)</li><li>Sinh hoạt tại Chi đoàn thành phố Rostov (2022 – 2026), chuyển sinh hoạt về Chi đoàn từ tháng 10/2026</li></ul></div>
       <div class="cv-sec"><h3>Khen thưởng</h3><ul><li>Bằng khen và Huy chương của Đại sứ Việt Nam tại Liên bang Nga – Chủ tịch danh dự Quỹ Khai sáng (2024, 2025)</li><li>Giấy khen của Đảng ủy tại Liên bang Nga (2024); Bằng khen của Ban Cán sự Đoàn tại Liên bang Nga (2023)</li><li>Giấy khen của Đại sứ Việt Nam tại Lào (nhiệm kỳ 2019 – 2021)</li></ul></div>
     </div>
@@ -1003,7 +1111,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34e. GIỚI THIỆU ỨNG CỬ VIÊN: TỐNG THỊ THUỲ -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Tống Thị Thuỳ" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 5/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 5/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv">
     <div class="cv-ph"><img src="img/ungvien/thuy.jpg" alt=""><span class="no">5</span></div>
     <div class="cv-r">
@@ -1018,7 +1126,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 
 <!-- 34f. GIỚI THIỆU ỨNG CỬ VIÊN: NGUYỄN THỊ UYÊN -->
 <section class="slide paper" data-title="Giới thiệu ứng cử viên: Nguyễn Thị Uyên" data-item="13">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 – 2027 · 6/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Nhân sự ứng cử Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 · 6/6</div><h1>Giới thiệu ứng cử viên</h1></div></div>
   <div class="cv">
     <div class="cv-ph"><img src="img/ungvien/uyen.jpg" alt=""><span class="no">6</span></div>
     <div class="cv-r">
@@ -1058,13 +1166,13 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="sec-k">BAN KIỂM PHIẾU ĐANG LÀM VIỆC</div>
     <div class="sec-t" style="margin:18px 0 0;font-size:84px;max-width:900px">Kiểm phiếu bầu Ban Chấp hành</div>
     <div class="sec-bar" style="margin:36px 0"></div>
-    <div class="sec-s serif">nhiệm kỳ 2026 – 2027</div>
+    <div class="sec-s serif">nhiệm kỳ 2026 ⁠–⁠ 2027</div>
   </div>
 </section>
 
 <!-- 37. KẾT QUẢ BẦU CỬ -->
 <section class="slide paper" data-title="Kết quả bầu Ban Chấp hành" data-reveal="bch" data-music="stop" data-item="13" id="s-bch">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Trưởng Ban Kiểm phiếu công bố</div><h1>Kết quả bầu Ban Chấp hành nhiệm kỳ 2026 – 2027</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Trưởng Ban Kiểm phiếu công bố</div><h1>Kết quả bầu Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027</h1></div></div>
   <div class="bd" id="bchBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -1074,7 +1182,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Ý kiến chỉ đạo của Ban Cán sự Đoàn và Chi ủy Chi bộ</div><h1>Đại hội bầu trực tiếp Bí thư Chi đoàn</h1></div></div>
   <div class="bd grid" style="grid-template-columns:1fr 1.15fr;gap:40px">
     <div class="card"><h3>Ý kiến chỉ đạo · nhân sự dự kiến</h3><ul class="list sm">
-      <li>Ban Cán sự Đoàn tại Liên bang Nga và Chi ủy Chi bộ Trắc địa Bản đồ Mát-xcơ-va đồng ý để Đại hội <b>bầu trực tiếp Bí thư</b> Chi đoàn nhiệm kỳ 2026 – 2027</li>
+      <li>Ban Cán sự Đoàn tại Liên bang Nga và Chi ủy Chi bộ Trắc địa Bản đồ Mát-xcơ-va đồng ý để Đại hội <b>bầu trực tiếp Bí thư</b> Chi đoàn nhiệm kỳ 2026 ⁠–⁠ 2027</li>
       <li>Tiêu chuẩn: ưu tiên đảng viên hoặc đoàn viên đã học lớp bồi dưỡng nhận thức về Đảng; có kinh nghiệm công tác Đoàn – Hội; quy tụ, đoàn kết đoàn viên các trường; sử dụng tốt tiếng Nga</li>
       <li>Nhân sự dự kiến được giới thiệu: <b id="btDkName">đồng chí Đặng Lý Hoành</b></li></ul></div>
     <div class="card"><h3>Trình tự</h3><ol class="steps">
@@ -1094,7 +1202,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="sec-k">BAN KIỂM PHIẾU ĐANG LÀM VIỆC</div>
     <div class="sec-t" style="margin:18px 0 0;font-size:84px;max-width:900px">Kiểm phiếu bầu Bí thư Chi đoàn</div>
     <div class="sec-bar" style="margin:36px 0"></div>
-    <div class="sec-s serif">nhiệm kỳ 2026 – 2027</div>
+    <div class="sec-s serif">nhiệm kỳ 2026 ⁠–⁠ 2027</div>
   </div>
 </section>
 
@@ -1103,6 +1211,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   <div class="center" id="btBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 14: Hội nghị BCH lần thứ nhất (bầu Phó Bí thư)" data-item="14"></section>
 
 <!-- 38. HỘI NGHỊ BCH LẦN 1 -->
 <section class="slide blue" data-title="Hội nghị BCH lần thứ nhất – bầu Phó Bí thư (chờ)" data-music="giai-lao" data-item="14">
@@ -1115,6 +1226,9 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
   </div>
 </section>
 
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 15: Ra mắt BCH khóa mới; tri ân BCH khóa cũ" data-item="15"></section>
+
 <!-- 39. RA MẮT BCH -->
 <section class="slide ramat" data-title="Ra mắt Ban Chấp hành khóa mới" data-music="chuc-mung" data-item="15" id="s-newbch">
   <div class="rm-bg"><svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="rmGlow" cx="50%" cy="34%" r="62%"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><linearGradient id="rmSw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><g fill="none" stroke="#6f9bd3" stroke-opacity=".20" stroke-width="2"><circle cx="960" cy="860" r="780"/><ellipse cx="960" cy="860" rx="125" ry="780"/><ellipse cx="960" cy="860" rx="328" ry="780"/><ellipse cx="960" cy="860" rx="515" ry="780"/><ellipse cx="960" cy="860" rx="671" ry="780"/><ellipse cx="960" cy="658" rx="753" ry="105"/><ellipse cx="960" cy="447" rx="661" ry="93"/><ellipse cx="960" cy="280" rx="522" ry="73"/><ellipse cx="960" cy="165" rx="354" ry="50"/><ellipse cx="960" cy="103" rx="189" ry="26"/><ellipse cx="960" cy="860" rx="780" ry="109"/></g><rect width="1920" height="1080" fill="url(#rmGlow)"/><path d="M-40 760 C 420 640, 760 900, 1180 800 S 1760 640, 1980 720" fill="none" stroke="url(#rmSw)" stroke-width="5"/><path d="M-40 820 C 380 720, 820 960, 1220 860 S 1780 720, 1980 800" fill="none" stroke="url(#rmSw)" stroke-width="3"/><g fill="#6f9bd3" fill-opacity=".10"><circle cx="230" cy="540" r="6"/><circle cx="1700" cy="500" r="6"/><circle cx="420" cy="380" r="4"/><circle cx="1500" cy="350" r="4"/></g></svg></div>
@@ -1124,25 +1238,31 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="rm-l1">BAN CÁN SỰ ĐOÀN TẠI LIÊN BANG NGA</div>
     <div class="rm-l2">CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
     <div class="rm-t">BAN CHẤP HÀNH CHI ĐOÀN<br>TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
-    <div class="rm-nk">NHIỆM KỲ 2026 – 2027</div>
+    <div class="rm-nk">NHIỆM KỲ 2026 ⁠–⁠ 2027</div>
   </div>
   <div class="rm-body" id="newBchBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 16: Thông qua Nghị quyết Đại hội" data-item="16"></section>
 
 <!-- 40. NGHỊ QUYẾT -->
 <section class="slide paper" data-title="Thông qua Nghị quyết Đại hội" data-music="stop" data-item="16">
   <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Đoàn Thư ký trình bày · Đại hội biểu quyết</div><h1>Nghị quyết Đại hội</h1></div></div>
   <div class="bd" style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
     <div class="card"><h3>Đại hội nhất trí</h3><ul class="list sm">
-      <li>Thông qua Báo cáo tổng kết nhiệm kỳ 2025 – 2026, phương hướng nhiệm kỳ 2026 – 2027</li>
+      <li>Thông qua Báo cáo tổng kết nhiệm kỳ 2025 ⁠–⁠ 2026, phương hướng nhiệm kỳ 2026 ⁠–⁠ 2027</li>
       <li>Thông qua kết quả đánh giá, xếp loại đoàn viên, Chi đoàn và đoàn viên ưu tú năm 2026</li>
-      <li>Bầu Ban Chấp hành nhiệm kỳ 2026 – 2027 gồm 05 đồng chí; bầu trực tiếp Bí thư Chi đoàn</li>
+      <li>Bầu Ban Chấp hành nhiệm kỳ 2026 ⁠–⁠ 2027 gồm 05 đồng chí; bầu trực tiếp Bí thư Chi đoàn</li>
       <li>Tiếp thu ý kiến chỉ đạo của Ban Cán sự Đoàn, Chi ủy Chi bộ</li></ul></div>
-    <div class="card" style="background:linear-gradient(160deg,#123f9a,#071a45);color:#fff;border:0"><h3 style="color:var(--gold)">05 chỉ tiêu nhiệm kỳ 2026 – 2027</h3><ul class="list sm" style="color:#e6ecfa" id="targetsShort"></ul></div>
+    <div class="card" style="background:linear-gradient(160deg,#123f9a,#071a45);color:#fff;border:0"><h3 style="color:var(--gold)">05 chỉ tiêu nhiệm kỳ 2026 ⁠–⁠ 2027</h3><ul class="list sm" style="color:#e6ecfa" id="targetsShort"></ul></div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
+
+<!-- KHÁNH TIẾT (bản sao slide 1) -->
+<section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 17: Bế mạc Đại hội" data-item="17"></section>
 
 <!-- 41. BẾ MẠC -->
 <section class="slide blue" data-title="Bế mạc Đại hội" data-item="17">
@@ -1151,7 +1271,7 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
     <div class="sec-k" style="margin-top:36px">ĐOÀN CHỦ TỊCH</div>
     <div class="sec-t" style="font-size:120px">BẾ MẠC ĐẠI HỘI</div>
     <div class="sec-bar"></div>
-    <div class="sec-s serif">Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va nhiệm kỳ 2026 – 2027 thành công tốt đẹp</div>
+    <div class="sec-s serif">Đại hội Chi đoàn Trắc địa Bản đồ Mát-xcơ-va nhiệm kỳ 2026 ⁠–⁠ 2027 thành công tốt đẹp</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -1240,19 +1360,19 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 <script>
 'use strict';
 /* ================== DỮ LIỆU CỐ ĐỊNH ================== */
-var PHOTOS = [["01.jpg", "21/12/2025", "Đại hội Chi đoàn nhiệm kỳ 2025 – 2026"], ["56.jpg", "", "Đồng chí Đinh Công Đại – «Niềm tự hào MIIGAiK 2025»"], ["02.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["03.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["04.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["06.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["07.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["08.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["09.jpg", "23/01/2026", "Theo dõi phiên bế mạc Đại hội XIV của Đảng"], ["10.jpg", "23/01/2026", "Theo dõi phiên bế mạc Đại hội XIV của Đảng"], ["11.jpg", "12/02/2026", "Đ/c Quyền Đình Tuyền bảo vệ thành công luận án Tiến sĩ"], ["12.jpg", "12/02/2026", "Đ/c Quyền Đình Tuyền bảo vệ thành công luận án Tiến sĩ"], ["13.jpg", "28/02/2026", "Đêm nhạc “Светло – Ánh sáng phương Đông”"], ["14.jpg", "28/02/2026", "Đêm nhạc “Светло – Ánh sáng phương Đông”"], ["15.jpg", "03/03/2026", "Hai đồng chí bảo vệ thành công luận án Tiến sĩ"], ["48.jpg", "03/03/2026", "Phiên bảo vệ luận án Tiến sĩ của đoàn viên Chi đoàn"], ["49.jpg", "03/03/2026", "Hai đồng chí bảo vệ thành công luận án Tiến sĩ"], ["47.jpg", "03/03/2026", "Chúc mừng hai tân Tiến sĩ của Chi đoàn"], ["16.jpg", "08/03/2026", "Giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["17.jpg", "08/03/2026", "Giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["53.jpg", "08/03/2026", "Nữ đoàn viên rạng rỡ trong ngày 8/3"], ["54.jpg", "08/03/2026", "Tiết mục giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["52.jpg", "08/03/2026", "Thư cảm ơn tại chương trình chào mừng Ngày 8/3"], ["18.jpg", "15/03/2026", "Thi trực tuyến tìm hiểu Nghị quyết của Đảng về thanh niên"], ["19.jpg", "15/03/2026", "Thi trực tuyến tìm hiểu Nghị quyết của Đảng về thanh niên"], ["20.jpg", "22/03/2026", "Đoàn viên nhận Bằng khen của Quỹ Khai sáng"], ["21.jpg", "23/03/2026", "Đón Đoàn Đại học Quốc gia Hà Nội thăm MIIGAiK"], ["22.jpg", "23/03/2026", "Đón Đoàn Đại học Quốc gia Hà Nội thăm MIIGAiK"], ["24.jpg", "13 – 17/04/2026", "Tuần lễ Khoa học sinh viên quốc tế SSW-2026"], ["25.jpg", "", "Đoàn viên báo cáo tại hội thảo khoa học"], ["26.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["27.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["28.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["29.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["30.jpg", "03/05/2026", "Đại hội Thể thao sinh viên Việt Nam tại Nga"], ["31.jpg", "03/05/2026", "Đại hội Thể thao sinh viên Việt Nam tại Nga"], ["32.jpg", "", "Đoàn viên tham gia thi đấu thể thao"], ["33.jpg", "09/05/2026", "Kỷ niệm Ngày Chiến thắng"], ["34.jpg", "16/05/2026", "Dâng hoa Tượng đài Chủ tịch Hồ Chí Minh"], ["35.jpg", "16/05/2026", "Dâng hoa Tượng đài Chủ tịch Hồ Chí Minh"], ["50.jpg", "16/05/2026", "Kỷ niệm 136 năm Ngày sinh Chủ tịch Hồ Chí Minh (19/5)"], ["51.jpg", "16/05/2026", "Đoàn viên dâng hoa tưởng nhớ Bác Hồ kính yêu"], ["36.jpg", "23/05/2026", "Dã ngoại cuối xuân"], ["37.jpg", "", "Sinh hoạt, gắn kết đoàn viên"], ["38.jpg", "", "Sinh hoạt, gắn kết đoàn viên"], ["39.jpg", "", "Gặp mặt, sinh hoạt Chi đoàn"], ["40.jpg", "", "Hoàn thành khóa dự bị"], ["41.jpg", "", "Niềm vui tốt nghiệp thạc sĩ"], ["55.jpg", "09/09/2026", "Diễn đàn Khoa học và Công nghệ Việt Nam – LB Nga"], ["42.jpg", "13/09/2026", "Hái nấm mùa thu"], ["43.jpg", "13/09/2026", "Hái nấm mùa thu"], ["44.jpg", "20/09/2026", "Đạp xe tại VDNKh"], ["45.jpg", "04/10/2026", "Tham quan Plyos"], ["46.jpg", "18/10/2026", "Đá bóng giao lưu nội bộ"]];
+var PHOTOS = [["01.jpg", "21/12/2025", "Đại hội Chi đoàn nhiệm kỳ 2025 ⁠–⁠ 2026"], ["56.jpg", "", "Đồng chí Đinh Công Đại – «Niềm tự hào MIIGAiK 2025»"], ["02.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["03.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["04.jpg", "03 – 04/01/2026", "Gặp mặt đầu năm 2026"], ["06.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["07.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["08.jpg", "18/01/2026", "Hưởng ứng thay bộ hình nền chào mừng Đại hội XIV của Đảng"], ["09.jpg", "23/01/2026", "Theo dõi phiên bế mạc Đại hội XIV của Đảng"], ["10.jpg", "23/01/2026", "Theo dõi phiên bế mạc Đại hội XIV của Đảng"], ["11.jpg", "12/02/2026", "Đ/c Quyền Đình Tuyền bảo vệ thành công luận án Tiến sĩ"], ["12.jpg", "12/02/2026", "Đ/c Quyền Đình Tuyền bảo vệ thành công luận án Tiến sĩ"], ["13.jpg", "28/02/2026", "Đêm nhạc “Светло – Ánh sáng phương Đông”"], ["14.jpg", "28/02/2026", "Đêm nhạc “Светло – Ánh sáng phương Đông”"], ["15.jpg", "03/03/2026", "Hai đồng chí bảo vệ thành công luận án Tiến sĩ"], ["48.jpg", "03/03/2026", "Phiên bảo vệ luận án Tiến sĩ của đoàn viên Chi đoàn"], ["49.jpg", "03/03/2026", "Hai đồng chí bảo vệ thành công luận án Tiến sĩ"], ["47.jpg", "03/03/2026", "Chúc mừng hai tân Tiến sĩ của Chi đoàn"], ["16.jpg", "08/03/2026", "Giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["17.jpg", "08/03/2026", "Giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["53.jpg", "08/03/2026", "Nữ đoàn viên rạng rỡ trong ngày 8/3"], ["54.jpg", "08/03/2026", "Tiết mục giao lưu chào mừng Ngày Quốc tế Phụ nữ 8/3"], ["52.jpg", "08/03/2026", "Thư cảm ơn tại chương trình chào mừng Ngày 8/3"], ["18.jpg", "15/03/2026", "Thi trực tuyến tìm hiểu Nghị quyết của Đảng về thanh niên"], ["19.jpg", "15/03/2026", "Thi trực tuyến tìm hiểu Nghị quyết của Đảng về thanh niên"], ["20.jpg", "22/03/2026", "Đoàn viên nhận Bằng khen của Quỹ Khai sáng"], ["21.jpg", "23/03/2026", "Đón Đoàn Đại học Quốc gia Hà Nội thăm MIIGAiK"], ["22.jpg", "23/03/2026", "Đón Đoàn Đại học Quốc gia Hà Nội thăm MIIGAiK"], ["24.jpg", "13 – 17/04/2026", "Tuần lễ Khoa học sinh viên quốc tế SSW-2026"], ["25.jpg", "", "Đoàn viên báo cáo tại hội thảo khoa học"], ["26.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["27.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["28.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["29.jpg", "22/04/2026", "Hội sách “Mầm” 2026"], ["30.jpg", "03/05/2026", "Đại hội Thể thao sinh viên Việt Nam tại Nga"], ["31.jpg", "03/05/2026", "Đại hội Thể thao sinh viên Việt Nam tại Nga"], ["32.jpg", "", "Đoàn viên tham gia thi đấu thể thao"], ["33.jpg", "09/05/2026", "Kỷ niệm Ngày Chiến thắng"], ["34.jpg", "16/05/2026", "Dâng hoa Tượng đài Chủ tịch Hồ Chí Minh"], ["35.jpg", "16/05/2026", "Dâng hoa Tượng đài Chủ tịch Hồ Chí Minh"], ["50.jpg", "16/05/2026", "Kỷ niệm 136 năm Ngày sinh Chủ tịch Hồ Chí Minh (19/5)"], ["51.jpg", "16/05/2026", "Đoàn viên dâng hoa tưởng nhớ Bác Hồ kính yêu"], ["36.jpg", "23/05/2026", "Dã ngoại cuối xuân"], ["37.jpg", "", "Sinh hoạt, gắn kết đoàn viên"], ["38.jpg", "", "Sinh hoạt, gắn kết đoàn viên"], ["39.jpg", "", "Gặp mặt, sinh hoạt Chi đoàn"], ["40.jpg", "", "Hoàn thành khóa dự bị"], ["41.jpg", "", "Niềm vui tốt nghiệp thạc sĩ"], ["55.jpg", "09/09/2026", "Diễn đàn Khoa học và Công nghệ Việt Nam – LB Nga"], ["42.jpg", "13/09/2026", "Hái nấm mùa thu"], ["43.jpg", "13/09/2026", "Hái nấm mùa thu"], ["44.jpg", "20/09/2026", "Đạp xe tại VDNKh"], ["45.jpg", "04/10/2026", "Tham quan Plyos"], ["46.jpg", "18/10/2026", "Đá bóng giao lưu nội bộ"]];
 var AGENDA = [
  [1,'12h30 – 13h00','Ổn định tổ chức, đón tiếp đại biểu'],[2,'13h00 – 13h05','Chào cờ (Quốc ca, Đoàn ca)'],
  [3,'13h05 – 13h12','Tuyên bố lý do, giới thiệu đại biểu'],[4,'13h12 – 13h17','Bầu Đoàn Chủ tịch, Đoàn Thư ký'],
  [5,'13h17 – 13h22','Khai mạc Đại hội'],[6,'13h22 – 13h25','Báo cáo số lượng đoàn viên có mặt'],
  [7,'13h25 – 13h35','Thông qua Chương trình, Nội quy, Quy chế bầu cử'],[8,'13h35 – 14h00','Báo cáo tổng kết, phương hướng nhiệm kỳ mới'],
- [9,'14h00 – 14h40','Xếp loại đoàn viên; bình xét đoàn viên ưu tú; công bố kết quả'],[10,'14h40 – 15h05','Thảo luận, góp ý văn kiện'],
+ [9,'14h00 – 14h40','Xếp loại đoàn viên; bình xét đoàn viên ưu tú; công bố kết quả'],[10,'14h40 – 15h05','Thảo luận: nghe tham luận, góp ý'],
  [11,'15h05 – 15h15','Phát biểu chỉ đạo của Ban Cán sự Đoàn'],[12,'15h15 – 15h25','Chỉ đạo của Chi ủy Chi bộ'],
  [0,'15h25 – 15h35','Giải lao'],[13,'15h35 – 16h20','Kết thúc nhiệm kỳ; bầu Ban Chấp hành mới; bầu trực tiếp Bí thư'],
  [14,'16h20 – 16h30','Hội nghị BCH lần thứ nhất (bầu Phó Bí thư)'],[15,'16h30 – 16h40','Ra mắt BCH khóa mới; tri ân BCH khóa cũ'],
  [16,'16h40 – 16h50','Thông qua Nghị quyết Đại hội'],[17,'16h50 – 16h55','Bế mạc Đại hội'],[18,'16h55 – 17h00','Chào cờ bế mạc; chụp ảnh lưu niệm']];
 var TIMELINE1 = [
- ['12/2025',[['21/12','Đại hội Chi đoàn nhiệm kỳ 2025 – 2026']]],
+ ['12/2025',[['21/12','Đại hội Chi đoàn nhiệm kỳ 2025 ⁠–⁠ 2026']]],
  ['01/2026',[['03–04/01','Gặp mặt đầu năm 2026'],['18/01','Phát động Cuộc thi “Tự hào tiến bước dưới cờ Đảng”'],['23/01','Theo dõi phiên bế mạc Đại hội XIV của Đảng'],['25/01','Hưởng ứng “Ngày Thanh niên cùng hành động”']]],
  ['02/2026',[['12/02','Đ/c Quyền Đình Tuyền bảo vệ luận án Tiến sĩ'],['28/02','Đêm nhạc “Светло – Ánh sáng phương Đông”']]],
  ['03/2026',[['03/03','02 đồng chí bảo vệ luận án Tiến sĩ'],['08/03','Giao lưu chào mừng Ngày Quốc tế Phụ nữ'],['13/03','Tuyên truyền bầu cử Quốc hội khóa XVI'],['15/03','Thi tìm hiểu Nghị quyết của Đảng về thanh niên'],['22/03','Đoàn viên nhận Bằng khen Quỹ Khai sáng'],['23/03','Đón Đoàn ĐHQG Hà Nội thăm MIIGAiK'],['28/03','Cuộc thi trực tuyến “Sắc trẻ III”']]]];
@@ -1319,7 +1439,7 @@ function blankState(){
     nb:{m:[],hn:{thu:'',bt:'',pbt:''},bt:{dk:'Đặng Lý Hoành',name:'',thu:'',v:''}},
     photos:{},
     brk:10, phongV:'v1', p3:p3def(),
-    phong3:'NHIỆM KỲ 2026 – 2027'
+    phong3:'NHIỆM KỲ 2026 ⁠–⁠ 2027'
   };
 }
 var S;
@@ -1389,7 +1509,17 @@ function next(){
 }
 function prevS(){ go(cur-1); }
 
+
+function syncPhongCopies(){
+  var src = document.getElementById('phong'); if(!src) return;
+  var html = src.innerHTML.replace(/\sid="[^"]*"/g,'');
+  document.querySelectorAll('section.phong-copy').forEach(function(c){
+    if(c._h!==html){ c.innerHTML = html; c._h = html; }
+    ['v2','v3','v4','custom'].forEach(function(k){ c.classList.toggle(k, src.classList.contains(k)); });
+  });
+}
 function enter(s){
+  if(s.classList.contains('phong-copy')) syncPhongCopies();
   if(s.classList.contains('qc')) Flag.start(s.querySelector('canvas'));
   var m = s.dataset.music;
   if(m){ if(m==='stop') Music.fadeOut(); else Music.play(m); }
@@ -1558,16 +1688,14 @@ function sortABC(list){
 }
 function renderGuests(){
   var lines = (S.guests||'').split('\n').map(function(s){return s.trim();}).filter(Boolean);
-  document.getElementById('pnLine3').textContent = (S.phong3||'NHIỆM KỲ 2026 – 2027');
-  document.getElementById('pn2Line3').textContent = (S.phong3||'NHIỆM KỲ 2026 – 2027');
+  document.getElementById('pnLine3').textContent = (S.phong3||'NHIỆM KỲ 2026 ⁠–⁠ 2027');
+  document.getElementById('pn2Line3').textContent = (S.phong3||'NHIỆM KỲ 2026 ⁠–⁠ 2027');
   document.getElementById('phong').classList.toggle('v2', S.phongV==='v2');
   document.getElementById('phong').classList.toggle('v3', S.phongV==='v3');
   document.getElementById('phong').classList.toggle('v4', S.phongV==='v4');
   renderP3();
+  syncPhongCopies();
   document.getElementById('guestList').innerHTML = lines.map(function(l){ var k = l.indexOf(' – '); if(k>0 && /^đồng chí/i.test(l)) return '<li style="font-size:30px;margin-bottom:18px"><b>'+esc(l.slice(0,k))+'</b><div style="font-size:25px;line-height:1.35;color:var(--muted);margin-top:4px">'+esc(l.slice(k+3))+'</div></li>'; return '<li style="font-size:30px;margin-bottom:18px">'+esc(l)+'</li>'; }).join('');
-  var n = (S.spk.name||'').trim(), t=(S.spk.title||'').trim();
-  document.getElementById('spk1n').textContent = n ? ('Đồng chí '+n.replace(/^đồng chí\s+/i,'')) : 'Đại diện Ban Cán sự Đoàn tại Liên bang Nga';
-  document.getElementById('spk1t').textContent = t || (n ? 'Ban Cán sự Đoàn tại Liên bang Nga' : 'Ban Chấp hành Hội Sinh viên Việt Nam tại Nga');
 }
 function renderAttend(){
   var a = S.att, tt = num(a.trieuTap)||41, cm = num(a.coMat), need = Math.ceil(tt*2/3);
@@ -1692,7 +1820,7 @@ function renderBT(){
   var thu = num(b.thu), v = num(b.v);
   if(!nm || !thu || v===null){ box.innerHTML = '<div class="sec-k">KẾT QUẢ BẦU BÍ THƯ</div><div class="waiting" style="color:#cfd9f2;margin-top:30px"><b style="color:#fff">Chờ Ban Kiểm phiếu công bố</b>Nhập kết quả trong Bảng điều khiển (phím K) → thẻ “BCH mới” → mục “Bầu trực tiếp Bí thư”</div>'; return; }
   var ok = v*2 > thu;
-  box.innerHTML = '<img src="img/huy-hieu-doan.png" alt="" style="height:150px"><div class="sec-k" style="margin-top:30px">KẾT QUẢ BẦU TRỰC TIẾP BÍ THƯ CHI ĐOÀN NHIỆM KỲ 2026 – 2027</div><div class="sec-t" style="font-size:96px">Đồng chí '+esc(nm.replace(/^đồng chí\s+/i,''))+'</div><div class="sec-bar"></div><div class="sec-s serif">'+v+'/'+thu+' phiếu thu vào ('+pct(v,thu)+') · '+(ok?'trúng cử Bí thư Chi đoàn':'chưa đạt quá 1/2 số phiếu thu vào')+'</div>';
+  box.innerHTML = '<img src="img/huy-hieu-doan.png" alt="" style="height:150px"><div class="sec-k" style="margin-top:30px">KẾT QUẢ BẦU TRỰC TIẾP BÍ THƯ CHI ĐOÀN NHIỆM KỲ 2026 ⁠–⁠ 2027</div><div class="sec-t" style="font-size:96px">Đồng chí '+esc(nm.replace(/^đồng chí\s+/i,''))+'</div><div class="sec-bar"></div><div class="sec-s serif">'+v+'/'+thu+' phiếu thu vào ('+pct(v,thu)+') · '+(ok?'trúng cử Bí thư Chi đoàn':'chưa đạt quá 1/2 số phiếu thu vào')+'</div>';
 }
 function renderAll(){ renderBT(); renderGuests(); renderAttend(); renderCands(); renderXL(); renderBCH(); if(slides[cur] && slides[cur].id==='s-newbch') renderNewBch(false); else renderNewBch(false); }
 
@@ -1786,7 +1914,7 @@ function renderP3(){
   r.className = 'pn3' + (P.bg && P.bg!=='trongdong' ? ' bg-'+P.bg : '');
   document.getElementById('p3t1').textContent = T.t1 || P3TXT.t1;
   document.getElementById('p3t2').textContent = T.t2 || P3TXT.t2;
-  document.getElementById('p3t3').textContent = S.phong3 || 'NHIỆM KỲ 2026 – 2027';
+  document.getElementById('p3t3').textContent = S.phong3 || 'NHIỆM KỲ 2026 ⁠–⁠ 2027';
   document.getElementById('p3t4').textContent = T.t4 || P3TXT.t4;
   document.getElementById('p3slogan').textContent = T.slogan || P3TXT.slogan;
   r.querySelectorAll('.p3el').forEach(function(el){
@@ -1936,8 +2064,7 @@ function renderPanel(){
   }
   if(ptab==='misc'){
     h += '<h4>Đại biểu (mỗi dòng một người)</h4><textarea data-p="guests" rows="6">'+esc(S.guests)+'</textarea>';
-    h += '<h4>Người phát biểu chỉ đạo (Ban Cán sự Đoàn / Hội Sinh viên)</h4><label>Họ tên '+txt('spk.name',S.spk.name,'vd: Nguyễn Văn A',260)+'</label><label>Chức vụ '+txt('spk.title',S.spk.title,'vd: Phó Bí thư Ban Cán sự Đoàn',260)+'</label>';
-    h += '<h4>Phông Đại hội</h4><label>Mẫu phông <select data-p="phongV"><option value="v1"'+(['v2','v3','v4'].indexOf(S.phongV)<0?' selected':'')+'>Phương án 1 – theo Phụ lục 2</option><option value="v2"'+(S.phongV==='v2'?' selected':'')+'>Phương án 2 – theo mẫu khánh tiết (rèm đỏ, tượng Bác)</option><option value="v3"'+(S.phongV==='v3'?' selected':'')+'>Phương án 3 – tự chỉnh vị trí, ẩn/hiện chi tiết</option><option value="v4"'+(S.phongV==='v4'?' selected':'')+'>Phương án 4 – như phương án 1, nền đỏ đều màu, tượng Bác nhỏ</option></select></label><label>Dòng thứ ba '+txt('phong3',S.phong3,'LẦN THỨ …, NHIỆM KỲ 2026 – 2027',300)+'</label><p class="note">Mẫu Phụ lục 2 ghi “LẦN THỨ …, NHIỆM KỲ 2026 – 2027”; điền số lần thứ nếu Chi đoàn xác định được.</p>';
+    h += '<h4>Phông Đại hội</h4><label>Mẫu phông <select data-p="phongV"><option value="v1"'+(['v2','v3','v4'].indexOf(S.phongV)<0?' selected':'')+'>Phương án 1 – theo Phụ lục 2</option><option value="v2"'+(S.phongV==='v2'?' selected':'')+'>Phương án 2 – theo mẫu khánh tiết (rèm đỏ, tượng Bác)</option><option value="v3"'+(S.phongV==='v3'?' selected':'')+'>Phương án 3 – tự chỉnh vị trí, ẩn/hiện chi tiết</option><option value="v4"'+(S.phongV==='v4'?' selected':'')+'>Phương án 4 – như phương án 1, nền đỏ đều màu, tượng Bác nhỏ</option></select></label><label>Dòng thứ ba '+txt('phong3',S.phong3,'LẦN THỨ …, NHIỆM KỲ 2026 ⁠–⁠ 2027',300)+'</label><p class="note">Mẫu Phụ lục 2 ghi “LẦN THỨ …, NHIỆM KỲ 2026 ⁠–⁠ 2027”; điền số lần thứ nếu Chi đoàn xác định được.</p>';
     if(S.phongV==='v3'){
       var P = S.p3 || (S.p3 = p3def()), T = P.txt || (P.txt = {});
       h += '<h4>Tùy chỉnh phương án 3</h4><button class="act" id="p3go">Chỉnh trực tiếp trên slide (kéo thả)</button>';
