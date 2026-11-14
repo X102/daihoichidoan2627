@@ -134,6 +134,7 @@ body.present .ctl-only:hover{opacity:1}
 .pcard .av{width:132px;height:132px;border-radius:50%;margin:0 auto 22px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-weight:900;font-size:56px;display:flex;align-items:center;justify-content:center}
 .pcard .nm{font-weight:900;font-size:36px;color:var(--blued)}
 .pcard .rl{font-size:26px;color:var(--muted);margin-top:10px;font-weight:700}
+.pcard.ph{width:460px;padding:46px 30px 40px}.pcard.ph .av{width:280px;height:280px;overflow:hidden;padding:0;margin-bottom:28px;box-shadow:0 0 0 6px #fff,0 0 0 10px var(--blue)}.pcard.ph .av img{width:100%;height:100%;object-fit:cover;display:block}.pcard.ph .nm{font-size:40px}.pcard.ph .rl{font-size:28px;line-height:1.35}.people.ph3{gap:56px}
 
 /* biểu đồ */
 .hbar{display:flex;flex-direction:column;gap:26px}
@@ -301,6 +302,7 @@ table.tbl.cd td.lv{font-weight:900;font-size:28px;width:270px}
 .qrwrap{background:#fff;border-radius:26px;padding:22px;box-shadow:0 14px 40px rgba(10,30,80,.18);border:1px solid #dfe6f3}
 .qrwrap svg{display:block;width:100%;height:100%}
 .qrlink{font:900 50px LatoV,Arial,sans-serif;color:var(--blued);letter-spacing:.01em;word-break:break-all}
+.card.qr2{border-top:10px solid var(--red);display:flex;flex-direction:column;align-items:center;gap:18px;padding:26px 34px 24px;min-height:0}.qr2-h{align-self:stretch;display:flex;align-items:center;gap:20px;font-weight:900;font-size:31px;line-height:1.25;color:var(--blued);min-height:78px}.qr2-h .n{flex:0 0 58px;height:58px;border-radius:50%;background:var(--red);color:#fff;font:900 32px/58px LatoV,Arial;text-align:center}.qrwrap.qr2-q{flex:none;width:330px;height:330px;padding:12px}.qr2-l{font:900 38px LatoV,Arial,sans-serif;color:var(--blued);letter-spacing:.01em}.qr2-n{font-size:24px;line-height:1.35;color:var(--muted);text-align:center;font-weight:700}
 .qrsteps{counter-reset:st;margin:0;padding:0;list-style:none}
 .qrsteps li{counter-increment:st;position:relative;padding:0 0 0 70px;margin:0 0 22px;font-size:29px;line-height:1.36}
 .qrsteps li::before{content:counter(st);position:absolute;left:0;top:-2px;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;font:900 28px/48px LatoV,Arial;text-align:center}
@@ -400,6 +402,7 @@ table.tbl{font-size:29px} table.tbl th{font-size:26px}
 .sumbox .it{font-size:29px}
 table.xl td,table.xl th{font-size:25px}
 .card.crit h3{font-size:33px} .card.crit ul.list.sm li{font-size:30px} .c3 .card.crit ul.list.sm li{font-size:28px}
+section.kt-dk .card.crit ul.list.sm li{font-size:27px;line-height:1.34;margin-bottom:12px}section.kt-dk .card.crit{padding:26px 34px}section.kt-dk .card.crit h3{margin-bottom:12px}
 .lead{font-size:27px}
 .ut-it span{font-size:27px}
 table.tbl.cd td{font-size:28px} table.tbl.cd td.lv{font-size:30px}
@@ -514,15 +517,28 @@ ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
 <section class="slide phong-copy" data-title="Khánh tiết · chuyển sang Mục 4: Bầu Đoàn Chủ tịch, Đoàn Thư ký" data-item="4"></section>
 
 <!-- 4. ĐOÀN CHỦ TỊCH -->
-<section class="slide paper" data-title="Đoàn Chủ tịch, Đoàn Thư ký" data-item="4">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Bầu Đoàn Chủ tịch · Đoàn Thư ký</div><h1>Điều hành Đại hội</h1></div></div>
-  <div class="bd">
-    <div class="people" style="margin-top:10px">
-      <div class="pcard"><div class="av">H</div><div class="nm">Phạm Đăng Hiển</div><div class="rl">Đoàn Chủ tịch – chủ trì<br>Bí thư Chi đoàn</div></div>
-      <div class="pcard"><div class="av">H</div><div class="nm">Nguyễn Thị Hường</div><div class="rl">Đoàn Chủ tịch<br>Phó Bí thư Chi đoàn</div></div>
-      <div class="pcard"><div class="av">H</div><div class="nm">Trần Hồng Hải</div><div class="rl">Đoàn Chủ tịch<br>Ủy viên BCH Chi đoàn</div></div>
-      <div class="pcard" style="border-top-color:var(--gold)"><div class="av" style="background:linear-gradient(135deg,#f0b429,#c48a00)">T</div><div class="nm">Nguyễn Thị Trâm</div><div class="rl">Đoàn Thư ký</div></div>
+<section class="slide paper" data-title="Đoàn Chủ tịch Đại hội" data-item="4">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Bầu Đoàn Chủ tịch · 03 đồng chí</div><h1>Đoàn Chủ tịch Đại hội</h1></div></div>
+  <div class="bd" style="display:flex;align-items:center;justify-content:center">
+    <div class="people ph3">
+      <div class="pcard ph"><div class="av"><img src="img/dct/hien.jpg" alt=""></div><div class="nm">Phạm Đăng Hiển</div><div class="rl">Chủ trì Đại hội<br>Bí thư Chi đoàn</div></div>
+      <div class="pcard ph"><div class="av"><img src="img/dct/huong.jpg" alt=""></div><div class="nm">Nguyễn Thị Hường</div><div class="rl">Ủy viên Đoàn Chủ tịch<br>Phó Bí thư Chi đoàn</div></div>
+      <div class="pcard ph"><div class="av"><img src="img/dct/hai.jpg" alt=""></div><div class="nm">Trần Hồng Hải</div><div class="rl">Ủy viên Đoàn Chủ tịch<br>Ủy viên BCH Chi đoàn</div></div>
     </div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
+<!-- 4b. ĐOÀN THƯ KÝ -->
+<section class="slide paper" data-title="Đoàn Thư ký Đại hội" data-item="4">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Bầu Đoàn Thư ký · 01 đồng chí</div><h1>Đoàn Thư ký Đại hội</h1></div></div>
+  <div class="bd" style="display:grid;grid-template-columns:520px 1fr;gap:70px;align-items:center;padding:0 60px">
+    <div class="pcard ph" style="width:520px;border-top-color:var(--gold)"><div class="av" style="background:linear-gradient(135deg,#f0b429,#c48a00)"><img src="img/dct/tram.jpg" alt=""></div><div class="nm">Nguyễn Thị Trâm</div><div class="rl">Thư ký Đại hội</div></div>
+    <div class="card" style="border-top:8px solid var(--gold)"><h3>Nhiệm vụ của Đoàn Thư ký</h3><ul class="list">
+      <li>Ghi biên bản Đại hội</li>
+      <li>Tổng hợp ý kiến thảo luận, góp ý của đại biểu</li>
+      <li>Ghi biên bản họp bình xét khen thưởng (Mẫu 03)</li>
+      <li>Hoàn thiện dự thảo Nghị quyết, trình Đại hội thông qua</li></ul></div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -810,7 +826,7 @@ ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
       <li>04 mức: Hoàn thành xuất sắc · Hoàn thành tốt · Hoàn thành · Không hoàn thành nhiệm vụ</li>
       <li>“Hoàn thành xuất sắc” không quá 25% (tối đa <b>02 đồng chí</b>); đoàn viên đang được xem xét kết nạp Đảng tính ngoài tỷ lệ</li>
       <li>Mức xếp loại được thông qua khi có <b>trên 1/2</b> số đoàn viên biểu quyết tán thành</li>
-      <li>Cùng phiếu: xếp loại Chi đoàn, đoàn viên ưu tú, đề nghị khen thưởng</li></ul></div>
+      <li>Phiếu 1: xếp loại đoàn viên, Chi đoàn, đoàn viên ưu tú · Phiếu 2: đề xuất khen thưởng</li></ul></div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
@@ -855,7 +871,7 @@ ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
   <div class="bd" style="display:grid;grid-template-columns:1fr 560px;gap:44px">
     <div class="card" style="padding:34px 40px"><h3>Đoàn viên thuộc diện đánh giá, xếp loại</h3>
       <div style="display:flex;align-items:center;gap:34px;margin:10px 0 26px"><div class="big-num" style="font-size:150px;color:var(--red);line-height:1">11</div><div style="font-size:34px;line-height:1.35;font-weight:800">đồng chí<br><span style="font-weight:400;color:var(--muted);font-size:28px">họ tên in sẵn trên Phiếu đánh giá, xếp loại</span></div></div>
-      <ul class="list sm"><li>Đánh dấu X vào <b>01 ô</b> cho mỗi dòng (phiếu kín, không ghi tên người bỏ phiếu)</li><li>Tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc nhiệm vụ” (không tính đoàn viên đang được xem xét kết nạp Đảng)</li><li>Cùng phiếu: xếp loại Chi đoàn, đoàn viên ưu tú, đề nghị khen thưởng</li></ul></div>
+      <ul class="list sm"><li>Đánh dấu X vào <b>01 ô</b> cho mỗi dòng (phiếu kín, không ghi tên người bỏ phiếu)</li><li>Tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc nhiệm vụ” (không tính đoàn viên đang được xem xét kết nạp Đảng)</li><li>Cùng phiếu: xếp loại Chi đoàn và bình xét đoàn viên ưu tú</li></ul></div>
     <div class="card" style="border-top:8px solid var(--gold)"><h3>Ban Kiểm phiếu</h3>
       <ul class="list"><li><b>Nguyễn Đình Quân</b> – Trưởng ban</li><li><b>Trương Đức Tân</b> – Ủy viên</li><li><b>Lê Nhật Minh</b> – Ủy viên</li></ul>
       <div class="cap" style="font-size:22px;line-height:1.4">Phổ biến thể lệ, phát và thu phiếu, kiểm phiếu, lập biên bản; không có tên trong danh sách bầu cử</div></div>
@@ -863,13 +879,32 @@ ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
+<!-- 25a0. ĐIỀU KIỆN KHEN THƯỞNG -->
+<section class="slide paper kt-dk" data-title="Điều kiện khen thưởng cá nhân, tập thể" data-item="9">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn 07-HD/BCSĐ · Hướng dẫn khen thưởng 2026 · thành tích 01/12/2025 – 30/11/2026</div><h1>Điều kiện đề nghị khen thưởng</h1></div></div>
+  <div class="bd" style="display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:22px 34px">
+    <div class="card crit" style="border-top:10px solid var(--red)"><h3 style="color:var(--red)">Đối với cá nhân</h3><ul class="list sm">
+      <li>Tư tưởng chính trị vững vàng; chấp hành tốt chủ trương của Đảng, pháp luật Việt Nam và nước sở tại, Điều lệ Đoàn; đạo đức, lối sống tốt, <b>được tập thể tín nhiệm</b></li>
+      <li>Đoàn viên <b>hoàn thành tốt nhiệm vụ trở lên</b>; tích cực tham gia hoạt động, phong trào của Đoàn các cấp, Ban Cán sự Đoàn – Hội Sinh viên</li>
+      <li>Học tập: điểm trung bình năm học 2025 ⁠–⁠ 2026 <b>từ 4,0/5</b>, không nợ môn; nghiên cứu sinh <b>hoàn thành kế hoạch đào tạo</b>, có xác nhận của cơ sở đào tạo</li>
+      <li>Có <b>thành tích, đóng góp cụ thể</b>: sáng kiến, mô hình, giải thưởng, phần việc thanh niên; là hạt nhân tập hợp đoàn viên</li></ul></div>
+    <div class="card crit" style="border-top:10px solid var(--blued)"><h3 style="color:var(--blued)">Đối với tập thể</h3><ul class="list sm">
+      <li>Đoàn kết; chấp hành chủ trương, pháp luật, quy định; tổ chức Đoàn vững mạnh, Ban Chấp hành hoạt động hiệu quả</li>
+      <li>Tập thể <b>hoàn thành tốt nhiệm vụ trở lên</b>; duy trì sinh hoạt; quản lý đoàn viên, thu nộp đoàn phí đúng quy định</li>
+      <li>Có chương trình, phần việc mang lại <b>kết quả cụ thể</b> cho thành viên, cộng đồng; thành tích nổi bật trong phong trào của Ban Cán sự Đoàn, Hội Sinh viên</li>
+      <li>Làm tốt công tác giới thiệu đoàn viên ưu tú cho Đảng</li></ul></div>
+    <div class="cap" style="grid-column:1 / span 2;font-size:24px;line-height:1.35;margin:0"><b style="color:var(--red)">Không xét:</b> bị kỷ luật từ khiển trách trở lên trong kỳ; kê khai không trung thực · <b style="color:var(--red)">Tạm dừng xét:</b> đang bị cơ quan có thẩm quyền xem xét vi phạm · Chi đoàn được đề nghị <b>tối đa 04 cá nhân</b> (10% × 41)</div>
+  </div>
+  <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
+</section>
+
 <!-- 25a. BÌNH XÉT ĐỀ NGHỊ KHEN THƯỞNG 2026 -->
 <section class="slide paper" data-title="Bình xét đề nghị khen thưởng năm 2026" data-item="9">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn bình xét khen thưởng năm 2026 của Ban Cán sự Đoàn · biểu quyết cùng phiếu xếp loại</div><h1>Bình xét đề nghị khen thưởng năm 2026</h1></div></div>
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Hướng dẫn bình xét khen thưởng năm 2026 của Ban Cán sự Đoàn · phiếu đề xuất riêng</div><h1>Bình xét đề nghị khen thưởng năm 2026</h1></div></div>
   <div class="bd" style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
     <div class="card"><h3>Ban Chấp hành đề nghị</h3>
-      <ul class="list sm"><li class="nob"><b>Tập thể:</b> Chi đoàn Trắc địa Bản đồ Mát-xcơ-va</li><li class="nob"><b>Cá nhân (04 đồng chí):</b></li></ul>
-      <ul class="list"><li><b>Nguyễn Thị Hường</b></li><li><b>Bùi Bảo Thiện</b></li><li><b>Nguyễn Thị Uyên</b></li><li><b>Nguyễn Hoàng Duy</b></li></ul>
+      <ul class="list sm"><li class="nob"><b>Tập thể:</b> Chi đoàn Trắc địa Bản đồ Mát-xcơ-va</li><li class="nob"><b>Cá nhân (03 đồng chí):</b></li></ul>
+      <ul class="list"><li><b>Nguyễn Thị Hường</b></li><li><b>Bùi Bảo Thiện</b></li><li><b>Nguyễn Hoàng Duy</b></li></ul>
     </div>
     <div class="card"><h3>Nguyên tắc</h3>
       <div class="grid" style="grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px">
@@ -879,28 +914,25 @@ ol.steps li{font-size:28px} ol.steps li::before{font-size:24px}
       <ul class="list sm">
         <li>Bình xét khi có mặt ít nhất <b>2/3</b> số đoàn viên (từ 28/41 đồng chí)</li>
         <li>Từng hồ sơ được thống nhất đề nghị khi có <b>trên 50%</b> số đoàn viên <b>có mặt</b> đồng ý</li>
-        <li>Biểu quyết <b>đồng ý / không đồng ý</b> trên cùng Google Form với phiếu xếp loại</li></ul>
+        <li>Biểu quyết <b>đồng ý / không đồng ý</b> trên <b>Phiếu đề xuất khen thưởng</b> (Google Form riêng)</li></ul>
     </div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
-<!-- 25b. BỎ PHIẾU TRỰC TUYẾN (GOOGLE FORM) -->
-<section class="slide paper" data-title="Bỏ phiếu đánh giá, xếp loại (mã QR Google Form)" data-item="9">
-  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phiếu kín · không ghi tên người bỏ phiếu</div><h1>Bỏ phiếu đánh giá, xếp loại trực tuyến</h1></div></div>
-  <div class="bd" style="display:grid;grid-template-columns:660px 1fr;gap:60px;align-items:center">
-    <div class="qrwrap" style="width:660px;height:660px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" shape-rendering="crispEdges" class="qrsvg"><path fill="#fff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#000" d="M4 4.5h7m1 0h6m1 0h1m3 0h2m1 0h7m-29 1h1m5 0h1m1 0h2m1 0h3m3 0h2m3 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h2m5 0h1m1 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m6 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m5 0h2m2 0h5m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m1 0h2m4 0h4m-21 1h1m1 0h2m1 0h3m2 0h2m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-29 1h6m1 0h2m2 0h4m2 0h1m2 0h1m1 0h3m3 0h1m-29 1h1m1 0h1m1 0h4m2 0h1m1 0h2m12 0h2m-28 1h1m1 0h3m4 0h2m1 0h1m6 0h1m1 0h1m1 0h2m3 0h1m-26 1h2m1 0h1m1 0h1m2 0h1m2 0h3m4 0h1m3 0h2m-25 1h1m4 0h2m1 0h1m1 0h1m1 0h3m5 0h1m3 0h3m-28 1h1m3 0h4m2 0h1m1 0h1m2 0h1m1 0h4m2 0h1m1 0h3m-27 1h1m1 0h1m2 0h1m1 0h3m2 0h2m3 0h1m1 0h2m1 0h1m2 0h1m-28 1h1m2 0h1m2 0h3m2 0h2m1 0h2m4 0h2m2 0h2m1 0h1m-27 1h2m2 0h1m5 0h1m2 0h1m3 0h3m2 0h1m1 0h3m-28 1h1m1 0h1m3 0h1m1 0h1m2 0h6m3 0h1m2 0h1m2 0h1m-25 1h2m1 0h1m1 0h2m1 0h2m1 0h3m1 0h3m1 0h2m1 0h1m1 0h1m-26 1h2m1 0h1m1 0h2m1 0h2m1 0h5m1 0h1m1 0h7m-19 1h2m6 0h3m1 0h1m3 0h5m-29 1h7m1 0h4m2 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m-28 1h1m5 0h1m1 0h3m1 0h3m3 0h3m3 0h2m1 0h1m-28 1h1m1 0h3m1 0h1m2 0h2m9 0h5m1 0h2m-28 1h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h2m1 0h3m1 0h3m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h1m3 0h1m1 0h1m4 0h1m2 0h1m1 0h1m-29 1h1m5 0h1m4 0h1m4 0h1m3 0h1m1 0h1m2 0h1m1 0h1m-28 1h7m1 0h1m2 0h2m2 0h1m2 0h3m6 0h1"/></svg></div>
-    <div>
-      <div class="sec-k" style="color:var(--red);font-size:26px">QUÉT MÃ QR HOẶC MỞ ĐƯỜNG LINK</div>
-      <div class="qrlink" style="margin:14px 0 34px">forms.gle/CASCuWZM5KEnMkHt8</div>
-      <ol class="qrsteps">
-        <li>Mở camera điện thoại, quét mã QR (hoặc bấm link Ban Tổ chức gửi vào nhóm Chi đoàn)</li>
-        <li>Chọn <b>01 mức</b> cho từng đồng chí; tối đa <b>02 đồng chí</b> “Hoàn thành xuất sắc”</li>
-        <li>Xếp loại Chi đoàn; đoàn viên ưu tú và đề nghị khen thưởng (đồng ý / không đồng ý)</li>
-        <li>Bấm <b>“Gửi”</b>; mỗi đồng chí chỉ gửi <b>01 lần</b></li>
-      </ol>
-      <div class="cap" style="font-size:22px;line-height:1.45;margin-top:8px">Ban Kiểm phiếu đóng biểu mẫu khi hết thời gian và đối chiếu số phiếu với số đoàn viên có mặt. Đồng chí không dùng được điện thoại nhận phiếu giấy tại bàn Ban Kiểm phiếu.</div>
-    </div>
+<!-- 25b. BỎ PHIẾU TRỰC TUYẾN (02 GOOGLE FORM) -->
+<section class="slide paper" data-title="Bỏ phiếu: xếp loại và đề xuất khen thưởng (mã QR Google Form)" data-item="9">
+  <div class="hd"><img src="img/huy-hieu-doan.png" alt=""><div><div class="kick">Phiếu kín · không ghi tên người bỏ phiếu · mỗi phiếu gửi 01 lần</div><h1>Bỏ phiếu trực tuyến: 02 phiếu</h1></div></div>
+  <div class="bd" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:22px 56px">
+    <div class="card qr2"><div class="qr2-h"><b class="n">1</b><span>Đánh giá, xếp loại đoàn viên, tổ chức Đoàn, đoàn viên ưu tú</span></div>
+      <div class="qrwrap qr2-q"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" shape-rendering="crispEdges" class="qrsvg"><path fill="#fff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#000" d="M4 4.5h7m2 0h2m1 0h3m1 0h4m2 0h7m-29 1h1m5 0h1m6 0h4m3 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m3 0h1m2 0h2m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h5m2 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m4 0h1m1 0h2m4 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h2m1 0h6m1 0h2m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m1 0h1m2 0h1m2 0h1m-18 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m4 0h1m1 0h3m1 0h1m-24 1h2m1 0h1m1 0h1m1 0h1m6 0h1m2 0h1m2 0h1m1 0h1m2 0h1m2 0h1m-26 1h1m2 0h1m1 0h1m1 0h3m4 0h1m1 0h1m3 0h5m-28 1h2m1 0h1m6 0h2m2 0h1m1 0h1m1 0h2m2 0h3m1 0h2m-26 1h3m1 0h1m2 0h4m4 0h1m1 0h2m1 0h1m2 0h1m1 0h2m-29 1h2m3 0h1m2 0h1m2 0h2m2 0h1m1 0h1m2 0h2m-20 1h1m1 0h6m11 0h1m1 0h1m1 0h4m-26 1h3m1 0h1m3 0h1m1 0h2m2 0h2m1 0h4m1 0h1m1 0h1m-28 1h2m1 0h1m1 0h2m1 0h1m1 0h1m2 0h2m2 0h1m1 0h3m1 0h1m3 0h1m-27 1h1m2 0h2m1 0h3m6 0h1m2 0h1m1 0h3m1 0h1m2 0h1m-29 1h1m5 0h2m1 0h1m1 0h3m7 0h3m3 0h2m-26 1h2m2 0h1m1 0h1m2 0h2m1 0h6m3 0h1m2 0h2m-29 1h1m3 0h1m1 0h3m5 0h2m2 0h7m1 0h1m-19 1h2m3 0h1m3 0h4m3 0h1m1 0h3m-29 1h7m4 0h4m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m5 0h1m1 0h4m1 0h1m1 0h2m1 0h3m3 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h3m1 0h1m1 0h2m2 0h5m3 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m1 0h3m2 0h6m-28 1h1m1 0h3m1 0h1m3 0h1m1 0h1m3 0h4m4 0h3m1 0h1m-29 1h1m5 0h1m2 0h2m1 0h1m3 0h5m1 0h3m2 0h1m-28 1h7m1 0h2m1 0h4m1 0h1m3 0h1m2 0h3m1 0h1"/></svg></div>
+      <div class="qr2-l">forms.gle/FMyWktGge1qVD9cV7</div>
+      <div class="qr2-n">01 mức cho từng đồng chí · xếp loại Chi đoàn · đoàn viên ưu tú</div></div>
+    <div class="card qr2" style="border-top-color:var(--gold)"><div class="qr2-h"><b class="n" style="background:var(--gold)">2</b><span>Phiếu đề xuất khen thưởng cá nhân, tập thể năm 2026</span></div>
+      <div class="qrwrap qr2-q"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" shape-rendering="crispEdges" class="qrsvg"><path fill="#fff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#000" d="M4 4.5h7m2 0h1m1 0h4m1 0h2m1 0h1m2 0h7m-29 1h1m5 0h1m1 0h2m4 0h2m3 0h2m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m5 0h4m1 0h4m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h1m1 0h1m5 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h1m1 0h4m1 0h1m1 0h1m-20 1h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m6 0h1m2 0h1m-28 1h1m1 0h1m1 0h1m3 0h1m5 0h1m3 0h1m1 0h1m1 0h1m2 0h1m2 0h1m-28 1h1m1 0h2m1 0h1m3 0h2m1 0h1m4 0h1m1 0h1m1 0h3m1 0h3m-29 1h4m1 0h1m2 0h1m1 0h1m6 0h1m1 0h2m1 0h1m1 0h1m2 0h1m-28 1h3m3 0h2m2 0h1m1 0h1m3 0h2m2 0h1m1 0h1m2 0h1m1 0h2m-29 1h2m1 0h2m2 0h3m3 0h1m1 0h4m1 0h3m2 0h1m2 0h1m-26 1h1m2 0h2m1 0h4m1 0h1m1 0h2m3 0h1m3 0h1m1 0h2m-28 1h2m1 0h2m2 0h1m2 0h4m1 0h2m1 0h5m1 0h1m1 0h1m-26 1h2m2 0h1m2 0h2m1 0h1m1 0h1m5 0h4m1 0h1m1 0h2m-27 1h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m2 0h6m2 0h2m1 0h1m-29 1h1m1 0h3m1 0h2m5 0h1m7 0h3m3 0h2m-28 1h1m1 0h1m1 0h1m1 0h2m2 0h2m2 0h4m1 0h1m1 0h1m1 0h2m1 0h1m-28 1h1m1 0h1m2 0h2m5 0h1m2 0h2m2 0h6m-17 1h2m3 0h1m2 0h1m2 0h2m3 0h1m1 0h3m-29 1h7m2 0h3m2 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h2m-29 1h1m5 0h1m4 0h1m1 0h2m2 0h1m1 0h2m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h5m1 0h5m3 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h2m1 0h3m4 0h2m1 0h3m-29 1h1m1 0h3m1 0h1m1 0h6m5 0h2m2 0h3m2 0h1m-29 1h1m5 0h1m2 0h1m4 0h2m1 0h4m1 0h3m2 0h1m-28 1h7m1 0h2m1 0h2m3 0h1m2 0h2m1 0h3m2 0h2"/></svg></div>
+      <div class="qr2-l">forms.gle/EdpSzVxvUL5Ajm6C8</div>
+      <div class="qr2-n">Đồng ý / không đồng ý: tập thể Chi đoàn và 03 cá nhân</div></div>
+    <div class="cap" style="grid-column:1 / span 2;font-size:23px;line-height:1.35;text-align:center;margin:0">Quét mã QR hoặc bấm link trong nhóm Chi đoàn · Ban Kiểm phiếu đóng biểu mẫu khi hết giờ · Không dùng điện thoại: nhận phiếu giấy</div>
   </div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
