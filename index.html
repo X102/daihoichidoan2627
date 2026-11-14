@@ -199,6 +199,25 @@ table.xl td.res{font-weight:900}
 .mcard.bt{width:340px}.mcard.bt .pf{width:340px;height:454px;border-color:var(--gold)}
 .mcard.bt .rl{background:var(--red)}
 .mcard.pbt .rl{background:var(--gold);color:#5a3a00}
+.ramat{background:linear-gradient(180deg,#f8fbff 0%,#ecf4fc 52%,#d8e7f6 100%);color:#1b2b4a}
+.rm-bg{position:absolute;inset:0;pointer-events:none}.rm-bg svg{width:100%;height:100%;display:block}
+.rm-head{position:absolute;left:0;right:0;top:26px;text-align:center;font-family:LatoV,Lato,Arial,sans-serif;z-index:3}
+.rm-logos{display:flex;justify-content:center;align-items:center;gap:26px;height:104px}
+.rm-logos img{height:104px;width:auto;display:block}.rm-logos img.cd{height:100px}
+.rm-l1{margin-top:16px;font-weight:900;font-size:44px;line-height:1;letter-spacing:.045em;color:#3c63ae}
+.rm-l2{margin-top:10px;font-weight:900;font-size:31px;line-height:1;letter-spacing:.05em;color:#d8262c}
+.rm-t{margin-top:22px;font-weight:900;font-size:60px;line-height:1.1;color:#3c63ae}
+.rm-nk{margin-top:12px;font-weight:900;font-size:42px;line-height:1;letter-spacing:.05em;color:#d8262c}
+.rm-body{position:absolute;left:40px;right:40px;top:528px;bottom:72px;z-index:3}
+.ramat .bchrow{align-items:flex-start;gap:16px;padding:0}
+.ramat .mcard{width:336px;display:flex;flex-direction:column;align-items:center}
+.ramat .mcard .pf{width:270px;height:270px;border-radius:50%;border:8px solid #fff;box-shadow:0 14px 32px rgba(36,72,140,.22);background:#fff}
+.ramat .mcard .pf img{object-position:50% 20%}
+.ramat .mcard.bt{margin-top:-36px}.ramat .mcard.bt .pf{width:304px;height:304px;border-color:#fff}
+.ramat .mcard .rl{order:2;display:block;margin-top:20px;padding:0;border-radius:0;background:none;color:#1b1b1b;font-size:30px;font-weight:900;letter-spacing:.01em}
+.ramat .mcard .nm{order:3;margin-top:8px;color:#d8262c;font-size:29px;font-weight:900;text-transform:uppercase;white-space:nowrap;line-height:1.1}
+.ramat .mcard.bt .rl,.ramat .mcard.pbt .rl{background:none;color:#1b1b1b}
+.ramat .waiting{color:#5a6b8c}.ramat .waiting b{color:#3c63ae}
 .confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:5}
 .confetti i{position:absolute;top:-30px;width:14px;height:22px;border-radius:3px;animation:fall linear forwards}
 @keyframes fall{to{transform:translateY(1160px) rotate(720deg)}}
@@ -1097,10 +1116,17 @@ ol.steps li::before{content:counter(st);position:absolute;left:0;top:2px;width:4
 </section>
 
 <!-- 39. RA MẮT BCH -->
-<section class="slide blue" data-title="Ra mắt Ban Chấp hành khóa mới" data-music="chuc-mung" data-item="15" id="s-newbch">
+<section class="slide ramat" data-title="Ra mắt Ban Chấp hành khóa mới" data-music="chuc-mung" data-item="15" id="s-newbch">
+  <div class="rm-bg"><svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="rmGlow" cx="50%" cy="34%" r="62%"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><linearGradient id="rmSw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><g fill="none" stroke="#6f9bd3" stroke-opacity=".20" stroke-width="2"><circle cx="960" cy="860" r="780"/><ellipse cx="960" cy="860" rx="125" ry="780"/><ellipse cx="960" cy="860" rx="328" ry="780"/><ellipse cx="960" cy="860" rx="515" ry="780"/><ellipse cx="960" cy="860" rx="671" ry="780"/><ellipse cx="960" cy="658" rx="753" ry="105"/><ellipse cx="960" cy="447" rx="661" ry="93"/><ellipse cx="960" cy="280" rx="522" ry="73"/><ellipse cx="960" cy="165" rx="354" ry="50"/><ellipse cx="960" cy="103" rx="189" ry="26"/><ellipse cx="960" cy="860" rx="780" ry="109"/></g><rect width="1920" height="1080" fill="url(#rmGlow)"/><path d="M-40 760 C 420 640, 760 900, 1180 800 S 1760 640, 1980 720" fill="none" stroke="url(#rmSw)" stroke-width="5"/><path d="M-40 820 C 380 720, 820 960, 1220 860 S 1780 720, 1980 800" fill="none" stroke="url(#rmSw)" stroke-width="3"/><g fill="#6f9bd3" fill-opacity=".10"><circle cx="230" cy="540" r="6"/><circle cx="1700" cy="500" r="6"/><circle cx="420" cy="380" r="4"/><circle cx="1500" cy="350" r="4"/></g></svg></div>
   <div class="confetti" id="confetti"></div>
-  <div class="hd" style="justify-content:center;text-align:center;left:0;right:0"><div><div class="kick" style="font-size:30px">Ra mắt</div><h1 style="font-size:62px">Ban Chấp hành Chi đoàn nhiệm kỳ 2026 – 2027</h1></div></div>
-  <div class="bd" id="newBchBody" style="top:250px"></div>
+  <div class="rm-head">
+    <div class="rm-logos"><img src="img/huy-hieu-doan.png" alt=""><img class="cd" src="img/logo-chi-doan.png" alt=""></div>
+    <div class="rm-l1">BAN CÁN SỰ ĐOÀN TẠI LIÊN BANG NGA</div>
+    <div class="rm-l2">CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
+    <div class="rm-t">BAN CHẤP HÀNH CHI ĐOÀN<br>TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</div>
+    <div class="rm-nk">NHIỆM KỲ 2026 – 2027</div>
+  </div>
+  <div class="rm-body" id="newBchBody"></div>
   <div class="ft"><span>ĐẠI HỘI CHI ĐOÀN TRẮC ĐỊA BẢN ĐỒ MÁT-XCƠ-VA</span><span class="ag"></span><span class="pg"></span></div>
 </section>
 
@@ -1639,7 +1665,7 @@ function renderNewBch(animate){
   var box = document.getElementById('newBchBody');
   var byId = {}; pool().forEach(function(c){ byId[c.id]=c; });
   var ms = (S.nb.m||[]).filter(function(m){ return byId[m.id]; });
-  if(!ms.length){ box.innerHTML = '<div class="waiting" style="color:#cfd9f2"><b style="color:#fff">Chờ kết quả Hội nghị Ban Chấp hành lần thứ nhất</b>Chọn thành viên và chức danh trong Bảng điều khiển (phím K) → thẻ “BCH mới”</div>'; return; }
+  if(!ms.length){ box.innerHTML = '<div class="waiting"><b>Chờ kết quả Hội nghị Ban Chấp hành lần thứ nhất</b>Chọn thành viên và chức danh trong Bảng điều khiển (phím K) → thẻ “BCH mới”</div>'; return; }
   var rank = {'Bí thư':0,'Phó Bí thư':1,'Ủy viên':2};
   var bv = calcBCH(); var votes = {}; bv.rows.forEach(function(r){ votes[r.c.id]=r.v; });
   ms.sort(function(a,b){ return (rank[a.role]-rank[b.role]) || ((votes[b.id]||0)-(votes[a.id]||0)); });
@@ -1648,7 +1674,7 @@ function renderNewBch(animate){
   order = L.reverse().concat([ms[0]]).concat(R);
   var hn = S.nb.hn, thu = num(hn.thu), bt = S.nb.bt || {}, btThu = num(bt.thu), btV = num(bt.v);
   box.innerHTML = '<div class="bchrow">'+order.map(function(m){ var c = byId[m.id]; var cls = m.role==='Bí thư'?'bt':m.role==='Phó Bí thư'?'pbt':'';
-    var extra = '', vv = null, tt = null; if(m.role==='Bí thư' && btThu && btV!==null){ vv = btV; tt = btThu; } else if(m.role==='Phó Bí thư' && thu){ vv = num(hn.pbt); tt = thu; } if(vv!==null && tt) extra = '<div style="font-size:20px;color:#cfd9f2;margin-top:10px;font-weight:700">'+vv+'/'+tt+' phiếu ('+pct(vv,tt)+')</div>';
+    var extra = '', vv = null, tt = null; if(m.role==='Bí thư' && btThu && btV!==null){ vv = btV; tt = btThu; } else if(m.role==='Phó Bí thư' && thu){ vv = num(hn.pbt); tt = thu; } /* bản theo mẫu năm trước: không hiện số phiếu */
     return '<div class="mcard '+cls+'" data-rank="'+rank[m.role]+'"><div class="pf"><img src="'+esc(photoOf(c))+'" alt="" onerror="this.style.visibility=\'hidden\'"></div><div class="nm">'+esc(c.name)+'</div><div class="rl">'+esc(m.role.toUpperCase())+'</div>'+extra+'</div>'; }).join('')+'</div>';
   var cards = [].slice.call(box.querySelectorAll('.mcard')).sort(function(a,b){ return a.dataset.rank-b.dataset.rank; });
   if(animate){ cards.forEach(function(c,i){ setTimeout(function(){ c.classList.add('in'); }, 500+i*650); }); confetti(); }
